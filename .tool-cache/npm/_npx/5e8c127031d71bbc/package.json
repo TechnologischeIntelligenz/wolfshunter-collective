@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@shopify/cli": "^4.7.0"
+  },
+  "_npx": {
+    "packages": [
+      "@shopify/cli@latest"
+    ]
+  }
+}

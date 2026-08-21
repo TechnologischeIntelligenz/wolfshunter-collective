@@ -1,0 +1,22 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\gdjes\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.19.0
+2 info using node@v24.13.0
+3 silly config load:file:C:\Users\gdjes\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\gdjes\wolfshunter-collective\wolfshunter-collective\.npmrc
+5 silly config load:file:C:\Users\gdjes\.npmrc
+6 silly config load:file:C:\Users\gdjes\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm exec shopify app deploy --allow-updates --message App Store v1: catalog-only scope, main-shop admin isolation, compliance webhooks --version appstore-v1-20260821
+8 verbose argv "exec" "--yes" "--cache" "C:\\Users\\gdjes\\wolfshunter-collective\\.tool-cache\\npm" "--package" "@shopify/cli@latest" "--" "shopify" "app" "deploy" "--allow-updates" "--message" "App Store v1: catalog-only scope, main-shop admin isolation, compliance webhooks" "--version" "appstore-v1-20260821"
+9 verbose logfile logs-max:10 dir:C:\Users\gdjes\wolfshunter-collective\.tool-cache\npm\_logs\2026-08-20T22_59_17_642Z-
+10 verbose logfile C:\Users\gdjes\wolfshunter-collective\.tool-cache\npm\_logs\2026-08-20T22_59_17_642Z-debug-0.log
+11 warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+14 http fetch GET 200 https://registry.npmjs.org/@shopify%2fcli 354ms (cache revalidated)
+15 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+16 verbose cwd C:\Users\gdjes\wolfshunter-collective\wolfshunter-collective
+17 verbose os Windows_NT 10.0.26200
+18 verbose node v24.13.0
+19 verbose npm  v11.19.0
+20 verbose exit 0
+21 info ok

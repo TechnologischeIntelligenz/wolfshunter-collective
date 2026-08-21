@@ -1,0 +1,468 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\gdjes\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.19.0
+2 info using node@v24.13.0
+3 silly config load:file:C:\Users\gdjes\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\gdjes\wolfshunter-collective\wolfshunter-collective\.npmrc
+5 silly config load:file:C:\Users\gdjes\.npmrc
+6 silly config load:file:C:\Users\gdjes\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm exec shopify version
+8 verbose argv "exec" "--yes" "--cache" "C:\\Users\\gdjes\\wolfshunter-collective\\.tool-cache\\npm" "--package" "@shopify/cli@latest" "--" "shopify" "version"
+9 verbose logfile logs-max:10 dir:C:\Users\gdjes\wolfshunter-collective\.tool-cache\npm\_logs\2026-08-20T22_54_33_894Z-
+10 verbose logfile C:\Users\gdjes\wolfshunter-collective\.tool-cache\npm\_logs\2026-08-20T22_54_33_894Z-debug-0.log
+11 warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+14 http fetch GET 200 https://registry.npmjs.org/npm 772ms
+15 http fetch GET 200 https://registry.npmjs.org/@shopify%2fcli 1627ms (cache miss)
+16 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+17 silly idealTree buildDeps
+18 silly fetch manifest @shopify/cli@4.7.0
+19 silly packumentCache full:https://registry.npmjs.org/@shopify%2fcli cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@shopify%2fcli 1460ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@shopify%2fcli set size:undefined disposed:false
+22 silly placeDep ROOT @shopify/cli@4.7.0 OK for:  want: 4.7.0
+23 silly fetch manifest esbuild@0.28.1
+24 silly packumentCache full:https://registry.npmjs.org/esbuild cache-miss
+25 silly fetch manifest global-agent@3.0.0
+26 silly packumentCache full:https://registry.npmjs.org/global-agent cache-miss
+27 silly fetch manifest @ast-grep/napi@0.43.0
+28 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/global-agent 343ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/global-agent set size:undefined disposed:false
+31 http fetch GET 200 https://registry.npmjs.org/esbuild 604ms (cache miss)
+32 silly packumentCache full:https://registry.npmjs.org/esbuild set size:undefined disposed:false
+33 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi 782ms (cache miss)
+34 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi set size:undefined disposed:false
+35 silly placeDep ROOT @ast-grep/napi@0.43.0 OK for: @shopify/cli@4.7.0 want: 0.43.0
+36 silly placeDep ROOT esbuild@0.28.1 OK for: @shopify/cli@4.7.0 want: 0.28.1
+37 silly placeDep ROOT global-agent@3.0.0 OK for: @shopify/cli@4.7.0 want: 3.0.0
+38 silly fetch manifest @ast-grep/napi-darwin-x64@0.43.0
+39 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-darwin-x64 cache-miss
+40 silly fetch manifest @ast-grep/napi-darwin-arm64@0.43.0
+41 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-darwin-arm64 cache-miss
+42 silly fetch manifest @ast-grep/napi-linux-x64-gnu@0.43.0
+43 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-linux-x64-gnu cache-miss
+44 silly fetch manifest @ast-grep/napi-linux-x64-musl@0.43.0
+45 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-linux-x64-musl cache-miss
+46 silly fetch manifest @ast-grep/napi-win32-x64-msvc@0.43.0
+47 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-win32-x64-msvc cache-miss
+48 silly fetch manifest @ast-grep/napi-linux-arm64-gnu@0.43.0
+49 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-linux-arm64-gnu cache-miss
+50 silly fetch manifest @ast-grep/napi-win32-ia32-msvc@0.43.0
+51 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-win32-ia32-msvc cache-miss
+52 silly fetch manifest @ast-grep/napi-linux-arm64-musl@0.43.0
+53 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-linux-arm64-musl cache-miss
+54 silly fetch manifest @ast-grep/napi-win32-arm64-msvc@0.43.0
+55 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-win32-arm64-msvc cache-miss
+56 silly fetch manifest @esbuild/aix-ppc64@0.28.1
+57 silly packumentCache full:https://registry.npmjs.org/@esbuild%2faix-ppc64 cache-miss
+58 silly fetch manifest @esbuild/linux-arm@0.28.1
+59 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm cache-miss
+60 silly fetch manifest @esbuild/linux-x64@0.28.1
+61 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-x64 cache-miss
+62 silly fetch manifest @esbuild/sunos-x64@0.28.1
+63 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fsunos-x64 cache-miss
+64 silly fetch manifest @esbuild/win32-x64@0.28.1
+65 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-x64 cache-miss
+66 silly fetch manifest @esbuild/darwin-x64@0.28.1
+67 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-x64 cache-miss
+68 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-darwin-x64 491ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-darwin-x64 set size:undefined disposed:false
+70 silly fetch manifest @esbuild/linux-ia32@0.28.1
+71 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ia32 cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-linux-x64-gnu 557ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-linux-x64-gnu set size:undefined disposed:false
+74 silly fetch manifest @esbuild/netbsd-x64@0.28.1
+75 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-x64 cache-miss
+76 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-darwin-arm64 617ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-darwin-arm64 set size:undefined disposed:false
+78 silly fetch manifest @esbuild/win32-ia32@0.28.1
+79 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-ia32 cache-miss
+80 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fsunos-x64 762ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fsunos-x64 set size:undefined disposed:false
+82 silly fetch manifest @esbuild/android-arm@0.28.1
+83 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm cache-miss
+84 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-x64 851ms (cache miss)
+85 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-x64 set size:undefined disposed:false
+86 silly fetch manifest @esbuild/android-x64@0.28.1
+87 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-x64 cache-miss
+88 http fetch GET 200 https://registry.npmjs.org/@esbuild%2faix-ppc64 864ms (cache miss)
+89 silly packumentCache full:https://registry.npmjs.org/@esbuild%2faix-ppc64 set size:undefined disposed:false
+90 silly fetch manifest @esbuild/freebsd-x64@0.28.1
+91 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-x64 cache-miss
+92 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ia32 485ms (cache miss)
+93 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ia32 set size:undefined disposed:false
+94 silly fetch manifest @esbuild/linux-arm64@0.28.1
+95 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm64 cache-miss
+96 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-linux-arm64-gnu 1007ms (cache miss)
+97 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-linux-arm64-gnu set size:undefined disposed:false
+98 silly fetch manifest @esbuild/linux-ppc64@0.28.1
+99 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ppc64 cache-miss
+100 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-linux-arm64-musl 1033ms (cache miss)
+101 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-linux-arm64-musl set size:undefined disposed:false
+102 silly fetch manifest @esbuild/linux-s390x@0.28.1
+103 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-s390x cache-miss
+104 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-linux-x64-musl 1070ms (cache miss)
+105 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-linux-x64-musl set size:undefined disposed:false
+106 silly fetch manifest @esbuild/openbsd-x64@0.28.1
+107 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-x64 cache-miss
+108 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-x64 710ms (cache miss)
+109 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-x64 set size:undefined disposed:false
+110 silly fetch manifest @esbuild/win32-arm64@0.28.1
+111 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-arm64 cache-miss
+112 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-x64 1325ms (cache miss)
+113 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-x64 set size:undefined disposed:false
+114 silly fetch manifest @esbuild/darwin-arm64@0.28.1
+115 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-arm64 cache-miss
+116 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-ia32 807ms (cache miss)
+117 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-ia32 set size:undefined disposed:false
+118 silly fetch manifest @esbuild/netbsd-arm64@0.28.1
+119 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 cache-miss
+120 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-x64 1436ms (cache miss)
+121 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-x64 set size:undefined disposed:false
+122 silly fetch manifest @esbuild/android-arm64@0.28.1
+123 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm64 cache-miss
+124 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm 1482ms (cache miss)
+125 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm set size:undefined disposed:false
+126 silly fetch manifest @esbuild/freebsd-arm64@0.28.1
+127 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 cache-miss
+128 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-win32-arm64-msvc 1508ms (cache miss)
+129 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-win32-arm64-msvc set size:undefined disposed:false
+130 silly fetch manifest @esbuild/linux-loong64@0.28.1
+131 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-loong64 cache-miss
+132 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-win32-ia32-msvc 1520ms (cache miss)
+133 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-win32-ia32-msvc set size:undefined disposed:false
+134 silly fetch manifest @esbuild/linux-riscv64@0.28.1
+135 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-riscv64 cache-miss
+136 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm64 603ms (cache miss)
+137 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-arm64 set size:undefined disposed:false
+138 silly fetch manifest @esbuild/openbsd-arm64@0.28.1
+139 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 cache-miss
+140 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm 844ms (cache miss)
+141 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm set size:undefined disposed:false
+142 silly fetch manifest @esbuild/linux-mips64el@0.28.1
+143 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-mips64el cache-miss
+144 http fetch GET 200 https://registry.npmjs.org/@ast-grep%2fnapi-win32-x64-msvc 1723ms (cache miss)
+145 silly packumentCache full:https://registry.npmjs.org/@ast-grep%2fnapi-win32-x64-msvc set size:undefined disposed:false
+146 silly fetch manifest @esbuild/openharmony-arm64@0.28.1
+147 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenharmony-arm64 cache-miss
+148 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-x64 932ms (cache miss)
+149 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-x64 set size:undefined disposed:false
+150 silly fetch manifest roarr@^2.15.3
+151 silly packumentCache full:https://registry.npmjs.org/roarr cache-miss
+152 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-x64 1031ms (cache miss)
+153 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-x64 set size:undefined disposed:false
+154 silly fetch manifest semver@^7.3.2
+155 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+156 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-arm64 642ms (cache miss)
+157 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fwin32-arm64 set size:undefined disposed:false
+158 silly fetch manifest boolean@^3.0.1
+159 silly packumentCache full:https://registry.npmjs.org/boolean cache-miss
+160 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-mips64el 544ms (cache miss)
+161 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-mips64el set size:undefined disposed:false
+162 silly fetch manifest matcher@^3.0.0
+163 silly packumentCache full:https://registry.npmjs.org/matcher cache-miss
+164 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-x64 1088ms (cache miss)
+165 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-x64 set size:undefined disposed:false
+166 silly fetch manifest es6-error@^4.1.1
+167 silly packumentCache full:https://registry.npmjs.org/es6-error cache-miss
+168 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ppc64 1198ms (cache miss)
+169 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-ppc64 set size:undefined disposed:false
+170 silly fetch manifest serialize-error@^7.0.1
+171 silly packumentCache full:https://registry.npmjs.org/serialize-error cache-miss
+172 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 680ms (cache miss)
+173 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenbsd-arm64 set size:undefined disposed:false
+174 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-s390x 1307ms (cache miss)
+175 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-s390x set size:undefined disposed:false
+176 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm64 952ms (cache miss)
+177 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fandroid-arm64 set size:undefined disposed:false
+178 http fetch GET 200 https://registry.npmjs.org/boolean 523ms (cache miss)
+179 silly packumentCache full:https://registry.npmjs.org/boolean set size:undefined disposed:false
+180 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenharmony-arm64 725ms (cache miss)
+181 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fopenharmony-arm64 set size:undefined disposed:false
+182 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 1060ms (cache miss)
+183 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fnetbsd-arm64 set size:undefined disposed:false
+184 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-arm64 1165ms (cache miss)
+185 silly packumentCache full:https://registry.npmjs.org/@esbuild%2fdarwin-arm64 set size:undefined disposed:false
+186 http fetch GET 200 https://registry.npmjs.org/es6-error 445ms (cache miss)
+187 silly packumentCache full:https://registry.npmjs.org/es6-error set size:undefined disposed:false
+188 http fetch GET 200 https://registry.npmjs.org/matcher 452ms (cache miss)
+189 silly packumentCache full:https://registry.npmjs.org/matcher set size:undefined disposed:false
+190 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 1162ms (cache miss)
+191 silly packumentCache full:https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 set size:undefined disposed:false
+192 http fetch GET 200 https://registry.npmjs.org/serialize-error 460ms (cache miss)
+193 silly packumentCache full:https://registry.npmjs.org/serialize-error set size:undefined disposed:false
+194 http fetch GET 200 https://registry.npmjs.org/semver 788ms (cache miss)
+195 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+196 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-riscv64 1176ms (cache miss)
+197 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-riscv64 set size:undefined disposed:false
+198 http fetch GET 200 https://registry.npmjs.org/roarr 956ms (cache miss)
+199 silly packumentCache full:https://registry.npmjs.org/roarr set size:undefined disposed:false
+200 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-loong64 1243ms (cache miss)
+201 silly packumentCache full:https://registry.npmjs.org/@esbuild%2flinux-loong64 set size:undefined disposed:false
+202 silly placeDep ROOT @ast-grep/napi-darwin-arm64@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+203 silly placeDep ROOT @ast-grep/napi-darwin-x64@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+204 silly placeDep ROOT @ast-grep/napi-linux-arm64-gnu@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+205 silly placeDep ROOT @ast-grep/napi-linux-arm64-musl@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+206 silly placeDep ROOT @ast-grep/napi-linux-x64-gnu@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+207 silly placeDep ROOT @ast-grep/napi-linux-x64-musl@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+208 silly placeDep ROOT @ast-grep/napi-win32-arm64-msvc@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+209 silly placeDep ROOT @ast-grep/napi-win32-ia32-msvc@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+210 silly placeDep ROOT @ast-grep/napi-win32-x64-msvc@0.43.0 OK for: @ast-grep/napi@0.43.0 want: 0.43.0
+211 silly placeDep ROOT @esbuild/aix-ppc64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+212 silly placeDep ROOT @esbuild/android-arm@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+213 silly placeDep ROOT @esbuild/android-arm64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+214 silly placeDep ROOT @esbuild/android-x64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+215 silly placeDep ROOT @esbuild/darwin-arm64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+216 silly placeDep ROOT @esbuild/darwin-x64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+217 silly placeDep ROOT @esbuild/freebsd-arm64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+218 silly placeDep ROOT @esbuild/freebsd-x64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+219 silly placeDep ROOT @esbuild/linux-arm@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+220 silly placeDep ROOT @esbuild/linux-arm64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+221 silly placeDep ROOT @esbuild/linux-ia32@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+222 silly placeDep ROOT @esbuild/linux-loong64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+223 silly placeDep ROOT @esbuild/linux-mips64el@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+224 silly placeDep ROOT @esbuild/linux-ppc64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+225 silly placeDep ROOT @esbuild/linux-riscv64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+226 silly placeDep ROOT @esbuild/linux-s390x@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+227 silly placeDep ROOT @esbuild/linux-x64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+228 silly placeDep ROOT @esbuild/netbsd-arm64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+229 silly placeDep ROOT @esbuild/netbsd-x64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+230 silly placeDep ROOT @esbuild/openbsd-arm64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+231 silly placeDep ROOT @esbuild/openbsd-x64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+232 silly placeDep ROOT @esbuild/openharmony-arm64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+233 silly placeDep ROOT @esbuild/sunos-x64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+234 silly placeDep ROOT @esbuild/win32-arm64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+235 silly placeDep ROOT @esbuild/win32-ia32@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+236 silly placeDep ROOT @esbuild/win32-x64@0.28.1 OK for: esbuild@0.28.1 want: 0.28.1
+237 silly placeDep ROOT boolean@3.2.0 OK for: global-agent@3.0.0 want: ^3.0.1
+238 silly placeDep ROOT es6-error@4.1.1 OK for: global-agent@3.0.0 want: ^4.1.1
+239 silly placeDep ROOT matcher@3.0.0 OK for: global-agent@3.0.0 want: ^3.0.0
+240 silly placeDep ROOT roarr@2.15.4 OK for: global-agent@3.0.0 want: ^2.15.3
+241 silly placeDep ROOT semver@7.8.5 OK for: global-agent@3.0.0 want: ^7.3.2
+242 silly placeDep ROOT serialize-error@7.0.1 OK for: global-agent@3.0.0 want: ^7.0.1
+243 silly fetch manifest escape-string-regexp@^4.0.0
+244 silly packumentCache full:https://registry.npmjs.org/escape-string-regexp cache-miss
+245 silly fetch manifest globalthis@^1.0.1
+246 silly packumentCache full:https://registry.npmjs.org/globalthis cache-miss
+247 silly fetch manifest sprintf-js@^1.1.2
+248 silly packumentCache full:https://registry.npmjs.org/sprintf-js cache-miss
+249 silly fetch manifest detect-node@^2.0.4
+250 silly packumentCache full:https://registry.npmjs.org/detect-node cache-miss
+251 silly fetch manifest semver-compare@^1.0.0
+252 silly packumentCache full:https://registry.npmjs.org/semver-compare cache-miss
+253 silly fetch manifest json-stringify-safe@^5.0.1
+254 silly packumentCache full:https://registry.npmjs.org/json-stringify-safe cache-miss
+255 silly fetch manifest type-fest@^0.13.1
+256 silly packumentCache full:https://registry.npmjs.org/type-fest cache-miss
+257 http fetch GET 200 https://registry.npmjs.org/semver-compare 88ms (cache miss)
+258 silly packumentCache full:https://registry.npmjs.org/semver-compare set size:undefined disposed:false
+259 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 93ms (cache miss)
+260 silly packumentCache full:https://registry.npmjs.org/escape-string-regexp set size:undefined disposed:false
+261 http fetch GET 200 https://registry.npmjs.org/sprintf-js 92ms (cache miss)
+262 silly packumentCache full:https://registry.npmjs.org/sprintf-js set size:undefined disposed:false
+263 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe 92ms (cache miss)
+264 silly packumentCache full:https://registry.npmjs.org/json-stringify-safe set size:undefined disposed:false
+265 http fetch GET 200 https://registry.npmjs.org/detect-node 245ms (cache miss)
+266 silly packumentCache full:https://registry.npmjs.org/detect-node set size:undefined disposed:false
+267 http fetch GET 200 https://registry.npmjs.org/globalthis 262ms (cache miss)
+268 silly packumentCache full:https://registry.npmjs.org/globalthis set size:undefined disposed:false
+269 http fetch GET 200 https://registry.npmjs.org/type-fest 407ms (cache miss)
+270 silly packumentCache full:https://registry.npmjs.org/type-fest set size:undefined disposed:false
+271 silly placeDep ROOT escape-string-regexp@4.0.0 OK for: matcher@3.0.0 want: ^4.0.0
+272 silly placeDep ROOT detect-node@2.1.0 OK for: roarr@2.15.4 want: ^2.0.4
+273 silly placeDep ROOT globalthis@1.0.4 OK for: roarr@2.15.4 want: ^1.0.1
+274 silly placeDep ROOT json-stringify-safe@5.0.1 OK for: roarr@2.15.4 want: ^5.0.1
+275 silly placeDep ROOT semver-compare@1.0.0 OK for: roarr@2.15.4 want: ^1.0.0
+276 silly placeDep ROOT sprintf-js@1.1.3 OK for: roarr@2.15.4 want: ^1.1.2
+277 silly fetch manifest define-properties@^1.2.1
+278 silly packumentCache full:https://registry.npmjs.org/define-properties cache-miss
+279 silly fetch manifest gopd@^1.0.1
+280 silly packumentCache full:https://registry.npmjs.org/gopd cache-miss
+281 http fetch GET 200 https://registry.npmjs.org/gopd 83ms (cache miss)
+282 silly packumentCache full:https://registry.npmjs.org/gopd set size:undefined disposed:false
+283 http fetch GET 200 https://registry.npmjs.org/define-properties 256ms (cache miss)
+284 silly packumentCache full:https://registry.npmjs.org/define-properties set size:undefined disposed:false
+285 silly placeDep ROOT define-properties@1.2.1 OK for: globalthis@1.0.4 want: ^1.2.1
+286 silly placeDep ROOT gopd@1.2.0 OK for: globalthis@1.0.4 want: ^1.0.1
+287 silly fetch manifest define-data-property@^1.0.1
+288 silly packumentCache full:https://registry.npmjs.org/define-data-property cache-miss
+289 silly fetch manifest has-property-descriptors@^1.0.0
+290 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors cache-miss
+291 silly fetch manifest object-keys@^1.1.1
+292 silly packumentCache full:https://registry.npmjs.org/object-keys cache-miss
+293 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors 248ms (cache miss)
+294 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors set size:undefined disposed:false
+295 http fetch GET 200 https://registry.npmjs.org/define-data-property 254ms (cache miss)
+296 silly packumentCache full:https://registry.npmjs.org/define-data-property set size:undefined disposed:false
+297 http fetch GET 200 https://registry.npmjs.org/object-keys 260ms (cache miss)
+298 silly packumentCache full:https://registry.npmjs.org/object-keys set size:undefined disposed:false
+299 silly placeDep ROOT define-data-property@1.1.4 OK for: define-properties@1.2.1 want: ^1.0.1
+300 silly placeDep ROOT has-property-descriptors@1.0.2 OK for: define-properties@1.2.1 want: ^1.0.0
+301 silly placeDep ROOT object-keys@1.1.1 OK for: define-properties@1.2.1 want: ^1.1.1
+302 silly fetch manifest es-define-property@^1.0.0
+303 silly packumentCache full:https://registry.npmjs.org/es-define-property cache-miss
+304 silly fetch manifest es-errors@^1.3.0
+305 silly packumentCache full:https://registry.npmjs.org/es-errors cache-miss
+306 silly fetch manifest es-define-property@^1.0.0
+307 silly packumentCache full:https://registry.npmjs.org/es-define-property cache-miss
+308 http fetch GET 200 https://registry.npmjs.org/es-errors 109ms (cache miss)
+309 silly packumentCache full:https://registry.npmjs.org/es-errors set size:undefined disposed:false
+310 http fetch GET 200 https://registry.npmjs.org/es-define-property 111ms (cache miss)
+311 silly packumentCache full:https://registry.npmjs.org/es-define-property set size:undefined disposed:false
+312 http fetch GET 200 https://registry.npmjs.org/es-define-property 148ms (cache miss)
+313 silly packumentCache full:https://registry.npmjs.org/es-define-property set size:undefined disposed:false
+314 silly placeDep ROOT es-define-property@1.0.1 OK for: define-data-property@1.1.4 want: ^1.0.0
+315 silly placeDep ROOT es-errors@1.3.0 OK for: define-data-property@1.1.4 want: ^1.3.0
+316 silly placeDep ROOT type-fest@0.13.1 OK for: serialize-error@7.0.1 want: ^0.13.1
+317 silly reify moves {}
+318 silly audit bulk request {
+318 silly audit   '@shopify/cli': [ '4.7.0' ],
+318 silly audit   '@ast-grep/napi': [ '0.43.0' ],
+318 silly audit   esbuild: [ '0.28.1' ],
+318 silly audit   'global-agent': [ '3.0.0' ],
+318 silly audit   '@ast-grep/napi-darwin-arm64': [ '0.43.0' ],
+318 silly audit   '@ast-grep/napi-darwin-x64': [ '0.43.0' ],
+318 silly audit   '@ast-grep/napi-linux-arm64-gnu': [ '0.43.0' ],
+318 silly audit   '@ast-grep/napi-linux-arm64-musl': [ '0.43.0' ],
+318 silly audit   '@ast-grep/napi-linux-x64-gnu': [ '0.43.0' ],
+318 silly audit   '@ast-grep/napi-linux-x64-musl': [ '0.43.0' ],
+318 silly audit   '@ast-grep/napi-win32-arm64-msvc': [ '0.43.0' ],
+318 silly audit   '@ast-grep/napi-win32-ia32-msvc': [ '0.43.0' ],
+318 silly audit   '@ast-grep/napi-win32-x64-msvc': [ '0.43.0' ],
+318 silly audit   '@esbuild/aix-ppc64': [ '0.28.1' ],
+318 silly audit   '@esbuild/android-arm': [ '0.28.1' ],
+318 silly audit   '@esbuild/android-arm64': [ '0.28.1' ],
+318 silly audit   '@esbuild/android-x64': [ '0.28.1' ],
+318 silly audit   '@esbuild/darwin-arm64': [ '0.28.1' ],
+318 silly audit   '@esbuild/darwin-x64': [ '0.28.1' ],
+318 silly audit   '@esbuild/freebsd-arm64': [ '0.28.1' ],
+318 silly audit   '@esbuild/freebsd-x64': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-arm': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-arm64': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-ia32': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-loong64': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-mips64el': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-ppc64': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-riscv64': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-s390x': [ '0.28.1' ],
+318 silly audit   '@esbuild/linux-x64': [ '0.28.1' ],
+318 silly audit   '@esbuild/netbsd-arm64': [ '0.28.1' ],
+318 silly audit   '@esbuild/netbsd-x64': [ '0.28.1' ],
+318 silly audit   '@esbuild/openbsd-arm64': [ '0.28.1' ],
+318 silly audit   '@esbuild/openbsd-x64': [ '0.28.1' ],
+318 silly audit   '@esbuild/openharmony-arm64': [ '0.28.1' ],
+318 silly audit   '@esbuild/sunos-x64': [ '0.28.1' ],
+318 silly audit   '@esbuild/win32-arm64': [ '0.28.1' ],
+318 silly audit   '@esbuild/win32-ia32': [ '0.28.1' ],
+318 silly audit   '@esbuild/win32-x64': [ '0.28.1' ],
+318 silly audit   boolean: [ '3.2.0' ],
+318 silly audit   'es6-error': [ '4.1.1' ],
+318 silly audit   matcher: [ '3.0.0' ],
+318 silly audit   roarr: [ '2.15.4' ],
+318 silly audit   semver: [ '7.8.5' ],
+318 silly audit   'serialize-error': [ '7.0.1' ],
+318 silly audit   'escape-string-regexp': [ '4.0.0' ],
+318 silly audit   'detect-node': [ '2.1.0' ],
+318 silly audit   globalthis: [ '1.0.4' ],
+318 silly audit   'json-stringify-safe': [ '5.0.1' ],
+318 silly audit   'semver-compare': [ '1.0.0' ],
+318 silly audit   'sprintf-js': [ '1.1.3' ],
+318 silly audit   'define-properties': [ '1.2.1' ],
+318 silly audit   gopd: [ '1.2.0' ],
+318 silly audit   'define-data-property': [ '1.1.4' ],
+318 silly audit   'has-property-descriptors': [ '1.0.2' ],
+318 silly audit   'object-keys': [ '1.1.1' ],
+318 silly audit   'es-define-property': [ '1.0.1' ],
+318 silly audit   'es-errors': [ '1.3.0' ],
+318 silly audit   'type-fest': [ '0.13.1' ]
+318 silly audit }
+319 http cache type-fest@https://registry.npmjs.org/type-fest/-/type-fest-0.13.1.tgz 0ms (cache hit)
+320 http cache es-define-property@https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz 0ms (cache hit)
+321 http cache es-errors@https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz 0ms (cache hit)
+322 http cache gopd@https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz 0ms (cache hit)
+323 http cache define-data-property@https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz 0ms (cache hit)
+324 http cache has-property-descriptors@https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz 0ms (cache hit)
+325 http cache define-properties@https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz 0ms (cache hit)
+326 http cache object-keys@https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz 0ms (cache hit)
+327 http cache sprintf-js@https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.1.3.tgz 0ms (cache hit)
+328 http cache globalthis@https://registry.npmjs.org/globalthis/-/globalthis-1.0.4.tgz 0ms (cache hit)
+329 http cache json-stringify-safe@https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz 0ms (cache hit)
+330 http cache escape-string-regexp@https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz 0ms (cache hit)
+331 http cache detect-node@https://registry.npmjs.org/detect-node/-/detect-node-2.1.0.tgz 0ms (cache hit)
+332 http cache semver-compare@https://registry.npmjs.org/semver-compare/-/semver-compare-1.0.0.tgz 0ms (cache hit)
+333 http cache roarr@https://registry.npmjs.org/roarr/-/roarr-2.15.4.tgz 0ms (cache hit)
+334 http cache semver@https://registry.npmjs.org/semver/-/semver-7.8.5.tgz 0ms (cache hit)
+335 http cache serialize-error@https://registry.npmjs.org/serialize-error/-/serialize-error-7.0.1.tgz 0ms (cache hit)
+336 http cache es6-error@https://registry.npmjs.org/es6-error/-/es6-error-4.1.1.tgz 0ms (cache hit)
+337 http cache boolean@https://registry.npmjs.org/boolean/-/boolean-3.2.0.tgz 0ms (cache hit)
+338 http cache matcher@https://registry.npmjs.org/matcher/-/matcher-3.0.0.tgz 0ms (cache hit)
+339 http cache @ast-grep/napi-win32-x64-msvc@https://registry.npmjs.org/@ast-grep/napi-win32-x64-msvc/-/napi-win32-x64-msvc-0.43.0.tgz 0ms (cache hit)
+340 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.28.1.tgz 0ms (cache hit)
+341 http cache global-agent@https://registry.npmjs.org/global-agent/-/global-agent-3.0.0.tgz 0ms (cache hit)
+342 http cache @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.28.1.tgz 0ms (cache hit)
+343 http cache @shopify/cli@https://registry.npmjs.org/@shopify/cli/-/cli-4.7.0.tgz 0ms (cache hit)
+344 silly tarball no local data for type-fest@https://registry.npmjs.org/type-fest/-/type-fest-0.13.1.tgz. Extracting by manifest.
+345 http cache @ast-grep/napi@https://registry.npmjs.org/@ast-grep/napi/-/napi-0.43.0.tgz 0ms (cache hit)
+346 silly tarball no local data for es-define-property@https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz. Extracting by manifest.
+347 silly tarball no local data for es-errors@https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz. Extracting by manifest.
+348 silly tarball no local data for gopd@https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz. Extracting by manifest.
+349 silly tarball no local data for define-data-property@https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz. Extracting by manifest.
+350 silly tarball no local data for has-property-descriptors@https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz. Extracting by manifest.
+351 silly tarball no local data for define-properties@https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz. Extracting by manifest.
+352 silly tarball no local data for object-keys@https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz. Extracting by manifest.
+353 silly tarball no local data for sprintf-js@https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.1.3.tgz. Extracting by manifest.
+354 silly tarball no local data for globalthis@https://registry.npmjs.org/globalthis/-/globalthis-1.0.4.tgz. Extracting by manifest.
+355 silly tarball no local data for json-stringify-safe@https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz. Extracting by manifest.
+356 silly tarball no local data for escape-string-regexp@https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz. Extracting by manifest.
+357 silly tarball no local data for detect-node@https://registry.npmjs.org/detect-node/-/detect-node-2.1.0.tgz. Extracting by manifest.
+358 silly tarball no local data for semver-compare@https://registry.npmjs.org/semver-compare/-/semver-compare-1.0.0.tgz. Extracting by manifest.
+359 silly tarball no local data for roarr@https://registry.npmjs.org/roarr/-/roarr-2.15.4.tgz. Extracting by manifest.
+360 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.8.5.tgz. Extracting by manifest.
+361 silly tarball no local data for serialize-error@https://registry.npmjs.org/serialize-error/-/serialize-error-7.0.1.tgz. Extracting by manifest.
+362 silly tarball no local data for es6-error@https://registry.npmjs.org/es6-error/-/es6-error-4.1.1.tgz. Extracting by manifest.
+363 silly tarball no local data for boolean@https://registry.npmjs.org/boolean/-/boolean-3.2.0.tgz. Extracting by manifest.
+364 silly tarball no local data for matcher@https://registry.npmjs.org/matcher/-/matcher-3.0.0.tgz. Extracting by manifest.
+365 silly tarball no local data for @ast-grep/napi-win32-x64-msvc@https://registry.npmjs.org/@ast-grep/napi-win32-x64-msvc/-/napi-win32-x64-msvc-0.43.0.tgz. Extracting by manifest.
+366 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.28.1.tgz. Extracting by manifest.
+367 silly tarball no local data for global-agent@https://registry.npmjs.org/global-agent/-/global-agent-3.0.0.tgz. Extracting by manifest.
+368 silly tarball no local data for @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.28.1.tgz. Extracting by manifest.
+369 silly tarball no local data for @shopify/cli@https://registry.npmjs.org/@shopify/cli/-/cli-4.7.0.tgz. Extracting by manifest.
+370 silly tarball no local data for @ast-grep/napi@https://registry.npmjs.org/@ast-grep/napi/-/napi-0.43.0.tgz. Extracting by manifest.
+371 http fetch GET 200 https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz 181ms (cache miss)
+372 http fetch GET 200 https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz 183ms (cache miss)
+373 http fetch GET 200 https://registry.npmjs.org/detect-node/-/detect-node-2.1.0.tgz 179ms (cache miss)
+374 http fetch GET 200 https://registry.npmjs.org/semver-compare/-/semver-compare-1.0.0.tgz 180ms (cache miss)
+375 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz 186ms (cache miss)
+376 http fetch GET 200 https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz 232ms (cache miss)
+377 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 279ms
+378 silly audit report {}
+379 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz 245ms (cache miss)
+380 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz 253ms (cache miss)
+381 http fetch GET 200 https://registry.npmjs.org/es6-error/-/es6-error-4.1.1.tgz 250ms (cache miss)
+382 http fetch GET 200 https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz 262ms (cache miss)
+383 http fetch GET 200 https://registry.npmjs.org/serialize-error/-/serialize-error-7.0.1.tgz 254ms (cache miss)
+384 http fetch GET 200 https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz 262ms (cache miss)
+385 http fetch GET 200 https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz 264ms (cache miss)
+386 http fetch GET 200 https://registry.npmjs.org/matcher/-/matcher-3.0.0.tgz 261ms (cache miss)
+387 http fetch GET 200 https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.1.3.tgz 277ms (cache miss)
+388 http fetch GET 200 https://registry.npmjs.org/globalthis/-/globalthis-1.0.4.tgz 288ms (cache miss)
+389 http fetch GET 200 https://registry.npmjs.org/esbuild/-/esbuild-0.28.1.tgz 283ms (cache miss)
+390 http fetch GET 200 https://registry.npmjs.org/boolean/-/boolean-3.2.0.tgz 308ms (cache miss)
+391 warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+392 http fetch GET 200 https://registry.npmjs.org/type-fest/-/type-fest-0.13.1.tgz 348ms (cache miss)
+393 http fetch GET 200 https://registry.npmjs.org/roarr/-/roarr-2.15.4.tgz 349ms (cache miss)
+394 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.8.5.tgz 400ms (cache miss)
+395 http fetch GET 200 https://registry.npmjs.org/global-agent/-/global-agent-3.0.0.tgz 470ms (cache miss)
+396 http fetch GET 200 https://registry.npmjs.org/@ast-grep/napi/-/napi-0.43.0.tgz 725ms (cache miss)
+397 http fetch GET 200 https://registry.npmjs.org/@ast-grep/napi-win32-x64-msvc/-/napi-win32-x64-msvc-0.43.0.tgz 4144ms (cache miss)
+398 http fetch GET 200 https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.28.1.tgz 17718ms (cache miss)
+399 http fetch GET 200 https://registry.npmjs.org/@shopify/cli/-/cli-4.7.0.tgz 21019ms (cache miss)
+400 info run esbuild@0.28.1 postinstall node_modules/esbuild node install.js
+401 info run esbuild@0.28.1 postinstall { code: 0, signal: null }
+402 verbose cwd C:\Users\gdjes\wolfshunter-collective\wolfshunter-collective
+403 verbose os Windows_NT 10.0.26200
+404 verbose node v24.13.0
+405 verbose npm  v11.19.0
+406 verbose exit 0
+407 info ok

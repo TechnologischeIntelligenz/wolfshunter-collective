@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="wolfshunter-collective">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/collective-snapshot-20260813-233910-no-db.zip!/" />
+      <root url="jar://$PROJECT_DIR$/collective-snapshot-20260813-221344.zip!/" />
+      <root url="jar://$PROJECT_DIR$/collective-snapshot-20260813-221623.zip!/" />
+      <root url="jar://$PROJECT_DIR$/collective-snapshot-20260813-233854.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
