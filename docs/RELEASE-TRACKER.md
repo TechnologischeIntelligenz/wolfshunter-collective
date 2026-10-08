@@ -140,6 +140,7 @@ Vorheriger Einzelschritt vom Nutzer bestätigt: Dev-Shop → Import Lists → Cr
 - **Shopify-Version released:** `wolfshunter-collective-23`, Version-ID `1160128069633`. Shopify CLI meldet diese Version als `active`.
 - **Billing:** Produktionsmodus ist aktiv (`BILLING_TEST_MODE=false`); der Code definiert 99 USD pro 30 Tage nach einer 14-tägigen Testphase.
 - **Live-Session geprüft:** Dev-Shop `wolfshunter-ai-dev.myshopify.com`, richtige App-ID, konfigurierte Scopes und 0 GraphQL-Fehler.
+- **Admin-/Retailer-Flows separat geprüft:** Produktions-Shop `3ddd6b-2.myshopify.com` und Dev-Shop `wolfshunter-ai-dev.myshopify.com` liefern beide Shopify HTTP 200, die korrekte App-ID, alle konfigurierten Scopes und 0 GraphQL-Fehler. Nicht angemeldete `/app`-Aufrufe leiten korrekt zu `/auth/login` weiter.
 - **Scheduler-Recovery:** Katalog, Commerce/Policies und Orders verwenden wieder durable, seitenweise Checkpoints. Typecheck und Produktions-Build sind grün.
 - **Recovery-Backup:** GitHub-Branch `recovery-20261008`, letzter Commit `5171d1f`.
 - **Noch kein öffentlicher App-Store-Reviewabschluss:** Fulfillment-Ausführung, Carrier-Tracking, geschützte Kundendatenfreigabe, vollständiger Browser-/Neuinstallationstest und die Dashboard-Einreichung bleiben separate Nachweise. Diese Punkte werden in V1 nicht beworben.
