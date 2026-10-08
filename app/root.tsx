@@ -29,9 +29,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div role="status" style={{ padding: "10px 16px", background: "#fff4ce", color: "#352900", textAlign: "center", fontSize: 14 }}>
-          Testversion
-        </div>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
