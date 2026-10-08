@@ -1,6 +1,7 @@
 import { readCatalogSnapshot } from "./catalog-snapshot.server.ts";
 import { readSourceCommerce } from "./source-commerce.server.ts";
 import { getCatalogSourceShop } from "./app-admin.server.ts";
+import db from "../db.server.ts";
 import { createPhaseOneFixtureState } from "./merchandising/fixtures.ts";
 import type {
   CatalogProduct,
@@ -25,6 +26,62 @@ interface CachedSourceCatalog {
   expiresAt: number;
   syncedAt: string;
   catalog: ShopifyAdminCatalog;
+}
+
+const parseArray = <T>(value: string): T[] => {
+  try {
+    const parsed = JSON.parse(value) as unknown;
+    return Array.isArray(parsed) ? (parsed as T[]) : [];
+  } catch {
+    return [];
+  }
+};
+
+async function readDatabaseSourceCatalog(sourceShop: string) {
+  const rows = await db.catalogKnowledgeProduct.findMany({
+    where: { sourceShop, status: "ACTIVE" },
+    orderBy: { sourceProductId: "asc" },
+  });
+  if (!rows.length) return null;
+  const products: ShopifyAdminProduct[] = rows.map((row) => {
+    const imageUrls = parseArray<string>(row.imageUrlsJson).filter(Boolean);
+    const collections = parseArray<{ id: string; title: string; handle: string; updatedAt?: string }>(row.collectionsJson)
+      .filter((collection) => collection.id && collection.title && collection.handle)
+      .map((collection) => ({
+        id: collection.id,
+        title: collection.title,
+        handle: collection.handle,
+        updatedAt: collection.updatedAt ?? row.sourceUpdatedAt?.toISOString() ?? row.updatedAt.toISOString(),
+      }));
+    return {
+      id: row.sourceProductId,
+      title: row.title,
+      handle: row.handle,
+      descriptionHtml: row.descriptionHtml,
+      status: row.status,
+      vendor: row.vendor,
+      productType: row.productType,
+      tags: parseArray<string>(row.tagsJson),
+      collections,
+      createdAt: row.sourceCreatedAt?.toISOString() ?? row.createdAt.toISOString(),
+      updatedAt: row.sourceUpdatedAt?.toISOString() ?? row.updatedAt.toISOString(),
+      totalInventory: row.totalInventory,
+      variantCount: row.variantCount,
+      imageCount: row.imageCount || imageUrls.length,
+      images: imageUrls.map((url) => ({ url, altText: null })),
+      priceRange: row.priceMinimum !== null && row.priceMaximum !== null && row.currency
+        ? { minimum: row.priceMinimum, maximum: row.priceMaximum, currency: row.currency }
+        : null,
+    };
+  });
+  const syncedAt = rows.reduce((latest, row) => {
+    const value = row.lastSyncedAt.toISOString();
+    return value > latest ? value : latest;
+  }, rows[0].lastSyncedAt.toISOString());
+  return {
+    catalog: { source: "shopify" as const, products, collections: [], error: null },
+    syncedAt,
+  };
 }
 
 const sourceCatalogCache = new Map<string, CachedSourceCatalog>();
@@ -122,11 +179,12 @@ async function readSourceCatalog(sourceShop: string) {
   if (cached && cached.expiresAt > Date.now()) return cached;
 
   const snapshot = await readCatalogSnapshot(sourceShop);
-  if (!snapshot) throw new Error("The source catalog must be synchronized first");
-  const catalog = snapshot.catalog;
+  const databaseSnapshot = snapshot ? null : await readDatabaseSourceCatalog(sourceShop);
+  if (!snapshot && !databaseSnapshot) throw new Error("The source catalog must be synchronized first");
+  const catalog = snapshot?.catalog ?? databaseSnapshot!.catalog;
   const entry = {
     catalog,
-    syncedAt: snapshot.syncedAt,
+    syncedAt: snapshot?.syncedAt ?? databaseSnapshot!.syncedAt,
     expiresAt: Date.now() + cacheMilliseconds(),
   };
 
