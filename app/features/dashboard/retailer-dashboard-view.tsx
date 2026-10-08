@@ -14,8 +14,8 @@ const signals = [
   ["Mapping health", "Mappings appear after a product DRAFT is created."],
   ["Low stock alerts", "Requires verified, fresh supplier inventory signals."],
   ["Margin-risk alerts", "Requires verified supplier costs and retailer pricing."],
-  ["Pending fulfillment", "Order routing is protected until the workflow is live."],
-  ["Tracking exceptions", "Shipment monitoring starts after fulfillment integration."],
+  ["Draft approvals", "Approved Import List entries create unpublished Shopify DRAFTs."],
+  ["Import checks", "Readiness is shown only after a verified catalog check."],
 ] as const;
 
 export function RetailerDashboardView({
@@ -29,10 +29,10 @@ export function RetailerDashboardView({
 }: AuthenticatedAppLoaderData) {
   const isConnected = Boolean(shop);
   const countLabel = (metric: { count: number; precision: string } | null) =>
-    metric ? `${metric.count}${metric.precision === "EXACT" ? "" : "+"}` : "—";
+    metric ? `${metric.count}${metric.precision === "EXACT" ? "" : "+"}` : "â€”";
   const countDetail = (metric: { count: number; precision: string } | null) =>
     metric
-      ? `Shopify Admin · ${metric.precision === "EXACT" ? "exact count" : "lower bound"}`
+      ? `Shopify Admin Â· ${metric.precision === "EXACT" ? "exact count" : "lower bound"}`
       : "Shopify read-only query unavailable";
   const metrics = [
     ["Shopify products", countLabel(shopMetrics.totalProducts), countDetail(shopMetrics.totalProducts)],
@@ -49,7 +49,7 @@ export function RetailerDashboardView({
     <main className="collective-page">
       <PageHeader
         eyebrow="Retailer operations"
-        title="A calm view across your commerce network."
+        title="A calm view across your retail workspace."
         description="Curate supplier products, protect margins, and move approved products into your Shopify store from one premium workspace."
         actions={
           <>
@@ -143,7 +143,7 @@ export function RetailerDashboardView({
                 <h3>{title}</h3>
                 <p>{description}</p>
               </div>
-              <span>—</span>
+              <span>â€”</span>
             </article>
           ))}
         </div>
@@ -156,7 +156,7 @@ export function RetailerDashboardView({
           <p>
             Discover, favorite, and stage products for review. An explicit
             Import List approval creates an unpublished Shopify DRAFT;
-            publication, inventory synchronization, and fulfillment remain
+            publication and inventory synchronization remain
             protected until their real workflows are ready.
           </p>
         </div>

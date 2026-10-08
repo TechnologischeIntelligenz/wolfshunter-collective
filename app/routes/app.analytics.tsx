@@ -8,7 +8,7 @@ export default function AnalyticsRoute() {
     <FoundationRouteView
       eyebrow="Verified performance"
       title="Analytics"
-      description="Retail revenue, wholesale cost, margin, and fulfillment performance—derived only from recorded data."
+      description="Retail revenue, wholesale cost, and margin derived only from recorded data."
       emptyTitle="There is no verified activity to analyze."
       emptyDescription="Collective will never invent performance metrics. Analytics begins after real, tenant-scoped commerce events exist."
     />

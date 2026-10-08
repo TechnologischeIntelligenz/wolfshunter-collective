@@ -16,7 +16,7 @@ const unavailableMetrics = [
   ["Live products", "No Shopify products have been pushed"],
   ["Orders", "No retailer order data is connected"],
   ["Retail revenue", "Calculated only from verified order data"],
-  ["Wholesale cost", "Calculated only from accepted Network Orders"],
+  ["Wholesale cost", "Calculated only from verified supplier costs"],
   ["Estimated gross margin", "No verified revenue or cost data"],
 ] as const;
 
@@ -38,12 +38,12 @@ const operationalSignals = [
     description: "Margin policy is ready for a future verified cost feed.",
   },
   {
-    title: "Pending fulfillment",
-    description: "No retailer orders are connected or routed.",
+    title: "Draft approvals",
+    description: "Approved Import List entries create unpublished Shopify DRAFTs.",
   },
   {
-    title: "Tracking exceptions",
-    description: "No shipments are being monitored.",
+    title: "Import checks",
+    description: "Import readiness is shown only after a verified catalog check.",
   },
 ] as const;
 
@@ -54,8 +54,8 @@ export function DashboardView({ authLink, sessionType, shop }: AuthenticatedAppL
     <main className="collective-page">
       <PageHeader
         eyebrow="Retailer operations"
-        title="A calm view across your commerce network."
-        description="Curate products, protect margins, and prepare fulfillment from one premium operating workspace."
+        title="A calm view across your retail workspace."
+        description="Curate supplier products, protect margins, and stage Shopify DRAFTs from one premium workspace."
         actions={
           <>
             <Link className="collective-button collective-button-secondary" to={authLink}>
@@ -115,7 +115,7 @@ export function DashboardView({ authLink, sessionType, shop }: AuthenticatedAppL
       <section className="collective-section">
         <SectionHeading
           title="Commerce overview"
-          description="Metrics remain blank until verified retailer and Network Order data exists."
+          description="Metrics remain blank until verified retailer and catalog data exists."
         />
         <div className="collective-metric-grid">
           {unavailableMetrics.map(([label, detail]) => (
@@ -127,7 +127,7 @@ export function DashboardView({ authLink, sessionType, shop }: AuthenticatedAppL
       <section className="collective-section">
         <SectionHeading
           title="Operational health"
-          description="Each signal will be derived from mapped, tenant-scoped records—not inferred activity."
+          description="Each signal will be derived from mapped, tenant-scoped recordsâ€”not inferred activity."
         />
         <div className="collective-signal-grid">
           {operationalSignals.map((signal) => (
@@ -137,7 +137,7 @@ export function DashboardView({ authLink, sessionType, shop }: AuthenticatedAppL
                 <h3>{signal.title}</h3>
                 <p>{signal.description}</p>
               </div>
-              <span>—</span>
+              <span>â€”</span>
             </article>
           ))}
         </div>
@@ -149,7 +149,8 @@ export function DashboardView({ authLink, sessionType, shop }: AuthenticatedAppL
           <h2>Build the assortment before touching the store.</h2>
           <p>
             Discover, favorite, and stage products for review. Product creation,
-            inventory synchronization, publication, and fulfillment stay disabled.
+            inventory synchronization and publication stay disabled until each
+            approved workflow is ready.
           </p>
         </div>
         <div className="collective-mini-flow" aria-label="Phase 1 product workflow">

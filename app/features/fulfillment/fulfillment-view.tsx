@@ -3,7 +3,7 @@ import { FoundationNotice, PageHeader, SectionHeading, StatusPill } from "../../
 const fulfillmentStages = [
   ["Order received", "Retailer order verified and mapped lines isolated"],
   ["Stock reserved", "Supplier inventory reservation confirmed"],
-  ["Payment required / paid", "Network Order payment state resolved"],
+  ["Payment required / paid", "Payment state shown as a preview only"],
   ["Supplier accepted", "Supplier accepts only eligible mapped items"],
   ["Picking", "Warehouse preparation in progress"],
   ["Packed", "Parcel and shipment details prepared"],

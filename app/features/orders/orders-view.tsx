@@ -25,7 +25,7 @@ export function OrdersView({
       <PageHeader
         eyebrow="Retailer orders"
         title="Orders"
-        description="Recent Shopify orders are synchronized into this tenant-scoped workspace for the retailer. Supplier routing comes later through mapped network order lines."
+        description="Recent Shopify orders are synchronized into this tenant-scoped workspace for the retailer. Supplier routing is not active in V1."
         actions={<StatusPill tone="positive">Read-only sync</StatusPill>}
       />
       <FoundationNotice>
