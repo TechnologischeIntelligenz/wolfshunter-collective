@@ -1,0 +1,565 @@
+{
+  "catalogSamples": [
+    {
+      "sourceProductId": "gid://shopify/Product/7492808671321",
+      "title": "A.1 Women Loose Casual Sweater",
+      "vendor": "WORLDSHOP",
+      "totalInventory": 392535,
+      "missing": 1
+    },
+    {
+      "sourceProductId": "gid://shopify/Product/7900620685401",
+      "title": "Boys' Casual Geometric Print T-Shirt - Machine Washable, Round Neck - Perfect For Spring Summer Men T-Shirt",
+      "vendor": "WORLDSHOP",
+      "totalInventory": 48840,
+      "missing": 1
+    },
+    {
+      "sourceProductId": "gid://shopify/Product/7902329143385",
+      "title": "Double Take Full Size Printed Tie Back Wide Leg Jumpsuit",
+      "vendor": "Trendsi",
+      "totalInventory": 849,
+      "missing": 3
+    },
+    {
+      "sourceProductId": "gid://shopify/Product/7902349492313",
+      "title": "Vibrant MIU Full Size Jess Button Flare Jeans",
+      "vendor": "Trendsi",
+      "totalInventory": 187,
+      "missing": 1
+    },
+    {
+      "sourceProductId": "gid://shopify/Product/7902349656153",
+      "title": "White Birch Forever And Always Full Size One Shoulder Top",
+      "vendor": "Trendsi",
+      "totalInventory": 43,
+      "missing": 1
+    },
+    {
+      "sourceProductId": "gid://shopify/Product/7902402510937",
+      "title": "Basic Bae Full Size Open Front Long Sleeve Cardigan with Pockets",
+      "vendor": "Trendsi",
+      "totalInventory": 39,
+      "missing": 1
+    },
+    {
+      "sourceProductId": "gid://shopify/Product/7902431445081",
+      "title": "Fame Enjoy The Simple Things Fedora Hat",
+      "vendor": "Trendsi",
+      "totalInventory": 2,
+      "missing": 1
+    },
+    {
+      "sourceProductId": "gid://shopify/Product/7922150867033",
+      "title": "Premium Pillow Enchanted Forest",
+      "vendor": "WORLDSHOP",
+      "totalInventory": 29997,
+      "missing": 3
+    }
+  ],
+  "sourceSamples": [
+    {
+      "id": "gid://shopify/Product/7492808671321",
+      "title": "A.1 Women Loose Casual Sweater",
+      "variants": {
+        "nodes": [
+          {
+            "title": "Black And White / L",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 11695
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          },
+          {
+            "title": "Black And White / M",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 11203
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7900620685401",
+      "title": "Boys' Casual Geometric Print T-Shirt - Machine Washable, Round Neck - Perfect For Spring Summer Men T-Shirt",
+      "variants": {
+        "nodes": [
+          {
+            "title": "Black / 2XL",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 6261
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          },
+          {
+            "title": "Black / 3XL",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 6444
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7902329143385",
+      "title": "Double Take Full Size Printed Tie Back Wide Leg Jumpsuit",
+      "variants": {
+        "nodes": [
+          {
+            "title": "Royal  Blue / S",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 26
+                      }
+                    ]
+                  },
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 0
+                      }
+                    ]
+                  },
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 8
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          },
+          {
+            "title": "Royal  Blue / M",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 59
+                      }
+                    ]
+                  },
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 0
+                      }
+                    ]
+                  },
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 18
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7902349492313",
+      "title": "Vibrant MIU Full Size Jess Button Flare Jeans",
+      "variants": {
+        "nodes": [
+          {
+            "title": "Light / 1(25)",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 9
+                      }
+                    ]
+                  },
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 4
+                      }
+                    ]
+                  },
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 0
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          },
+          {
+            "title": "Light / 3(26)",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 0
+                      }
+                    ]
+                  },
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 9
+                      }
+                    ]
+                  },
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 0
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7902349656153",
+      "title": "White Birch Forever And Always Full Size One Shoulder Top",
+      "variants": {
+        "nodes": [
+          {
+            "title": "Hot Pink / S",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 11
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          },
+          {
+            "title": "Hot Pink / M",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 1
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7902402510937",
+      "title": "Basic Bae Full Size Open Front Long Sleeve Cardigan with Pockets",
+      "variants": {
+        "nodes": [
+          {
+            "title": "Dark Gray / S",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 8
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          },
+          {
+            "title": "Dark Gray / M",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 0
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    null,
+    {
+      "id": "gid://shopify/Product/7922150867033",
+      "title": "Premium Pillow Enchanted Forest",
+      "variants": {
+        "nodes": [
+          {
+            "title": "18″×18″",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64150536281",
+                      "name": "Printful (app uninstalled)"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 9999
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          },
+          {
+            "title": "20″×12″",
+            "inventoryItem": {
+              "tracked": true,
+              "inventoryLevels": {
+                "nodes": [
+                  {
+                    "location": {
+                      "id": "gid://shopify/Location/64150536281",
+                      "name": "Printful (app uninstalled)"
+                    },
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 9999
+                      }
+                    ]
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

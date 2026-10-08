@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-18T07:53:43.084Z",
+  "proof": "Real Shopify API and Supabase; same import service as the route. Browser interaction not covered.",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "sourceProductId": "gid://shopify/Product/7461319671897",
+  "title": "Trendy Autumn Special-interest Design Crossbody Bag",
+  "productId": "gid://shopify/Product/16337859346819",
+  "status": "DRAFT",
+  "price": "80.00",
+  "currency": "EUR",
+  "variantCount": 1,
+  "images": 7,
+  "supplierSkuEmpty": true,
+  "importStatus": "DRAFT_CREATED",
+  "warning": null,
+  "adminUrl": "https://wolfshunter-ai-dev.myshopify.com/admin/products/16337859346819"
+}

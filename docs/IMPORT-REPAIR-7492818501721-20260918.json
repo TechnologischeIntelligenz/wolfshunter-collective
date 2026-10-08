@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-18T09:17:40.598Z",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "sourceProductId": "gid://shopify/Product/7492818501721",
+  "notes": [
+    "30 variants have no image association in the source. Assign their original supplier images manually."
+  ],
+  "stockMatched": 30,
+  "variants": 30,
+  "sourceImages": 20,
+  "stockLocation": "WOLFSHUNTER COLLECTIVE",
+  "stockSource": "shopify-cj-mirror",
+  "skuConfirmed": 30
+}

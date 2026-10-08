@@ -1,0 +1,276 @@
+import type {
+  CatalogProduct,
+  RetailerAffinitySignals,
+  TenantContext,
+} from "./types";
+
+export interface PhaseOneFixtureState {
+  tenant: TenantContext;
+  catalog: CatalogProduct[];
+  affinity: RetailerAffinitySignals;
+}
+
+const stampTenant = (
+  tenantId: string,
+  product: Omit<
+    CatalogProduct,
+    "tenantId" | "descriptionHtml" | "collections" | "imageUrls"
+  > &
+    Partial<Pick<CatalogProduct, "descriptionHtml" | "collections" | "imageUrls">>,
+): CatalogProduct => ({
+  ...product,
+  tenantId,
+  descriptionHtml: product.descriptionHtml ?? null,
+  collections: product.collections ?? [],
+  imageUrls:
+    product.imageUrls ??
+    [product.imageUrl, ...product.variantImageUrls].filter(
+      (url): url is string => Boolean(url),
+    ),
+});
+
+export const createPhaseOneFixtureState = (
+  shopDomain = "phase-one-preview.myshopify.com",
+): PhaseOneFixtureState => {
+  const tenantId =
+    shopDomain === "phase-one-preview.myshopify.com"
+      ? "tenant_phase_one_atelier"
+      : `tenant:${shopDomain}`;
+
+  const tenant: TenantContext = {
+    tenantId,
+    shopDomain,
+    destinationCountry: "AT",
+    compatibleWarehouses: ["Vienna Atelier", "Central Europe"],
+    preferredCategories: ["Home", "Accessories", "Travel"],
+    asOf: "2026-08-12T12:00:00.000Z",
+  };
+
+  const catalog = [
+    stampTenant(tenant.tenantId, {
+      id: "collective-linen-throw",
+      title: "Washed Linen Atelier Throw",
+      category: "Home",
+      wholesalePrice: 48,
+      recommendedRetailPrice: 118,
+      currency: "EUR",
+      imageUrl:
+        "https://images.unsplash.com/photo-1583845112203-29329902332e?auto=format&fit=crop&w=1200&q=85",
+      imageCount: 5,
+      variantImageUrls: [
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=160&q=80",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=160&q=80",
+      ],
+      variantCount: 4,
+      warehouse: "Vienna Atelier",
+      shipFromCountry: "AT",
+      estimatedDeliveryDays: 2,
+      dispatchDays: 1,
+      availableToSell: 84,
+      stockConfidence: 0.96,
+      primaryImageAvailable: true,
+      variantCompleteness: 1,
+      categoryAvailable: true,
+      mappingQuality: 0.98,
+      dataCompleteness: 0.98,
+      selection: "premium",
+      createdAt: "2026-08-04T09:00:00.000Z",
+    }),
+    stampTenant(tenant.tenantId, {
+      id: "collective-weekender",
+      title: "Grained Leather Weekender",
+      category: "Travel",
+      wholesalePrice: 92,
+      recommendedRetailPrice: 220,
+      currency: "EUR",
+      imageUrl:
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=85",
+      imageCount: 8,
+      variantImageUrls: [
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=160&q=80",
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=160&q=80",
+      ],
+      variantCount: 3,
+      warehouse: "Central Europe",
+      shipFromCountry: "DE",
+      estimatedDeliveryDays: 4,
+      dispatchDays: 1,
+      availableToSell: 46,
+      stockConfidence: 0.91,
+      primaryImageAvailable: true,
+      variantCompleteness: 1,
+      categoryAvailable: true,
+      mappingQuality: 0.96,
+      dataCompleteness: 0.95,
+      selection: "exclusive",
+      createdAt: "2026-07-11T08:00:00.000Z",
+    }),
+    stampTenant(tenant.tenantId, {
+      id: "collective-sculptural-lamp",
+      title: "Sculptural Travertine Table Lamp",
+      category: "Lighting",
+      wholesalePrice: 74,
+      recommendedRetailPrice: 169,
+      currency: "EUR",
+      imageUrl:
+        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=85",
+      imageCount: 4,
+      variantImageUrls: [
+        "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=160&q=80",
+      ],
+      variantCount: 2,
+      warehouse: "Central Europe",
+      shipFromCountry: "IT",
+      estimatedDeliveryDays: 6,
+      dispatchDays: 2,
+      availableToSell: 19,
+      stockConfidence: 0.84,
+      primaryImageAvailable: true,
+      variantCompleteness: 0.92,
+      categoryAvailable: true,
+      mappingQuality: 0.91,
+      dataCompleteness: 0.9,
+      selection: "premium",
+      createdAt: "2026-08-09T10:30:00.000Z",
+    }),
+    stampTenant(tenant.tenantId, {
+      id: "collective-stoneware-set",
+      title: "Hand-Finished Stoneware Set",
+      category: "Home",
+      wholesalePrice: 36,
+      recommendedRetailPrice: 89,
+      currency: "EUR",
+      imageUrl:
+        "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=85",
+      imageCount: 6,
+      variantImageUrls: [],
+      variantCount: 6,
+      warehouse: "Vienna Atelier",
+      shipFromCountry: "AT",
+      estimatedDeliveryDays: 2,
+      dispatchDays: 1,
+      availableToSell: 126,
+      stockConfidence: 0.98,
+      primaryImageAvailable: true,
+      variantCompleteness: 1,
+      categoryAvailable: true,
+      mappingQuality: 0.97,
+      dataCompleteness: 0.97,
+      selection: "standard",
+      createdAt: "2026-06-18T13:00:00.000Z",
+    }),
+    stampTenant(tenant.tenantId, {
+      id: "collective-alpine-sunglasses",
+      title: "Alpine Acetate Sunglasses",
+      category: "Accessories",
+      wholesalePrice: 29,
+      recommendedRetailPrice: 78,
+      currency: "EUR",
+      imageUrl:
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=85",
+      imageCount: 7,
+      variantImageUrls: [],
+      variantCount: 5,
+      warehouse: "Central Europe",
+      shipFromCountry: "DE",
+      estimatedDeliveryDays: 4,
+      dispatchDays: 1,
+      availableToSell: 211,
+      stockConfidence: 0.94,
+      primaryImageAvailable: true,
+      variantCompleteness: 0.96,
+      categoryAvailable: true,
+      mappingQuality: 0.95,
+      dataCompleteness: 0.96,
+      selection: "premium",
+      createdAt: "2026-07-25T07:30:00.000Z",
+    }),
+    stampTenant(tenant.tenantId, {
+      id: "collective-oak-tray",
+      title: "Solid Oak Valet Tray",
+      category: "Home",
+      wholesalePrice: 22,
+      recommendedRetailPrice: 58,
+      currency: "EUR",
+      imageUrl:
+        "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85",
+      imageCount: 3,
+      variantImageUrls: [],
+      variantCount: 2,
+      warehouse: "Vienna Atelier",
+      shipFromCountry: "AT",
+      estimatedDeliveryDays: 3,
+      dispatchDays: 1,
+      availableToSell: 62,
+      stockConfidence: 0.93,
+      primaryImageAvailable: true,
+      variantCompleteness: 0.9,
+      categoryAvailable: true,
+      mappingQuality: 0.9,
+      dataCompleteness: 0.88,
+      selection: "standard",
+      createdAt: "2026-05-14T09:45:00.000Z",
+    }),
+    stampTenant(tenant.tenantId, {
+      id: "collective-cashmere-scarf",
+      title: "Brushed Cashmere Travel Scarf",
+      category: "Accessories",
+      wholesalePrice: 61,
+      recommendedRetailPrice: 148,
+      currency: "EUR",
+      imageUrl:
+        "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=1200&q=85",
+      imageCount: 5,
+      variantImageUrls: [],
+      variantCount: 8,
+      warehouse: "Northern Europe",
+      shipFromCountry: "DK",
+      estimatedDeliveryDays: 8,
+      dispatchDays: 2,
+      availableToSell: 31,
+      stockConfidence: 0.86,
+      primaryImageAvailable: true,
+      variantCompleteness: 0.94,
+      categoryAvailable: true,
+      mappingQuality: 0.88,
+      dataCompleteness: 0.92,
+      selection: "exclusive",
+      createdAt: "2026-08-10T08:15:00.000Z",
+    }),
+    stampTenant(tenant.tenantId, {
+      id: "collective-carry-bottle",
+      title: "Insulated Studio Carry Bottle",
+      category: "Travel",
+      wholesalePrice: 14,
+      recommendedRetailPrice: 38,
+      currency: "EUR",
+      imageUrl: null,
+      imageCount: 0,
+      variantImageUrls: [],
+      variantCount: 4,
+      warehouse: "Eastern Europe",
+      shipFromCountry: "PL",
+      estimatedDeliveryDays: 9,
+      dispatchDays: 3,
+      availableToSell: 7,
+      stockConfidence: 0.65,
+      primaryImageAvailable: false,
+      variantCompleteness: 0.72,
+      categoryAvailable: true,
+      mappingQuality: 0.66,
+      dataCompleteness: 0.7,
+      selection: "standard",
+      createdAt: "2026-04-02T11:20:00.000Z",
+    }),
+  ];
+
+  return {
+    tenant,
+    catalog,
+    affinity: {
+      favoriteProductIds: ["collective-weekender", "collective-alpine-sunglasses"],
+      importedProductIds: [],
+      orderedCategoryCounts: {},
+    },
+  };
+};

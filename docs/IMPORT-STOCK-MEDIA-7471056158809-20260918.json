@@ -1,0 +1,659 @@
+{
+  "checkedAt": "2026-09-18T08:28:03.212Z",
+  "readOnly": true,
+  "sourceShop": "3ddd6b-2.myshopify.com",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "source": {
+    "id": "gid://shopify/Product/7471056158809",
+    "title": "A1. Men's Lambskin Suede Lapel Biker's Leather Jacket",
+    "status": "ACTIVE",
+    "totalInventory": 142570,
+    "variantsCount": {
+      "count": 6
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/36354964029529",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-09-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779376876"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354963931225",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-08-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779376862"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350053089369",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-20-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779292155"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36339353649241",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-03-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779128648"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36339354533977",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-04-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779128661"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36339355353177",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-05-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779128673"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36339355844697",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-06-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779128686"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36339359088729",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-10-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779128732"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354964160601",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-11-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779376886"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354964422745",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-12-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779376896"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36374291775577",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-13-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779465803"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36374292201561",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-14-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779465815"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354963767385",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-02-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779376846"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36374292529241",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-15-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779465824"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350052663385",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-16-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779292140"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36374293053529",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-17-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779465834"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350052958297",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-18-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779292148"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350052991065",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-19-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779292152"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354963865689",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-07-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779376850"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354963701849",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-01-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1779376837"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/40791344808025",
+          "title": "Graphite Color / 2XL",
+          "inventoryQuantity": 26176,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Graphite Color"
+            },
+            {
+              "name": "size",
+              "value": "2XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13088
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13088
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13088
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13088
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40791344840793",
+          "title": "Graphite Color / 3XL",
+          "inventoryQuantity": 24968,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Graphite Color"
+            },
+            {
+              "name": "size",
+              "value": "3XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12484
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12484
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12484
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12484
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40791344873561",
+          "title": "Graphite Color / 4XL",
+          "inventoryQuantity": 21202,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Graphite Color"
+            },
+            {
+              "name": "size",
+              "value": "4XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10601
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10601
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10601
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10601
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40791344906329",
+          "title": "Graphite Color / 5XL",
+          "inventoryQuantity": 29108,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Graphite Color"
+            },
+            {
+              "name": "size",
+              "value": "5XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14554
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14554
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14554
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14554
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40791344939097",
+          "title": "Graphite Color / L",
+          "inventoryQuantity": 20748,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Graphite Color"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10374
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10374
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10374
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10374
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40791344971865",
+          "title": "Graphite Color / XL",
+          "inventoryQuantity": 20368,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Graphite Color"
+            },
+            {
+              "name": "size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10184
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10184
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10184
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10184
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    }
+  },
+  "target": {
+    "id": "gid://shopify/Product/16337836605827",
+    "title": "A1. Men's Lambskin Suede Lapel Biker's Leather Jacket",
+    "status": "ACTIVE",
+    "totalInventory": 0,
+    "variantsCount": {
+      "count": 1
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/86542876410243",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-09-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716921"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876443011",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-08-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716920"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876475779",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-20-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716921"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876508547",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-03-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716921"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876541315",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-04-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716921"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876574083",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-05-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716921"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876606851",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-06-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716921"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876639619",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-10-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716920"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876672387",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-11-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716920"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86542876705155",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-12-mens-lambskin-suede-lapel-bikers-leather-jacket.jpg?v=1789716920"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/62653865525635",
+          "title": "Default Title",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Title",
+              "value": "Default Title"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": false,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    }
+  }
+}

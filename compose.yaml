@@ -1,0 +1,25 @@
+﻿services:
+  collective:
+    build: .
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 45s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    env_file: ${COLLECTIVE_ENV_FILE:-.env.production}
+    environment:
+      NODE_ENV: production
+      APP_INSTANCES: "1"
+      PORT: "3001"
+      HOST: 0.0.0.0
+      DATABASE_URL: file:/data/collective.sqlite
+      SOURCE_DATA_DIR: /data/source
+    ports:
+      - "127.0.0.1:3001:3001"
+    volumes:
+      - collective-data:/data
+volumes:
+  collective-data:

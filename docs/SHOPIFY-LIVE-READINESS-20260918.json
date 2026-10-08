@@ -1,0 +1,99 @@
+{
+  "shop": {
+    "name": "wolfshunter-ai-dev",
+    "myshopifyDomain": "wolfshunter-ai-dev.myshopify.com"
+  },
+  "appByKey": {
+    "id": "gid://shopify/App/409933873153",
+    "title": "WOLFSHUNTER COLLECTIVE",
+    "apiKey": "51671c87d216d57415143f2ad8729399",
+    "embedded": true,
+    "published": false,
+    "requestedAccessScopes": [
+      {
+        "handle": "read_legal_policies"
+      },
+      {
+        "handle": "read_locations"
+      },
+      {
+        "handle": "read_markets"
+      },
+      {
+        "handle": "read_orders"
+      },
+      {
+        "handle": "read_shipping"
+      },
+      {
+        "handle": "write_assigned_fulfillment_orders"
+      },
+      {
+        "handle": "write_fulfillments"
+      },
+      {
+        "handle": "write_inventory"
+      },
+      {
+        "handle": "write_products"
+      },
+      {
+        "handle": "read_assigned_fulfillment_orders"
+      },
+      {
+        "handle": "read_fulfillments"
+      },
+      {
+        "handle": "read_inventory"
+      },
+      {
+        "handle": "read_products"
+      }
+    ],
+    "installation": {
+      "id": "gid://shopify/AppInstallation/1066767548803",
+      "launchUrl": "https://wolfshunter-ai-dev.myshopify.com/admin/apps/wolfshunter-collective",
+      "accessScopes": [
+        {
+          "handle": "read_legal_policies"
+        },
+        {
+          "handle": "read_locations"
+        },
+        {
+          "handle": "read_markets"
+        },
+        {
+          "handle": "read_orders"
+        },
+        {
+          "handle": "read_shipping"
+        },
+        {
+          "handle": "write_assigned_fulfillment_orders"
+        },
+        {
+          "handle": "write_fulfillments"
+        },
+        {
+          "handle": "write_inventory"
+        },
+        {
+          "handle": "write_products"
+        },
+        {
+          "handle": "read_assigned_fulfillment_orders"
+        },
+        {
+          "handle": "read_fulfillments"
+        },
+        {
+          "handle": "read_inventory"
+        },
+        {
+          "handle": "read_products"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-09-18T09:00:21.407Z",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "currentAppInstallation": {
+    "id": "gid://shopify/AppInstallation/1066767548803",
+    "app": {
+      "id": "gid://shopify/App/409933873153",
+      "title": "WOLFSHUNTER COLLECTIVE",
+      "apiKey": "51671c87d216d57415143f2ad8729399"
+    }
+  },
+  "services": [
+    {
+      "id": "gid://shopify/FulfillmentService/manual",
+      "serviceName": "Manual",
+      "handle": "manual",
+      "inventoryManagement": false,
+      "trackingSupport": false,
+      "type": "MANUAL",
+      "location": {
+        "id": "gid://shopify/Location/119252976003",
+        "name": "Shop location"
+      },
+      "callbackHost": null
+    },
+    {
+      "id": "gid://shopify/FulfillmentService/72072921475?id=true",
+      "serviceName": "Snow City Warehouse",
+      "handle": "snow-city-warehouse",
+      "inventoryManagement": false,
+      "trackingSupport": false,
+      "type": "THIRD_PARTY",
+      "location": {
+        "id": "gid://shopify/Location/119253041539",
+        "name": "Snow City Warehouse"
+      },
+      "callbackHost": "mock.shop"
+    }
+  ],
+  "locations": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Location/119253008771",
+        "name": "My Custom Location",
+        "isActive": true,
+        "fulfillsOnlineOrders": true,
+        "fulfillmentService": null
+      },
+      {
+        "id": "gid://shopify/Location/119252976003",
+        "name": "Shop location",
+        "isActive": true,
+        "fulfillsOnlineOrders": true,
+        "fulfillmentService": null
+      },
+      {
+        "id": "gid://shopify/Location/119253041539",
+        "name": "Snow City Warehouse",
+        "isActive": true,
+        "fulfillsOnlineOrders": true,
+        "fulfillmentService": {
+          "id": "gid://shopify/FulfillmentService/72072921475?id=true",
+          "serviceName": "Snow City Warehouse",
+          "inventoryManagement": false
+        }
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": false
+    }
+  }
+}

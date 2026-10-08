@@ -1,0 +1,145 @@
+{
+  "checkedAt": "2026-09-18T08:16:23.026Z",
+  "proof": "Real Shopify API and Supabase; same import service as the route. Browser interaction not covered.",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "sourceProductId": "gid://shopify/Product/7459581788249",
+  "title": "Thickened Jacket With Classic Plaid Fuzzy Fleece Lining Inside Design",
+  "productId": "gid://shopify/Product/16337889657219",
+  "status": "DRAFT",
+  "price": "113.33",
+  "currency": "EUR",
+  "variantCount": 9,
+  "images": 5,
+  "supplierSkuEmpty": true,
+  "importStatus": "DRAFT_CREATED",
+  "warning": null,
+  "adminUrl": "https://wolfshunter-ai-dev.myshopify.com/admin/products/16337889657219",
+  "variants": [
+    {
+      "id": "gid://shopify/ProductVariant/62653959274883",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Dark Brown"
+        },
+        {
+          "name": "Size",
+          "value": "2XL"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/ProductVariant/62653959307651",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Dark Brown"
+        },
+        {
+          "name": "Size",
+          "value": "L"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/ProductVariant/62653959340419",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Dark Brown"
+        },
+        {
+          "name": "Size",
+          "value": "XL"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/ProductVariant/62653959373187",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Dark Green"
+        },
+        {
+          "name": "Size",
+          "value": "M"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/ProductVariant/62653959405955",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Dark Green"
+        },
+        {
+          "name": "Size",
+          "value": "XL"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/ProductVariant/62653959438723",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Light Army Green"
+        },
+        {
+          "name": "Size",
+          "value": "2XL"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/ProductVariant/62653959471491",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Light Army Green"
+        },
+        {
+          "name": "Size",
+          "value": "L"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/ProductVariant/62653959504259",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Light Army Green"
+        },
+        {
+          "name": "Size",
+          "value": "M"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/ProductVariant/62653959537027",
+      "price": "113.33",
+      "selectedOptions": [
+        {
+          "name": "Color",
+          "value": "Light Army Green"
+        },
+        {
+          "name": "Size",
+          "value": "XL"
+        }
+      ]
+    }
+  ]
+}

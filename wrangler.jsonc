@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "wolfshunter-collective-test",
+  "account_id": "26772071fc212ec3397c645c6c98a350",
+  "main": "workers/app.ts",
+  "compatibility_date": "2026-09-18",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "triggers": { "crons": ["* * * * *"] },
+  "define": {
+    "process.env.NODE_ENV": "\"production\"",
+    "process.env.BILLING_TEST_MODE": "\"true\""
+  },
+  "assets": { "directory": "./build/client", "binding": "ASSETS" },
+  "hyperdrive": [{ "binding": "HYPERDRIVE", "id": "bfa2eb771dea44cabed0f276579e6b91" }],
+  "vars": {
+    "NODE_ENV": "production",
+    "BILLING_TEST_MODE": "true",
+    "APP_INSTANCES": "1",
+    "MERCHANT_WORKSPACE_ENABLED": "true",
+    "SHOPIFY_APP_URL": "https://wolfshunter-collective-test.limoorange99.workers.dev",
+    "APP_ROLE": "retailer",
+    "APP_ADMIN_SHOPS": "3ddd6b-2.myshopify.com",
+    "CATALOG_SOURCE_SHOP": "3ddd6b-2.myshopify.com"
+  },
+  "observability": { "enabled": true, "head_sampling_rate": 0.1 }
+}

@@ -1,0 +1,2048 @@
+{
+  "checkedAt": "2026-09-18T09:14:15.333Z",
+  "reports": [
+    {
+      "shop": "3ddd6b-2.myshopify.com",
+      "policyPresent": true,
+      "policyHash": "14c475f643aa05ad53657490f5b2f8d5be4abf0d02209604cd565ca6665bf352",
+      "nestedComplete": true,
+      "profiles": [
+        {
+          "id": "gid://shopify/DeliveryProfile/80910778457",
+          "name": "General profile",
+          "default": true,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90319781977",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281924697",
+                      "name": "Dear-Lover Dropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    {
+                      "id": "gid://shopify/Location/95221481561",
+                      "name": "Lager Salzburg"
+                    },
+                    {
+                      "id": "gid://shopify/Location/73058451545",
+                      "name": "SANEL CRNKIC"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    },
+                    {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    {
+                      "id": "gid://shopify/Location/70062276697",
+                      "name": "WHOLESALE USA"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/340415447129",
+                      "name": "SAFE ORDER ROUTE",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "AU",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "AT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "BE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "BG",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CA",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "HR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CZ",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "DK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "EE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "FI",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "FR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "DE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "GR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "HU",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IS",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "JP",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "LV",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "LI",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "LT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "LU",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "MT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "MC",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NZ",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NO",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SM",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SI",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "KR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "ES",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CH",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "TW",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "TR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "AE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "GB",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "US",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "UY",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CY",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "MY",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PA",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SG",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "HK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SA",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "ID",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PH",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "TH",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IL",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/582012141657",
+                          "name": "usps",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/803989651545",
+                          "name": "dhl_express",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/803989651545?source=RateRangeCondition&source_id=170242474073",
+                          "name": "dhl_express",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "USD"
+                            }
+                          },
+                          "methodConditions": [
+                            {
+                              "field": "TOTAL_PRICE",
+                              "operator": "GREATER_THAN_OR_EQUAL_TO",
+                              "conditionCriteria": {
+                                "amount": "30.0",
+                                "currencyCode": "USD"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809702588505",
+                          "name": "WORLDWIDE FLATRATE",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89691553881",
+          "name": "🇺🇸 United States Fast Warehouse",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90322403417",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281924697",
+                      "name": "Dear-Lover Dropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/73058451545",
+                      "name": "SANEL CRNKIC"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    },
+                    {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    {
+                      "id": "gid://shopify/Location/70062276697",
+                      "name": "WHOLESALE USA"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/340421181529",
+                      "name": "United States Fast Warehouse",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "US",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809640296537",
+                          "name": "usps",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809643442265",
+                          "name": "United States Warehouse Express",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809704456281",
+                          "name": "Collective Carrier Service",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89691848793",
+          "name": "Germany Warehouse Express",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90322698329",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/340423508057",
+                      "name": "Germany Warehouse",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "DE",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809653665881",
+                          "name": "DEUTSCHES VERSANDLAGER EXPRESS",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809653698649",
+                          "name": "Collective Carrier Service",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89692340313",
+          "name": "United Kingdom Fast Warehouse",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90323157081",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/340423278681",
+                      "name": "GB Warehouse",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "GB",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/575378849881",
+                          "name": "United Kingdom Express Flatrate",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "USD"
+                            }
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809647439961",
+                          "name": "Collective Carrier Service",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89692438617",
+          "name": "CAD Warehouse",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90323255385",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/340423540825",
+                      "name": "Kanada",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "CA",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809641705561",
+                          "name": "dhl_express",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809641738329",
+                          "name": "usps",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809641771097",
+                          "name": "Collective Carrier Service",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809654714457",
+                          "name": "CAD WAREHOUSE EXPRESS",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89765937241",
+          "name": "FRANCE WAREHOUSE EXPRESS",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90396033113",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281924697",
+                      "name": "Dear-Lover Dropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/340858634329",
+                      "name": "Frankreich",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "FR",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/576626884697",
+                          "name": "FRANCE WAREHOUSE EXPRESS",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "USD"
+                            }
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809688301657",
+                          "name": "Collective Carrier Service",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89765970009",
+          "name": "ITALY Fast Warehouse",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90396065881",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/340858667097",
+                      "name": "ITALY Warehouse EXPRESS",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "IT",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809688465497",
+                          "name": "ITALY Warehouse EXPRESS",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89766101081",
+          "name": "AUSTRALIA Warehouse EXPRESS",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/116417855577",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/502592929881",
+                      "name": "AUSTRALIA Warehouse EXPRESS",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "AU",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809704882265",
+                          "name": "AUSTRALIA Warehouse EXPRESS",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809704915033",
+                          "name": "Collective Carrier Service",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89766199385",
+          "name": "SPAIN Warehouse EXPRESS",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/116421754969",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/502631432281",
+                      "name": "SPAIN Warehouse EXPRESS",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "ES",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809974562905",
+                          "name": "SPAIN Warehouse EXPRESS",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/89766232153",
+          "name": "Japan Warehouse",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90396328025",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281924697",
+                      "name": "Dear-Lover Dropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    },
+                    {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/340859125849",
+                      "name": "Japan",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "JP",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809641443417",
+                          "name": "JAPAN FLATRATE",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809641476185",
+                          "name": "dhl_express",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/809641508953",
+                          "name": "usps",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/90155057241",
+          "name": "ALLGEMEINES PORFIL",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/90792591449",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281924697",
+                      "name": "Dear-Lover Dropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/64145162329",
+                      "name": "Jezerski 77241"
+                    },
+                    {
+                      "id": "gid://shopify/Location/73058451545",
+                      "name": "SANEL CRNKIC"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    },
+                    {
+                      "id": "gid://shopify/Location/72074297433",
+                      "name": "Trendsi US Location"
+                    },
+                    {
+                      "id": "gid://shopify/Location/70062276697",
+                      "name": "WHOLESALE USA"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/343102521433",
+                      "name": "LUXE LOGISTICS",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "AX",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "AL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "AD",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "AU",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "AT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "BE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "BA",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "BG",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CA",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CN",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "HR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CY",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CZ",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "DK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "EE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "FI",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "FR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "DE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "GR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "VA",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "HK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IS",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "ID",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "JP",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "XK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "LV",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "LI",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "LT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "LU",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "MY",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "MT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "MC",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "ME",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NZ",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "MK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NO",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PA",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "RO",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SM",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "RS",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SG",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SI",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "KR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "ES",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CH",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "TW",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "TR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "AE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "GB",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "US",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "UY",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/582012403801",
+                          "name": "LUXE LOGISTICS",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "USD"
+                            }
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/114825068633",
+          "name": "AE Warehouse",
+          "default": false,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/116088668249",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/94281400409",
+                      "name": "cjdropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281924697",
+                      "name": "Dear-Lover Dropshipping"
+                    },
+                    {
+                      "id": "gid://shopify/Location/94281662553",
+                      "name": "Trendsi"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/501426061401",
+                      "name": "ae",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "AE",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/803994632281",
+                          "name": "dhl_express",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryParticipant"
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/803994632281?source=RateRangeCondition&source_id=170244046937",
+                          "name": "dhl_express",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "USD"
+                            }
+                          },
+                          "methodConditions": [
+                            {
+                              "field": "TOTAL_PRICE",
+                              "operator": "GREATER_THAN_OR_EQUAL_TO",
+                              "conditionCriteria": {
+                                "amount": "30.0",
+                                "currencyCode": "USD"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "shop": "wolfshunter-ai-dev.myshopify.com",
+      "policyPresent": false,
+      "policyHash": null,
+      "nestedComplete": true,
+      "profiles": [
+        {
+          "id": "gid://shopify/DeliveryProfile/139916870019",
+          "name": "General profile",
+          "default": true,
+          "profileLocationGroups": [
+            {
+              "locationGroup": {
+                "id": "gid://shopify/DeliveryLocationGroup/141058244995",
+                "locations": {
+                  "nodes": [
+                    {
+                      "id": "gid://shopify/Location/119252976003",
+                      "name": "Shop location"
+                    }
+                  ],
+                  "pageInfo": {
+                    "hasNextPage": false
+                  }
+                }
+              },
+              "locationGroupZones": {
+                "nodes": [
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/673482670467",
+                      "name": "Domestic",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "AT",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/1243893137795",
+                          "name": "Standard",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "5.99",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/1243893137795?source=RateRangeCondition&source_id=186665992579",
+                          "name": "Standard",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": [
+                            {
+                              "field": "TOTAL_PRICE",
+                              "operator": "GREATER_THAN_OR_EQUAL_TO",
+                              "conditionCriteria": {
+                                "amount": "80.0",
+                                "currencyCode": "EUR"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/1243893170563",
+                          "name": "Express",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "9.99",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  },
+                  {
+                    "zone": {
+                      "id": "gid://shopify/DeliveryZone/673482703235",
+                      "name": "International",
+                      "countries": [
+                        {
+                          "code": {
+                            "countryCode": "AE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "AU",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "BE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CA",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CH",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "CZ",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "DE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "DK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "ES",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "FI",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "FR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "GB",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "HK",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "IT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "JP",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "KR",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "MY",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NO",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "NZ",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PL",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "PT",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SE",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "SG",
+                            "restOfWorld": false
+                          }
+                        },
+                        {
+                          "code": {
+                            "countryCode": "US",
+                            "restOfWorld": false
+                          }
+                        }
+                      ]
+                    },
+                    "methodDefinitions": {
+                      "nodes": [
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/1243893203331",
+                          "name": "International",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "16.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/1243893236099",
+                          "name": "Free International Shipping",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "0.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": [
+                            {
+                              "field": "TOTAL_WEIGHT",
+                              "operator": "GREATER_THAN_OR_EQUAL_TO",
+                              "conditionCriteria": {
+                                "value": 20,
+                                "unit": "KILOGRAMS"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gid://shopify/DeliveryMethodDefinition/1243893268867",
+                          "name": "International Shipping",
+                          "active": true,
+                          "rateProvider": {
+                            "__typename": "DeliveryRateDefinition",
+                            "price": {
+                              "amount": "30.0",
+                              "currencyCode": "EUR"
+                            }
+                          },
+                          "methodConditions": []
+                        }
+                      ],
+                      "pageInfo": {
+                        "hasNextPage": false
+                      }
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

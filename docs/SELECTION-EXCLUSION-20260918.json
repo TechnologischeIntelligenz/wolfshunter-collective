@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-18T10:30:31.573Z",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "report": [
+    {
+      "view": "all",
+      "transferredTrenchCoatExcluded": true
+    },
+    {
+      "view": "favorites",
+      "transferredTrenchCoatExcluded": true
+    }
+  ]
+}

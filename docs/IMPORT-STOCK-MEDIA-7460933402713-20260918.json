@@ -1,0 +1,1140 @@
+{
+  "checkedAt": "2026-09-18T10:21:47.452Z",
+  "readOnly": true,
+  "sourceShop": "3ddd6b-2.myshopify.com",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "source": {
+    "id": "gid://shopify/Product/7460933402713",
+    "title": "A Men's Hunting Clothes Medium Length Men's Casual Suit Trench Coat",
+    "status": "ACTIVE",
+    "totalInventory": 178068,
+    "variantsCount": {
+      "count": 7
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/36354483814489",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-02-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1779368006"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354485289049",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-05-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1779368031"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354485059673",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-04-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1779368025"
+        },
+        {
+          "id": "gid://shopify/ProductImage/32012900597849",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/63ec4e44-9d38-48ba-90ff-3edbdadbb006.jpg?v=1748861630"
+        },
+        {
+          "id": "gid://shopify/ProductImage/32012900663385",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/79bddcd1-1403-491e-a23c-d3b9d7616fdc.jpg?v=1748861630"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354484764761",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-03-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1779368018"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354485846105",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-06-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1779368044"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354483519577",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-01-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1779368000"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/40757344534617",
+          "title": "Black / 2XL",
+          "inventoryQuantity": 25748,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "2XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12874
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12874
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12874
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12874
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40757344567385",
+          "title": "Black / 3XL",
+          "inventoryQuantity": 24924,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "3XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12462
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12462
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12462
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12462
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40757344600153",
+          "title": "Black / 4XL",
+          "inventoryQuantity": 20320,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "4XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10160
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10160
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10160
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10160
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40757344632921",
+          "title": "Black / 5XL",
+          "inventoryQuantity": 29708,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "5XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14854
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14854
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14854
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14854
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40757344665689",
+          "title": "Black / L",
+          "inventoryQuantity": 26100,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13050
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13050
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13050
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13050
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40757344698457",
+          "title": "Black / M",
+          "inventoryQuantity": 22384,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11192
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11192
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11192
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11192
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40757344731225",
+          "title": "Black / XL",
+          "inventoryQuantity": 28884,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14442
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14442
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14442
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14442
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo0MDc1NzM0NDczMTIyNSwibGFzdF92YWx1ZSI6IjcifQ=="
+      }
+    }
+  },
+  "target": {
+    "id": "gid://shopify/Product/16337895031171",
+    "title": "A Men's Hunting Clothes Medium Length Men's Casual Suit Trench Coat",
+    "status": "ACTIVE",
+    "totalInventory": 89034,
+    "variantsCount": {
+      "count": 7
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/86543385592195",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-02-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1789719445"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543385624963",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-05-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1789719445"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543385657731",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-04-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1789719445"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543385690499",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/63ec4e44-9d38-48ba-90ff-3edbdadbb006.jpg?v=1789719444"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543385723267",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/79bddcd1-1403-491e-a23c-d3b9d7616fdc.jpg?v=1789719444"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543385756035",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-03-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1789719445"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543385788803",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-06-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1789719445"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543385821571",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-01-mens-hunting-clothes-medium-length-mens-casual-suit-trench-coat.jpg?v=1789719445"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/62653962715523",
+          "title": "Black / 2XL",
+          "inventoryQuantity": 12874,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "2XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12874
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12874
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654654054787",
+          "title": "Black / 3XL",
+          "inventoryQuantity": 12462,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "3XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12462
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12462
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654654087555",
+          "title": "Black / 4XL",
+          "inventoryQuantity": 10160,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "4XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10160
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10160
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654654120323",
+          "title": "Black / 5XL",
+          "inventoryQuantity": 14854,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "5XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14854
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14854
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654654153091",
+          "title": "Black / L",
+          "inventoryQuantity": 13050,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13050
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13050
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654654185859",
+          "title": "Black / M",
+          "inventoryQuantity": 11192,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11192
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11192
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654654218627",
+          "title": "Black / XL",
+          "inventoryQuantity": 14442,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "Size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14442
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14442
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2MjY1NDY1NDIxODYyNywibGFzdF92YWx1ZSI6IjcifQ=="
+      }
+    }
+  }
+}

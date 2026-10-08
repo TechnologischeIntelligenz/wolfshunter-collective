@@ -1,0 +1,234 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  engineType = "client"
+}
+
+// Note that some adapters may set a maximum length for the String type by default, please ensure your strings are long
+// enough when changing adapters.
+// See https://www.prisma.io/docs/orm/reference/prisma-schema-reference#string for more information
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Session {
+  id            String    @id
+  shop          String
+  state         String
+  isOnline      Boolean   @default(false)
+  scope         String?
+  expires       DateTime?
+  accessToken   String
+  userId        BigInt?
+  firstName     String?
+  lastName      String?
+  email         String?
+  accountOwner  Boolean   @default(false)
+  locale        String?
+  collaborator  Boolean?  @default(false)
+  emailVerified Boolean?  @default(false)
+  refreshToken        String?
+  refreshTokenExpires DateTime?
+}
+
+model RetailerWorkspace {
+  shop                String   @id
+  favoriteProductIds  String   @default("[]")
+  importedProductIds  String   @default("[]")
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+}
+
+model RetailerSettings {
+  shop             String   @id
+  marketCountry    String   @default("AT")
+  warehouse        String   @default("Vienna Atelier")
+  marginPercent    Float    @default(40)
+  requireApproval  Boolean  @default(true)
+  autoPublish      Boolean  @default(false)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model ImportedProductPush {
+  id                Int      @id @default(autoincrement())
+  shop              String
+  sourceProductId   String
+  sourceTitle       String
+  sourceCategory    String
+  retailPrice       Float
+  currency          String
+  idempotencyKey    String
+  status            String   @default("STAGED")
+  shopifyProductId  String?
+  shopifyVariantId  String?
+  errorMessage      String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@unique([shop, sourceProductId])
+  @@index([shop, status])
+}
+
+model CatalogKnowledgeProduct {
+  sourceProductId String   @id
+  sourceShop      String
+  title           String
+  handle          String
+  status          String
+  vendor          String   @default("")
+  productType     String   @default("")
+  category        String   @default("")
+  descriptionHtml String   @default("")
+  descriptionText String   @default("")
+  collectionsJson String   @default("[]")
+  imageUrlsJson   String   @default("[]")
+  tagsJson        String   @default("[]")
+  priceMinimum    Float?
+  priceMaximum    Float?
+  currency        String?
+  totalInventory  Int      @default(0)
+  variantCount    Int      @default(0)
+  imageCount      Int      @default(0)
+  sourceCreatedAt DateTime?
+  sourceUpdatedAt DateTime?
+  contentHash     String
+  lastSyncedAt    DateTime @default(now())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([sourceShop, status])
+  @@index([sourceShop, productType])
+  @@index([lastSyncedAt])
+}
+
+model CatalogSyncRun {
+  id            Int       @id @default(autoincrement())
+  shop          String
+  scope         String
+  status        String    @default("RUNNING")
+  triggeredBy   String    @default("system")
+  scannedCount  Int       @default(0)
+  upsertedCount Int       @default(0)
+  errorMessage  String?
+  startedAt     DateTime  @default(now())
+  finishedAt    DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([shop, startedAt])
+  @@index([scope, status])
+}
+
+model KnowledgeDocument {
+  id          Int      @id @default(autoincrement())
+  shop        String
+  domain      String
+  sourceKey   String
+  title       String
+  body        String
+  bodyHash    String
+  metadataJson String  @default("{}")
+  lastSyncedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([shop, domain, sourceKey])
+  @@index([shop, domain])
+  @@index([lastSyncedAt])
+}
+
+model RetailerProductRelease {
+  id               Int       @id @default(autoincrement())
+  retailerShop     String
+  sourceProductId  String
+  sourceTitle      String
+  shopifyProductId String?
+  shopifyVariantId String?
+  status           String    @default("STAGED")
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  lastSyncedAt     DateTime?
+
+  @@unique([retailerShop, sourceProductId])
+  @@index([retailerShop, status])
+  @@index([sourceProductId])
+}
+
+model RetailerOrder {
+  id                    Int      @id @default(autoincrement())
+  shop                  String
+  shopifyOrderId        String
+  orderNumber           String?
+  createdAt             DateTime
+  shopifyUpdatedAt      DateTime?
+  financialStatus       String?
+  fulfillmentStatus     String?
+  currency              String?
+  totalPrice            Float?
+  lineItemCount         Int      @default(0)
+  trackingStatus        String?
+  trackingJson          String   @default("[]")
+  estimatedDeliveryAt   DateTime?
+  syncStatus            String   @default("SYNCED")
+  lastEvent             String?
+  createdInCollectiveAt DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  @@unique([shop, shopifyOrderId])
+  @@index([shop, createdAt])
+  @@index([shop, syncStatus])
+}
+
+model SupportCase {
+  id             Int      @id @default(autoincrement())
+  shop           String
+  mode           String
+  message        String   @default("")
+  messagePreview String
+  answer         String   @default("")
+  status         String   @default("ANSWERED")
+  source         String
+  model          String?
+  errorCode      String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([shop, createdAt])
+  @@index([status, createdAt])
+}
+
+// Durable, resumable jobs replace process-local background task state on Workers.
+model BackgroundJob {
+  id             String   @id @default(cuid())
+  shop           String
+  kind           String
+  status         String   @default("PENDING")
+  stateJson      String   @default("{}")
+  revision       Int      @default(0)
+  attempts       Int      @default(0)
+  nextRunAt      DateTime @default(now())
+  leaseToken     String?
+  leaseExpiresAt DateTime?
+  errorMessage   String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([shop, kind])
+  @@index([kind, status, nextRunAt])
+  @@index([status, leaseExpiresAt])
+}
+
+// Small source metadata only; product records remain in CatalogKnowledgeProduct.
+model RuntimeSourceState {
+  shop        String
+  kind        String
+  payloadJson String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@id([shop, kind])
+}

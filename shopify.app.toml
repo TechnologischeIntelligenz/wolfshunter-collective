@@ -1,0 +1,40 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "51671c87d216d57415143f2ad8729399"
+name = "WOLFSHUNTER COLLECTIVE"
+application_url = "https://wolfshunter-collective-test.limoorange99.workers.dev"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = false
+
+[webhooks]
+api_version = "2026-07"
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/uninstalled"
+  topics = [ "app/uninstalled" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/compliance"
+  compliance_topics = [ "customers/data_request", "customers/redact", "shop/redact" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/scopes_update"
+  topics = [ "app/scopes_update" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/orders"
+  topics = [ "orders/create", "orders/updated", "orders/paid", "orders/cancelled", "orders/fulfilled", "orders/partially_fulfilled", "orders/delete" ]
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_locations,read_orders,write_assigned_fulfillment_orders,write_fulfillments,write_inventory,write_products,read_markets,read_shipping,read_legal_policies"
+use_legacy_install_flow = false
+
+[auth]
+redirect_urls = [
+  "https://wolfshunter-collective-test.limoorange99.workers.dev/auth/callback",
+  "https://wolfshunter-collective-test.limoorange99.workers.dev/auth/shopify/callback",
+  "https://wolfshunter-collective-test.limoorange99.workers.dev/api/auth/callback"
+]

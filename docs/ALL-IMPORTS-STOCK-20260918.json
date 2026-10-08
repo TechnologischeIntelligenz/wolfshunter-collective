@@ -1,0 +1,306 @@
+{
+  "checkedAt": "2026-09-18T10:33:24.719Z",
+  "items": [
+    {
+      "id": 1,
+      "sourceProductId": "collective-stoneware-set",
+      "sourceTitle": "Hand-Finished Stoneware Set",
+      "shopifyProductId": null,
+      "errorMessage": "Shopify konnte den DRAFT nicht anlegen: Http request error, no response available: GraphQL Client: fetch failed",
+      "summary": null
+    },
+    {
+      "id": 4,
+      "sourceProductId": "collective-oak-tray",
+      "sourceTitle": "Solid Oak Valet Tray",
+      "shopifyProductId": "gid://shopify/Product/16259679748483",
+      "errorMessage": "This old import record has no valid Shopify source product ID. Review the record before linking stock.",
+      "summary": null
+    },
+    {
+      "id": 5,
+      "sourceProductId": "gid://shopify/Product/8306311168089",
+      "sourceTitle": "White Plus Size Abstract Print Contrast Collar Split Neck Shift Long Dress",
+      "shopifyProductId": "gid://shopify/Product/16259894837635",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 4,
+        "checkedAt": "2026-09-18T10:27:07.599Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 4,
+        "sourceImages": 8,
+        "stockMatched": 4,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 6,
+      "sourceProductId": "gid://shopify/Product/8306228101209",
+      "sourceTitle": "Ashleigh Blue Boho Floral Plaid Patchwork Distressed Detail Ruffled Sleeve Waffle Knit Shacket",
+      "shopifyProductId": "gid://shopify/Product/16259894935939",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "4 variant images are still processing or need review. Retry the image check shortly."
+        ],
+        "variants": 8,
+        "checkedAt": "2026-09-18T10:19:13.455Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 8,
+        "sourceImages": 9,
+        "stockMatched": 8,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 7,
+      "sourceProductId": "collective-weekender",
+      "sourceTitle": "Grained Leather Weekender",
+      "shopifyProductId": "gid://shopify/Product/16337282236803",
+      "errorMessage": "This old import record has no valid Shopify source product ID. Review the record before linking stock.",
+      "summary": null
+    },
+    {
+      "id": 8,
+      "sourceProductId": "gid://shopify/Product/7900759654489",
+      "sourceTitle": "Women's Fashionable Minimalist Retractable Roller Skates",
+      "shopifyProductId": "gid://shopify/Product/16337323557251",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "72 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 72,
+        "checkedAt": "2026-09-18T10:27:53.329Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 72,
+        "sourceImages": 9,
+        "stockMatched": 72,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 9,
+      "sourceProductId": "gid://shopify/Product/7471056158809",
+      "sourceTitle": "A1. Men's Lambskin Suede Lapel Biker's Leather Jacket",
+      "shopifyProductId": "gid://shopify/Product/16337836605827",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "6 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 6,
+        "checkedAt": "2026-09-18T10:24:10.718Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 6,
+        "sourceImages": 20,
+        "stockMatched": 6,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 10,
+      "sourceProductId": "gid://shopify/Product/7461319671897",
+      "sourceTitle": "Trendy Autumn Special-interest Design Crossbody Bag",
+      "shopifyProductId": "gid://shopify/Product/16337859346819",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 1,
+        "checkedAt": "2026-09-18T10:20:36.917Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 1,
+        "sourceImages": 7,
+        "stockMatched": 1,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 11,
+      "sourceProductId": "gid://shopify/Product/7459581788249",
+      "sourceTitle": "Thickened Jacket With Classic Plaid Fuzzy Fleece Lining Inside Design",
+      "shopifyProductId": "gid://shopify/Product/16337889657219",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 9,
+        "checkedAt": "2026-09-18T10:20:42.532Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 9,
+        "sourceImages": 5,
+        "stockMatched": 9,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 12,
+      "sourceProductId": "gid://shopify/Product/7460933402713",
+      "sourceTitle": "A Men's Hunting Clothes Medium Length Men's Casual Suit Trench Coat",
+      "shopifyProductId": "gid://shopify/Product/16337895031171",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "7 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 7,
+        "checkedAt": "2026-09-18T10:20:45.861Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 7,
+        "sourceImages": 8,
+        "stockMatched": 7,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 13,
+      "sourceProductId": "gid://shopify/Product/7472157786201",
+      "sourceTitle": "Ceremonté™ – Slim Fit Three-Piece Wedding Suit",
+      "shopifyProductId": "gid://shopify/Product/16337912758659",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "96 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 96,
+        "checkedAt": "2026-09-18T10:20:53.602Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 96,
+        "sourceImages": 20,
+        "stockMatched": 96,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 14,
+      "sourceProductId": "gid://shopify/Product/7492818501721",
+      "sourceTitle": "A.1 Sports Long Sleeve Fitness Yoga Leggings Pants Two-piece Set",
+      "shopifyProductId": "gid://shopify/Product/16338027905411",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "30 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 30,
+        "checkedAt": "2026-09-18T10:20:57.490Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 30,
+        "sourceImages": 20,
+        "stockMatched": 30,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 15,
+      "sourceProductId": "gid://shopify/Product/7959609671769",
+      "sourceTitle": "Water Ripple Cashmere Women's Long Reversible Coat – Luxury & Versatility",
+      "shopifyProductId": "gid://shopify/Product/16338098094467",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "12 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 12,
+        "checkedAt": "2026-09-18T10:21:01.393Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 12,
+        "sourceImages": 19,
+        "stockMatched": 12,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 16,
+      "sourceProductId": "gid://shopify/Product/7471043117145",
+      "sourceTitle": "Warm Winter Chenille Hunting Jacket Men",
+      "shopifyProductId": "gid://shopify/Product/16338132664707",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "15 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 15,
+        "checkedAt": "2026-09-18T10:21:07.935Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 15,
+        "sourceImages": 7,
+        "stockMatched": 15,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 17,
+      "sourceProductId": "gid://shopify/Product/7922931269721",
+      "sourceTitle": "Cotton Striped Long Sleeved Shirt Men",
+      "shopifyProductId": "gid://shopify/Product/16338207572355",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 5,
+        "checkedAt": "2026-09-18T10:21:14.331Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 5,
+        "sourceImages": 12,
+        "stockMatched": 5,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 18,
+      "sourceProductId": "gid://shopify/Product/7480626937945",
+      "sourceTitle": "Men's Fashion Retro Denim Long-sleeved DressShirt",
+      "shopifyProductId": "gid://shopify/Product/16338207703427",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "10 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 10,
+        "checkedAt": "2026-09-18T10:21:20.591Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 10,
+        "sourceImages": 12,
+        "stockMatched": 10,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 19,
+      "sourceProductId": "gid://shopify/Product/7471245492313",
+      "sourceTitle": "Men DressShirt Casual Cotton",
+      "shopifyProductId": "gid://shopify/Product/16338208063875",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "10 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 10,
+        "checkedAt": "2026-09-18T10:21:26.951Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 10,
+        "sourceImages": 9,
+        "stockMatched": 10,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 20,
+      "sourceProductId": "gid://shopify/Product/8292695965785",
+      "sourceTitle": "Long Double-faced Wool Coat With A Shearling Collar",
+      "shopifyProductId": "gid://shopify/Product/16338266128771",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "3 variant images are still processing or need review. Retry the image check shortly."
+        ],
+        "variants": 18,
+        "checkedAt": "2026-09-18T10:31:13.922Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 18,
+        "sourceImages": 11,
+        "stockMatched": 18,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    }
+  ]
+}

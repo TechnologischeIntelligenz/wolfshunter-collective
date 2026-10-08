@@ -1,0 +1,1 @@
+query CollectiveHostingReadiness { shop { name myshopifyDomain } appByKey(apiKey: "51671c87d216d57415143f2ad8729399") { id title apiKey embedded published requestedAccessScopes { handle } installation { id launchUrl accessScopes { handle } } } }

@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-09-18T10:28:16.576Z",
+  "suppliers": [
+    {
+      "supplier": "cj",
+      "products": 6394,
+      "unknown": 23,
+      "positive": 6331,
+      "zero": 40
+    },
+    {
+      "supplier": "dear-lover",
+      "products": 1432,
+      "unknown": 2,
+      "positive": 1430,
+      "zero": 0
+    },
+    {
+      "supplier": "trendsi",
+      "products": 311,
+      "unknown": 4,
+      "positive": 204,
+      "zero": 103
+    }
+  ]
+}

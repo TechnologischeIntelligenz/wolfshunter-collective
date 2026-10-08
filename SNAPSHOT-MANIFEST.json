@@ -1,0 +1,622 @@
+﻿[
+    {
+        "path":  ".dockerignore",
+        "sha256":  "43F042A76F293FC0108669D689F05E1AE43EF317721C9251840C18DE13BA36CC"
+    },
+    {
+        "path":  ".env",
+        "sha256":  "6FACA90B2E9FDE19C8CF68102E68FEC7978ECAF1C16F6499AD2C377052F8047F"
+    },
+    {
+        "path":  ".env.example",
+        "sha256":  "B15F6B7FDE130E02EBAF8E0CCFED53F103557098B0181954ABB9DBAA30A481C5"
+    },
+    {
+        "path":  ".env.hostinger.example",
+        "sha256":  "008EAC115AD87682DABF0C7A94BAC64CA5481380AD02BD50088C21E343BC6C26"
+    },
+    {
+        "path":  ".env.production.example",
+        "sha256":  "9D04EDF52304CA35CF4D9D681C3DB73FE113575091E9100061197E0434E8E40B"
+    },
+    {
+        "path":  ".eslintignore",
+        "sha256":  "92EE3300D8A92C4E28A5C1C2C71C36097124FEFFAE4F3E4938030CF62CC8C898"
+    },
+    {
+        "path":  ".eslintrc.cjs",
+        "sha256":  "AA8EDB553D8365A084FF716A5FDA80656C35214630827CAA223B80A14907C5BB"
+    },
+    {
+        "path":  ".gitignore",
+        "sha256":  "BA323D0A72716E90B42E927404C7BF776AE91F79B265008AAE67C5EDBBED14F5"
+    },
+    {
+        "path":  "compose.yaml",
+        "sha256":  "FA9D4697BF3C49704188F5A11A67D11545FDC9CC7B7AC9E21104791A12F46022"
+    },
+    {
+        "path":  "Dockerfile",
+        "sha256":  "CA903097BC92FD8A124BB317FDDAC54BACDA2F6DB2109722BD7B5AF58B3C94E5"
+    },
+    {
+        "path":  "package-lock.json",
+        "sha256":  "83BADF8CA74061CE775CE27571A61A9F38C3FF0F6C89A9216E51033209DA144D"
+    },
+    {
+        "path":  "package.json",
+        "sha256":  "B1244DF0EC555E42B8BAA7EF15958FFC467D2D916C86C1B38BCE88B604CDFC51"
+    },
+    {
+        "path":  "README.md",
+        "sha256":  "7D9B4E2DC459379E019EA7CCDDB75FEDAEBDBFEFDB0FFB281CBC32C33BAAECDD"
+    },
+    {
+        "path":  "shopify.app.toml",
+        "sha256":  "15ED157E3DEFE47601434155392A47B26E36C047642ABF8B7300D24D642AA5BC"
+    },
+    {
+        "path":  "shopify.web.toml",
+        "sha256":  "EA08A681A4E17368A6C20185A21FA38A29914AAB98EED636B830902FCF8016E2"
+    },
+    {
+        "path":  "SNAPSHOT-README.txt",
+        "sha256":  "CEBB31559D1EA946E788F144A536CE729E6868B66836D4092833235FC6C5D9F4"
+    },
+    {
+        "path":  "tsconfig.json",
+        "sha256":  "19E432112B18158D5B7CB9F3D0B2A398C355964A6711B447062CB08C1C634D9C"
+    },
+    {
+        "path":  "vite.config.ts",
+        "sha256":  "44946C895D127C4B3CF4FE6489674680F5715D51C3906D77ECCA62253E12C635"
+    },
+    {
+        "path":  "app/db.server.ts",
+        "sha256":  "E667831B4361F897DB0D26FFCB57F272BE66E9838C4A5D48C8E83757D21C1536"
+    },
+    {
+        "path":  "app/entry.server.tsx",
+        "sha256":  "1DFF5AD3ABFD503C956A0E8BA001AEF5869DCFBAEE29181FA681D9349EEC76B0"
+    },
+    {
+        "path":  "app/globals.d.ts",
+        "sha256":  "9BE7EA778895C94059AF08E9D0386027594DEF4A9CD488504959DE7FA7BD3590"
+    },
+    {
+        "path":  "app/root.tsx",
+        "sha256":  "76643E53E3D4AFAE4E86A30AE598F77652300380DF31ECF66C57A90338116371"
+    },
+    {
+        "path":  "app/routes.ts",
+        "sha256":  "1714EB9740ACDD890CBC9D7D73EADBAC9CC5B1470979463DEFB6DFA619D48835"
+    },
+    {
+        "path":  "app/shopify.server.ts",
+        "sha256":  "9E1708978121642806C91119726FD024208A555146C1E1AF35A5B3515B2F3289"
+    },
+    {
+        "path":  "app/components/collective/catalog-pagination.tsx",
+        "sha256":  "0CDDD9C2886357CF7115E7D94CBBFCB6B5B3DE6CABCAF075451731E0CE6A5E26"
+    },
+    {
+        "path":  "app/components/collective/foundation.tsx",
+        "sha256":  "1A928018EC1F6B6907C86964B1E32AA4B4D793FD2ED921F31CABFEA69C5249DE"
+    },
+    {
+        "path":  "app/components/collective/product-card.tsx",
+        "sha256":  "3BB2FDD383C6CF0F593D7767C78EF25ECAF32E0DF8AF5E333CD984326194E16F"
+    },
+    {
+        "path":  "app/components/collective/product-image-stage.tsx",
+        "sha256":  "316B6A398F81A19D08FA3279E6AB637BEF411A4AA2A99AC0E57EFCA9DAB09905"
+    },
+    {
+        "path":  "app/components/collective/source-commerce-panel.tsx",
+        "sha256":  "911EAD9CD203743EE38B0ABA4516BF8AEF9ABD30A8CA67325BCF0874FBA42DA5"
+    },
+    {
+        "path":  "app/features/admin/admin-dashboard-view.tsx",
+        "sha256":  "53589DB41164277E8DF86F50331D9653EEA562E9EC7D236DE802A93E7597C73C"
+    },
+    {
+        "path":  "app/features/admin/admin-settings-view.tsx",
+        "sha256":  "DC9D701AE521AEBFF36B65971150FA0964275E72D2EADC97BD39B3923201803E"
+    },
+    {
+        "path":  "app/features/dashboard/ai-operations-brief.tsx",
+        "sha256":  "69EC748DEC0299CA0C8ABB2DB38D32804906A7745ECC3256065DACEECA94C306"
+    },
+    {
+        "path":  "app/features/dashboard/dashboard-view.tsx",
+        "sha256":  "87FF6393A485D004F2F2F19A8384D91A4EF3D54D89EF2CD3B78A60D40FC3087E"
+    },
+    {
+        "path":  "app/features/dashboard/read-only-diagnostics.tsx",
+        "sha256":  "2ED426E36BDEEE6F6578D7C4089EAA6B5A10E02CB6C755D5F2CF3AD7A51FA83F"
+    },
+    {
+        "path":  "app/features/dashboard/retailer-dashboard-view.tsx",
+        "sha256":  "97EE65C9AA8A0C96D31213180E6FF8387BF1DC6157905944DCA90C84DC017FD7"
+    },
+    {
+        "path":  "app/features/discover/discover-view.tsx",
+        "sha256":  "68259976618148413F6CCAAC297F9AF412609E24B77EF086826F527FF6858405"
+    },
+    {
+        "path":  "app/features/favorites/favorites-view.tsx",
+        "sha256":  "5AFB69AE164D1FA6FAE9C1FF65BB64CA249C2DF6152518BF98ED10D34EED827A"
+    },
+    {
+        "path":  "app/features/foundation/foundation-route-view.tsx",
+        "sha256":  "BC009CDDAE2BBD34BDE743448455773D0015D9EEF241B0D5937E3486D3018190"
+    },
+    {
+        "path":  "app/features/fulfillment/fulfillment-view.tsx",
+        "sha256":  "16C9E1E7CC7BAC1C3B5512D0E083AB88B7D9BEF2C8BD3A0D053FBE67F3B8E8B3"
+    },
+    {
+        "path":  "app/features/import-lists/import-lists-view.tsx",
+        "sha256":  "32E65B9F4A9D6994BB284EE279CFC0418E90BBAE1B1C8B69EA7EC36274627A8D"
+    },
+    {
+        "path":  "app/features/orders/orders-view.tsx",
+        "sha256":  "712660CE781D287E4CCB86B1756BF72AD8B666AD3CCE1D4F5A419383230C8C67"
+    },
+    {
+        "path":  "app/features/products/my-products-view.tsx",
+        "sha256":  "482F88E712A666A1586E037ACCDC5D48EE40C83E034AAB63667B1B36C7E99156"
+    },
+    {
+        "path":  "app/features/settings/retailer-settings-view.tsx",
+        "sha256":  "80F6B78B51F3F4A2EE43A4DCDF09240C6D7F1AE44349313C89332266AA2BD5F2"
+    },
+    {
+        "path":  "app/features/supplier/supplier-dashboard-view.tsx",
+        "sha256":  "03D7D56596558E71A55C33BBA8C8176C1AB18C230E24AD1D927C2DBFE688D98B"
+    },
+    {
+        "path":  "app/features/support/support-popup.tsx",
+        "sha256":  "54E2E14A3699449478D8B4B22BF068CA20981FE1F5BE28103739D3473A99EB80"
+    },
+    {
+        "path":  "app/features/support/support-view.tsx",
+        "sha256":  "7CE19E2908A43E0699A77E9812DB888CEAAC62BF6B17A72E298394070A8766B0"
+    },
+    {
+        "path":  "app/routes/app.additional.tsx",
+        "sha256":  "46B86A3EE820717229F9520B7271C1D060D61FD52033191B7B1720F7BC84F4A7"
+    },
+    {
+        "path":  "app/routes/app.admin.tsx",
+        "sha256":  "9DA3FB87D4EFDCA68F2E027237CECA3FDE72DA579DA422D8972BE4EBB7D217BB"
+    },
+    {
+        "path":  "app/routes/app.analytics.tsx",
+        "sha256":  "BC2C09652CC2C00B7FC948E9EF373232031D8A5968123807B74AB2D229677284"
+    },
+    {
+        "path":  "app/routes/app.discover.tsx",
+        "sha256":  "4A04AB208C6EA35E51F92087D421F9301F5A72A57968468486CF29878CC0BAD4"
+    },
+    {
+        "path":  "app/routes/app.favorites.tsx",
+        "sha256":  "183043C042891199115074A1EADC313E8A7B088CBFA0D40BE6EEB2A35AA20FDC"
+    },
+    {
+        "path":  "app/routes/app.fulfillment.tsx",
+        "sha256":  "1D9B68A4F9D4B53EE1381726052FFE044DCA47A21FD03E9D2A78E6D30D93D048"
+    },
+    {
+        "path":  "app/routes/app.import-lists.tsx",
+        "sha256":  "470B70181E9EE24EC4B93E8E294C7F778D73637C4F1CA9BC72E269F3CA328455"
+    },
+    {
+        "path":  "app/routes/app.my-products.tsx",
+        "sha256":  "EA622819B03409AD3E29F778D2184C8322190DE8C779B91325BC3DDD4CD0F430"
+    },
+    {
+        "path":  "app/routes/app.orders.tsx",
+        "sha256":  "93D236B37A08FE18BDC72E96C13E94F8656D0D4B44AFD60585D6F2B3167B35DF"
+    },
+    {
+        "path":  "app/routes/app.privacy-export.tsx",
+        "sha256":  "060A79555E80884FB179E7796A13499CDC1033AD3D501BEA58D69FA6BA6536C1"
+    },
+    {
+        "path":  "app/routes/app.privacy.tsx",
+        "sha256":  "6E14E1F6C9F9653F82778F48AFDD918F6385415FB45B6D64804949A8B05770BC"
+    },
+    {
+        "path":  "app/routes/app.settings.tsx",
+        "sha256":  "0453B0C1C35CBA47E6D39B021DF42AA50608FF0C632746785093F702839D025B"
+    },
+    {
+        "path":  "app/routes/app.subscription.tsx",
+        "sha256":  "1CD62166B579B7E58A6A9A090CE4431C5EE1BCD029AA402141EF5027365D9104"
+    },
+    {
+        "path":  "app/routes/app.support.tsx",
+        "sha256":  "FEEACAEC9B603DFD01B4ABEC4871C6693E84D909EDD82C6E170F551E4FBA6564"
+    },
+    {
+        "path":  "app/routes/app.tracking.tsx",
+        "sha256":  "D37EC4DA14372A77A00A1230A768A35729E93F59E03662D582BF5B5D13AA7802"
+    },
+    {
+        "path":  "app/routes/app.tsx",
+        "sha256":  "94FBEF48D81F4B759CF2C538578C2CAE2010FF924EC92253179C73882D2AB58D"
+    },
+    {
+        "path":  "app/routes/app._index.tsx",
+        "sha256":  "76ED9EBE4580CE198C3D8FD3E2532ECBCE00C04C9D27AF59DED3E37F50E1E70C"
+    },
+    {
+        "path":  "app/routes/auth.$.tsx",
+        "sha256":  "B7AB258B9CB439B441BBC2546333078FE05706613BAED32ABC2D7C4184D2097B"
+    },
+    {
+        "path":  "app/routes/extensions.tsx",
+        "sha256":  "9B8A6368C2F4BFF11A70C0A96DFD7083638CA32CEE7581C5BF7F79D02B0A8117"
+    },
+    {
+        "path":  "app/routes/health.tsx",
+        "sha256":  "0BB97693A48B0E133F77E6A976247DD46C67F554BB4B71CC56C580299CCCB0E7"
+    },
+    {
+        "path":  "app/routes/healthz.tsx",
+        "sha256":  "5338FC654ECFE26624830D9BB48FA81A03B7C891E25ADC823B46D691D6D92295"
+    },
+    {
+        "path":  "app/routes/phase-one-preview.tsx",
+        "sha256":  "8FA11608109A1CE406EAE1C4E4199B8A4AE9E1F17A486B2D1E98CD4362741BD1"
+    },
+    {
+        "path":  "app/routes/privacy.tsx",
+        "sha256":  "C491705C649FC1F0898ABE0E63A747F1D8CA86DC423E78EA19C37A364F365474"
+    },
+    {
+        "path":  "app/routes/support.tsx",
+        "sha256":  "3892B3DBADF9DADCBD9FF000244AA972A86E28A328999DEC5EF097FB7EBB2CA8"
+    },
+    {
+        "path":  "app/routes/terms.tsx",
+        "sha256":  "D90CEE28A432D4C3DD694E25E6E997A243E887D46A4B195C8DC6EA647FC77867"
+    },
+    {
+        "path":  "app/routes/webhooks.app.scopes_update.tsx",
+        "sha256":  "E5D0654C8A5A2B637ACAB1FE3DE12E6AA6C829E2D7DC381145EF039AD3C45BA7"
+    },
+    {
+        "path":  "app/routes/webhooks.app.uninstalled.tsx",
+        "sha256":  "0EB9F981DF559D1A0346DDA15698FC7FA96BB4EE3FACC37A95AC9A854FD11AD3"
+    },
+    {
+        "path":  "app/routes/webhooks.compliance.tsx",
+        "sha256":  "6FE76247A7DF407A4D8C14316103704E9B0600AA76CB6FC5F4BD97CEB6A743C1"
+    },
+    {
+        "path":  "app/routes/webhooks.orders.tsx",
+        "sha256":  "8E1C7784844B98B3195E6E25E05C8A2CD993B5C47B1D352C696465E177C7AE1A"
+    },
+    {
+        "path":  "app/routes/auth.login/error.server.tsx",
+        "sha256":  "A6A39EC263539A10FF423C79C7E6F83C334F415C9F30E417310B15F7753E8AC2"
+    },
+    {
+        "path":  "app/routes/auth.login/route.tsx",
+        "sha256":  "59541E9B2C7C9E0F18C3D11B9B19AF398157E7081027A3A56B958F3D93C8D750"
+    },
+    {
+        "path":  "app/routes/_index/route.tsx",
+        "sha256":  "0E4C7F00507515075773208D1F897582B123954243E1CE4F9387A523A743ADC6"
+    },
+    {
+        "path":  "app/routes/_index/styles.module.css",
+        "sha256":  "FD16E77F3C111D723CA9D602091F0E96249680A0C5D65E78EF49383EEDD504F9"
+    },
+    {
+        "path":  "app/services/app-admin.server.ts",
+        "sha256":  "ED963728C6A7CDA71E64E3CE8378D770E3EC91B86C91017B9B7E0A542AC3F83C"
+    },
+    {
+        "path":  "app/services/app-role.server.ts",
+        "sha256":  "490F08D39C0459F58331B6FBDDC19DC43735873B6A0EA98D3824256ACDB13549"
+    },
+    {
+        "path":  "app/services/app-role.test.ts",
+        "sha256":  "3DD98DEBEFD334E6A87FE1444A310D4510A550D1D58143AAFCA4DBC4E63E6C5A"
+    },
+    {
+        "path":  "app/services/authenticated-app-loader.server.ts",
+        "sha256":  "72DBD4CDEDBE3110E9CA0F6B0F40D158C415A229A7B0250B1ED6B1572776FE1E"
+    },
+    {
+        "path":  "app/services/catalog-bulk.server.ts",
+        "sha256":  "A22C71E41703710021D76415DF49D3986DAD77D805B3267747C50FA75835454B"
+    },
+    {
+        "path":  "app/services/catalog-page.ts",
+        "sha256":  "0247E1A58A1DA5B78B47C05B12B64BA061FB17D9282ADA4FA05B932514E93C0F"
+    },
+    {
+        "path":  "app/services/catalog-recovery.test.ts",
+        "sha256":  "4E7E7EA77FB570C172752FE04B53BFA7761BFE3C9A7291C4ACA15AF4590CFA5D"
+    },
+    {
+        "path":  "app/services/catalog-snapshot.server.ts",
+        "sha256":  "0493BAD0A2AB5E25E9AC44CF76BB818C856C0B3C41EFD222D57E623A859E2DAC"
+    },
+    {
+        "path":  "app/services/knowledge-sync.server.ts",
+        "sha256":  "6E7754BD41CB094160B1BFCCE678713FF51D80F02606AC17DFA100EC311D6EFC"
+    },
+    {
+        "path":  "app/services/openai-assistant.server.ts",
+        "sha256":  "07B16C23E5B089062664771000BE092137FC04F6584E44A28F098E7A8180F1B7"
+    },
+    {
+        "path":  "app/services/order-normalization.ts",
+        "sha256":  "5778A657BB4301EAAFB70A64A37BED2640B90238AF40B4F6F3CF2A004D414002"
+    },
+    {
+        "path":  "app/services/order-sync.test.ts",
+        "sha256":  "85F92B1DC3A279BCBFC73607C1E57E0755B2B0A2D10D2D0DF53BB4CB51ED2A04"
+    },
+    {
+        "path":  "app/services/privacy-requests.server.ts",
+        "sha256":  "997C0631AF94A10E2A8F07B8E48429AD7C83B7C9B61B4DB5BD3EEE99E5F998E9"
+    },
+    {
+        "path":  "app/services/read-only-diagnostics.server.ts",
+        "sha256":  "6CD7E57E726A75531EACE82581EEA8B50C6D484AD1DECAE8435060F0E250B3F1"
+    },
+    {
+        "path":  "app/services/retailer-commerce.server.ts",
+        "sha256":  "A81E8BEFBB102498950A326ACCE0237FD2CE822DEC9C59D032CB0066F0CDFBBD"
+    },
+    {
+        "path":  "app/services/retailer-orders.server.ts",
+        "sha256":  "6D7B451E475EA480FD2613567F02437EDC3F6127B867BC3803A638AA4ADAE2D3"
+    },
+    {
+        "path":  "app/services/retailer-workspace.server.ts",
+        "sha256":  "2764B06C83732E5E38D6C7B01A771D43DC5F860497091820AC6F648E5161555E"
+    },
+    {
+        "path":  "app/services/shopify-admin-catalog.server.ts",
+        "sha256":  "698DB4C9A8D686A177C5CDA5BC63D62024B783ADE0C131C5D11FDE1C271580C3"
+    },
+    {
+        "path":  "app/services/shopify-admin-catalog.test.ts",
+        "sha256":  "D942F37F02CF5EA349A75C7773A259EB3AF92804D7A106776E23EA9D3884B7EF"
+    },
+    {
+        "path":  "app/services/shopify-collection-options.server.ts",
+        "sha256":  "F2785EA48DF2F409C3704A51E69D1F7A9A4955DD6FB76E95D0B0609E9D309EE0"
+    },
+    {
+        "path":  "app/services/shopify-retailer-metrics.server.ts",
+        "sha256":  "01F94C115B6221E006161A878FA9BB7D443B25FF9EDD53D72B80BE89C8C7794B"
+    },
+    {
+        "path":  "app/services/shopify-source-catalog.server.ts",
+        "sha256":  "C6EC030CC54EDA9BD04AE04B918F2CBF02E53092BFCE5FFC22C65626EAC0C024"
+    },
+    {
+        "path":  "app/services/source-commerce.server.ts",
+        "sha256":  "C4227B9917D21518410BBAB4391268950DC3E5538028BC79685783BBACAC132A"
+    },
+    {
+        "path":  "app/services/source-sync.server.ts",
+        "sha256":  "031BD9F30220D4AE3BE5215CE2BF8A0E2DC5EBF7E1FB8323F2B53A5C5D0C2F53"
+    },
+    {
+        "path":  "app/services/supplier-sku-visibility.test.ts",
+        "sha256":  "1D7AE55FC625F7CB44E6057D624AD188FB5B2C0E15FB7022D7E8287383A73D56"
+    },
+    {
+        "path":  "app/services/supplier-sku-visibility.ts",
+        "sha256":  "D34A7A2F95E04F5DD787170204345DC354118C6B817D5E75C8E9BA97D9DF998E"
+    },
+    {
+        "path":  "app/services/support-case-sanitizer.ts",
+        "sha256":  "0C672147470C649F75370D4B1800D55004DB4BBD134E356280C4332130B9915C"
+    },
+    {
+        "path":  "app/services/support-case.server.ts",
+        "sha256":  "81F380E974A36A4CB5C0FB01013481E3485B729714A4A3A52932F973E6033605"
+    },
+    {
+        "path":  "app/services/tenant-data.server.ts",
+        "sha256":  "9D7CD18B70F144C9ED162C56F2DBB3C318C183F955DDE067796D83EC245E4E19"
+    },
+    {
+        "path":  "app/services/webhook-auth.server.ts",
+        "sha256":  "DF2AF3B317F39B212AEFAC87E08C454319AF6ED9B83D1EA11166B2927E9D53E5"
+    },
+    {
+        "path":  "app/services/webhook-signature.ts",
+        "sha256":  "91BBDDDB1A3FE96DF62BD2ED6A7277EFCA4C3503B5CFF09A304B060F38CDF1F5"
+    },
+    {
+        "path":  "app/services/merchandising/fixtures.ts",
+        "sha256":  "98F8E69224CFADC1B0465B72859DE463B443B25CBC1596D37422DC7A29F7F5AE"
+    },
+    {
+        "path":  "app/services/merchandising/rule-based-provider.test.ts",
+        "sha256":  "3DD0229642689075079EC5D56A75598660717784E770339A554A6AAD8F2DB8F4"
+    },
+    {
+        "path":  "app/services/merchandising/rule-based-provider.ts",
+        "sha256":  "C4CA03ADFE1918D6A3D9CE488125AE9C6D010AFA30F859A5F5FB4E788205FC25"
+    },
+    {
+        "path":  "app/services/merchandising/types.ts",
+        "sha256":  "7AAD389683EFD5CBA2FF68436B11F01B1FC55514AFF6E9CF1E395B67FAFDCF3E"
+    },
+    {
+        "path":  "app/styles/collective.css",
+        "sha256":  "6146C7515EE66116C11993D2AAC01568CA60B09C7B8E8BE79C294AB0A680AE81"
+    },
+    {
+        "path":  "data/3ddd6b-2.myshopify.com/catalog-1789690830552-b55ac15d-a4c0-448d-9bee-697e0cf1e4c8.json",
+        "sha256":  "D44909A50E6C3519FCD92F60659C31088D2AC6AA4305DD55281579C50F8B0F9B"
+    },
+    {
+        "path":  "data/3ddd6b-2.myshopify.com/catalog-current.json",
+        "sha256":  "2CD92502123CAE414D49F1141EC1E24C752505EB938BC0AB16DD383AEEF9C20E"
+    },
+    {
+        "path":  "data/3ddd6b-2.myshopify.com/commerce.json",
+        "sha256":  "946BAA7A01E72118F716C7C65B4F6D4FE371E97DF8B6D27B3B369E40814BE00D"
+    },
+    {
+        "path":  "data/3ddd6b-2.myshopify.com/sync-state.json",
+        "sha256":  "89EAE81B20C9BDDFD00A457684FA2CB01689BC55D1EFA449D4324BC4F3E9AD76"
+    },
+    {
+        "path":  "docs/APP_ARCHITECTURE.md",
+        "sha256":  "ECE76754BE39FF6BF7231F94E771EE81B8127BE6CDC776E1BC8DCE2FCB332F9F"
+    },
+    {
+        "path":  "docs/APP_STORE_READINESS_AUDIT.md",
+        "sha256":  "89857A199053224B503463762E171A084B8292AE4C0AFC3262A75C27F9B29818"
+    },
+    {
+        "path":  "docs/COMPETITIVE_PRODUCT_MATRIX.md",
+        "sha256":  "59EA8DD0BA0D73578C466DA27E84DD99D21ADCCCF0E116704F06DDD659683911"
+    },
+    {
+        "path":  "docs/ETHICS_AND_SAFEGUARDS.md",
+        "sha256":  "376DA16743D1A202664DAD36EDD0B3DD40DCC030FAA94F1EB7DB60D46B01F941"
+    },
+    {
+        "path":  "docs/HOSTING.md",
+        "sha256":  "51EDC1483A06C777E4EF8FCAF7B636D5D4F999662C35BC86149E3261A1D19FC2"
+    },
+    {
+        "path":  "docs/MERCHANDISING_ENGINE.md",
+        "sha256":  "52CF021D55DB66536AB6A05A0C9B5953ED8249A47ABF85B1B8E1084106C50B91"
+    },
+    {
+        "path":  "docs/ORDER-POLICY-SYNC-20260918.md",
+        "sha256":  "16BFAA7280CA47042B976862ADE4C011E554622EFFB03ED4685020E162542935"
+    },
+    {
+        "path":  "docs/PHASE1_GREEN_CHECKPOINT.md",
+        "sha256":  "5DE163651939016A295EC5DFE572ECCC6307E3D68C1C15EE431AC3EC6778E86E"
+    },
+    {
+        "path":  "docs/PROTECTED_CUSTOMER_DATA_PLAN.md",
+        "sha256":  "1C9E93551F10DA6DEF3145821500C459350A57F047DF9B7277940B81DFE93F70"
+    },
+    {
+        "path":  "docs/RELEASE-REVIEW-20260918.md",
+        "sha256":  "920E107D7C2C2B39A107B7AB9821EC7FD07DB904AD714A5DAE085CCB1CA6AEA1"
+    },
+    {
+        "path":  "docs/SHOPIFY_SCOPE_MATRIX.md",
+        "sha256":  "EF5C2EEB9E17909E83BF68129E37506682A515FDFF325E5E4964C2CB25BEC7FC"
+    },
+    {
+        "path":  "docs/screenshots/phase-one-discover-responsive.png",
+        "sha256":  "A3C0F3759BB95FF1381CB17903CCA64627B930037746DBB0635218FFB232D20A"
+    },
+    {
+        "path":  "docs/screenshots/phase-one-discover.png",
+        "sha256":  "B1599572ABB862EF8E7BCB9B79AC44F1E4F9BAF308368A5B3B1551A3621376D2"
+    },
+    {
+        "path":  "docs/screenshots/phase-one-product-detail.png",
+        "sha256":  "58A6E7AD8CBD6C3FE8445F7F33B80833C649DBB837D1A15CE9957D6680C7A2ED"
+    },
+    {
+        "path":  "extensions/.gitkeep",
+        "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+        "path":  "prisma/dev.sqlite",
+        "sha256":  "2D90BDFA1EA89A5B02E1B2CACEA1B0BE5DD5204C5B3972F5AB966640A9529E33"
+    },
+    {
+        "path":  "prisma/schema.prisma",
+        "sha256":  "6EBC26446C3F783A1ABEC56D0380E6DC9A873B2936AE3E9B26D413147A2102B9"
+    },
+    {
+        "path":  "prisma/migrations/20240530213853_create_session_table/migration.sql",
+        "sha256":  "6456F6A82B92B91000BB7D6380BCC38365CF9EF372963DAFA6C6E5B5CFCB5F9E"
+    },
+    {
+        "path":  "prisma/migrations/20260820193000_add_retailer_workspace/migration.sql",
+        "sha256":  "EEFBC3BF0AE1406C7D9ABF9B51F77072972C03F6F7B585C1715217FD5669EDF8"
+    },
+    {
+        "path":  "prisma/migrations/20260820201500_add_retailer_settings_and_product_push/migration.sql",
+        "sha256":  "1754CC608AC50D18C0E9103C91001B0A43C23CB8A5229CE46689F18FA4106354"
+    },
+    {
+        "path":  "prisma/migrations/20260820220000_add_retailer_orders/migration.sql",
+        "sha256":  "983014CB68979660A07E372FEC1D5EC7899FBEC038F89253505049CEB24130D2"
+    },
+    {
+        "path":  "prisma/migrations/20260821143000_add_support_cases/migration.sql",
+        "sha256":  "65F1E34731F992D6B69781C4E9AC2B1E3AAF91C53076C4952A9D231B1DFB179E"
+    },
+    {
+        "path":  "prisma/migrations/20260821164000_add_support_case_messages/migration.sql",
+        "sha256":  "62F9E30CB1A4FBDA56295D91A2A5685F286BCF6236DE34710A30FB9BB2A2E157"
+    },
+    {
+        "path":  "prisma/migrations/20260821170000_add_knowledge_sync_tracking/migration.sql",
+        "sha256":  "100926D5CB203637D74E86319FD3751C8E0C419C46DBB8A1457601CB61370C48"
+    },
+    {
+        "path":  "public/favicon.ico",
+        "sha256":  "39FF6FA1450C106B5BBC2B7368D888E70F6E799DF8F117FCCEE2A469926B4417"
+    },
+    {
+        "path":  "public/wolfshunter-collective-app-store-icon-1200.png",
+        "sha256":  "941E87DED118E233E13B9A83E67FF618D9882280ABE37DC73102C8B31C99C70E"
+    },
+    {
+        "path":  "public/wolfshunter-collective-logo.png",
+        "sha256":  "04AA2781BC7E953CBC9017A8BE99FC4AC791F4C8BA5A35530DE756D8FC2E32F7"
+    },
+    {
+        "path":  "scripts/production-config.mjs",
+        "sha256":  "2C594C573E98F77047426E5573C710A2A9D61898A0F22CCDFC76D234F29DE06C"
+    },
+    {
+        "path":  "scripts/session-status.mjs",
+        "sha256":  "0CD946ECEA53C3D51387D361FEDB8EAC57E970564B4749084F05E9D39F6E6510"
+    },
+    {
+        "path":  "scripts/shopify-cli-admin.mjs",
+        "sha256":  "3F732A1BA619EF0DF904D2F5CDF09C345267FA961CE5F9310A9BF5034267E25A"
+    },
+    {
+        "path":  "scripts/snapshot-db.mjs",
+        "sha256":  "F1E8608F94B7F6CAED4B5C8507009AECB9A1629064898B42FED431EF95645A2C"
+    },
+    {
+        "path":  "scripts/start-production.ps1",
+        "sha256":  "80B4894987AC78BC51DF9335C48897B6069E986E73C7434B778AE828C2D38EFF"
+    },
+    {
+        "path":  "scripts/start.mjs",
+        "sha256":  "FE4A94F7433324CFFC719C54B3640329B4DBF4E4C6B3DB0C23603F5936B231FD"
+    },
+    {
+        "path":  "scripts/sync-catalog.mjs",
+        "sha256":  "338191CA0CAC865D1F4517CFADD2DC34D86125EA83EBB9E70751A45144E121B9"
+    },
+    {
+        "path":  "scripts/sync-commerce.mjs",
+        "sha256":  "F609B1A50EA15F32A45634065ECC2A94048089817E15C2C47498EA63DCA85987"
+    },
+    {
+        "path":  "scripts/sync-source.mjs",
+        "sha256":  "44A219AACCEA6A782FF597E456537D4BDDAD04817840BCDD2332ED9720AE77BF"
+    }
+]

@@ -1,0 +1,4594 @@
+{
+  "checkedAt": "2026-09-18T09:10:01.472Z",
+  "readOnly": true,
+  "sourceShop": "3ddd6b-2.myshopify.com",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "source": {
+    "id": "gid://shopify/Product/7492818501721",
+    "title": "A.1 Sports Long Sleeve Fitness Yoga Leggings Pants Two-piece Set",
+    "status": "ACTIVE",
+    "totalInventory": 764654,
+    "variantsCount": {
+      "count": 30
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/36350137106521",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-20-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779294304"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343222730841",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-01-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194219"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343222960217",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-02-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194235"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343223222361",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-03-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194248"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343223812185",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-04-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194265"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343224008793",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-05-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194281"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343224631385",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-06-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194293"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343225253977",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-07-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194306"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343225712729",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-08-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194328"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343225876569",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-09-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194342"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343226040409",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-10-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194355"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343226269785",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-11-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194368"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36343227023449",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-12-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779194393"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350136582233",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-13-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779294284"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350136647769",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-14-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779294287"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350136680537",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-15-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779294289"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350136844377",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-16-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779294292"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350136877145",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-17-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779294295"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350136909913",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-18-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779294298"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36350137073753",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-19-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1779294302"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/40882589761625",
+          "title": "Army Green / L",
+          "inventoryQuantity": 20002,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Army Green"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10001
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10001
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10001
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10001
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882589794393",
+          "title": "Army Green / M",
+          "inventoryQuantity": 21504,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Army Green"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10752
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10752
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10752
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10752
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882589827161",
+          "title": "Army Green / S",
+          "inventoryQuantity": 29740,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Army Green"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14870
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14870
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14870
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14870
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882589859929",
+          "title": "Black / L",
+          "inventoryQuantity": 21980,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10990
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10990
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10990
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10990
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882589892697",
+          "title": "Black / M",
+          "inventoryQuantity": 26716,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13358
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13358
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13358
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13358
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882589925465",
+          "title": "Black / S",
+          "inventoryQuantity": 27802,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13901
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13901
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13901
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13901
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882589958233",
+          "title": "Blue / L",
+          "inventoryQuantity": 29358,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Blue"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14679
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14679
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14679
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14679
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882589991001",
+          "title": "Blue / M",
+          "inventoryQuantity": 24508,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Blue"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12254
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12254
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12254
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12254
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590023769",
+          "title": "Blue / S",
+          "inventoryQuantity": 26910,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Blue"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590056537",
+          "title": "Coffee / L",
+          "inventoryQuantity": 20804,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Coffee"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10402
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10402
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10402
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10402
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590089305",
+          "title": "Coffee / M",
+          "inventoryQuantity": 26862,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Coffee"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13431
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13431
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13431
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13431
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590122073",
+          "title": "Coffee / S",
+          "inventoryQuantity": 26582,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Coffee"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13291
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13291
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13291
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13291
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590154841",
+          "title": "Dark Blue / L",
+          "inventoryQuantity": 21642,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Blue"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10821
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10821
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10821
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10821
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590187609",
+          "title": "Dark Blue / M",
+          "inventoryQuantity": 22760,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Blue"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11380
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11380
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11380
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11380
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590220377",
+          "title": "Dark Blue / S",
+          "inventoryQuantity": 29936,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Blue"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14968
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14968
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14968
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14968
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590253145",
+          "title": "Dark Green / L",
+          "inventoryQuantity": 26910,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590285913",
+          "title": "Dark Green / M",
+          "inventoryQuantity": 24484,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12242
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12242
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12242
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12242
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590318681",
+          "title": "Dark Green / S",
+          "inventoryQuantity": 27034,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13517
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13517
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13517
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13517
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590351449",
+          "title": "Khaki / L",
+          "inventoryQuantity": 25532,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Khaki"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12766
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12766
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12766
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12766
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590384217",
+          "title": "Khaki / M",
+          "inventoryQuantity": 26184,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Khaki"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13092
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13092
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13092
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13092
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590416985",
+          "title": "Khaki / S",
+          "inventoryQuantity": 24496,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Khaki"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12248
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12248
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12248
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12248
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590449753",
+          "title": "Light Gray / L",
+          "inventoryQuantity": 23466,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Gray"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11733
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11733
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11733
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11733
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590482521",
+          "title": "Light Gray / M",
+          "inventoryQuantity": 29126,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Gray"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14563
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14563
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14563
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14563
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590515289",
+          "title": "Light Gray / S",
+          "inventoryQuantity": 21624,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Gray"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10812
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10812
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10812
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10812
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590548057",
+          "title": "Light Pink / L",
+          "inventoryQuantity": 27302,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Pink"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13651
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13651
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13651
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13651
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590580825",
+          "title": "Light Pink / M",
+          "inventoryQuantity": 29256,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Pink"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14628
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14628
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14628
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14628
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590613593",
+          "title": "Light Pink / S",
+          "inventoryQuantity": 23316,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Pink"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11658
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11658
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11658
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11658
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590646361",
+          "title": "Rose Red / L",
+          "inventoryQuantity": 27720,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Rose Red"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13860
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13860
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13860
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13860
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590679129",
+          "title": "Rose Red / M",
+          "inventoryQuantity": 28524,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Rose Red"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14262
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14262
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14262
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14262
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40882590711897",
+          "title": "Rose Red / S",
+          "inventoryQuantity": 22574,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Rose Red"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11287
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11287
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11287
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11287
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo0MDg4MjU5MDcxMTg5NywibGFzdF92YWx1ZSI6IjMwIn0="
+      }
+    }
+  },
+  "target": {
+    "id": "gid://shopify/Product/16338027905411",
+    "title": "A.1 Sports Long Sleeve Fitness Yoga Leggings Pants Two-piece Set",
+    "status": "ACTIVE",
+    "totalInventory": 382327,
+    "variantsCount": {
+      "count": 30
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/86543667003779",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-20-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667036547",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-01-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667069315",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-02-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667102083",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-03-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667134851",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-04-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667167619",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-05-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667200387",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-06-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667233155",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-07-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667265923",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-08-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720999"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543667298691",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-09-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789720998"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997469059",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-10-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997501827",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-11-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997534595",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-12-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997567363",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-13-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997600131",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-14-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997632899",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-15-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997665667",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-16-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997698435",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-17-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997731203",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-18-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543997763971",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-19-sports-long-sleeve-fitness-leggings-pants-two-piece-set.jpg?v=1789722417"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/62654167515523",
+          "title": "Army Green / L",
+          "inventoryQuantity": 10001,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Army Green"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10001
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10001
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167581059",
+          "title": "Army Green / M",
+          "inventoryQuantity": 10752,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Army Green"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10752
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10752
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167613827",
+          "title": "Army Green / S",
+          "inventoryQuantity": 14870,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Army Green"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14870
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14870
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167646595",
+          "title": "Black / L",
+          "inventoryQuantity": 10990,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10990
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10990
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167679363",
+          "title": "Black / M",
+          "inventoryQuantity": 13358,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13358
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13358
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167712131",
+          "title": "Black / S",
+          "inventoryQuantity": 13901,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Black"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13901
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13901
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167744899",
+          "title": "Blue / L",
+          "inventoryQuantity": 14679,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Blue"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14679
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14679
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167777667",
+          "title": "Blue / M",
+          "inventoryQuantity": 12254,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Blue"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12254
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12254
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167810435",
+          "title": "Blue / S",
+          "inventoryQuantity": 13455,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Blue"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167843203",
+          "title": "Coffee / L",
+          "inventoryQuantity": 10402,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Coffee"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10402
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10402
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167875971",
+          "title": "Coffee / M",
+          "inventoryQuantity": 13431,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Coffee"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13431
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13431
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167908739",
+          "title": "Coffee / S",
+          "inventoryQuantity": 13291,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Coffee"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13291
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13291
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167941507",
+          "title": "Dark Blue / L",
+          "inventoryQuantity": 10821,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Blue"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10821
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10821
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654167974275",
+          "title": "Dark Blue / M",
+          "inventoryQuantity": 11380,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Blue"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11380
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11380
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168007043",
+          "title": "Dark Blue / S",
+          "inventoryQuantity": 14968,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Blue"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14968
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14968
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168039811",
+          "title": "Dark Green / L",
+          "inventoryQuantity": 13455,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13455
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168072579",
+          "title": "Dark Green / M",
+          "inventoryQuantity": 12242,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12242
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12242
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168105347",
+          "title": "Dark Green / S",
+          "inventoryQuantity": 13517,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13517
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13517
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168138115",
+          "title": "Khaki / L",
+          "inventoryQuantity": 12766,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Khaki"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12766
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12766
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168170883",
+          "title": "Khaki / M",
+          "inventoryQuantity": 13092,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Khaki"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13092
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13092
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168203651",
+          "title": "Khaki / S",
+          "inventoryQuantity": 12248,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Khaki"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 12248
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 12248
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168236419",
+          "title": "Light Gray / L",
+          "inventoryQuantity": 11733,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Gray"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11733
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11733
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168269187",
+          "title": "Light Gray / M",
+          "inventoryQuantity": 14563,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Gray"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14563
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14563
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168301955",
+          "title": "Light Gray / S",
+          "inventoryQuantity": 10812,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Gray"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 10812
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 10812
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168334723",
+          "title": "Light Pink / L",
+          "inventoryQuantity": 13651,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Pink"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13651
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13651
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168367491",
+          "title": "Light Pink / M",
+          "inventoryQuantity": 14628,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Pink"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14628
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14628
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168400259",
+          "title": "Light Pink / S",
+          "inventoryQuantity": 11658,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Pink"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11658
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11658
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168433027",
+          "title": "Rose Red / L",
+          "inventoryQuantity": 13860,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Rose Red"
+            },
+            {
+              "name": "size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 13860
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 13860
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168465795",
+          "title": "Rose Red / M",
+          "inventoryQuantity": 14262,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Rose Red"
+            },
+            {
+              "name": "size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14262
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14262
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62654168498563",
+          "title": "Rose Red / S",
+          "inventoryQuantity": 11287,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Rose Red"
+            },
+            {
+              "name": "size",
+              "value": "S"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/120846123395",
+                    "name": "WOLFSHUNTER COLLECTIVE"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 11287
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 11287
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2MjY1NDE2ODQ5ODU2MywibGFzdF92YWx1ZSI6IjMwIn0="
+      }
+    }
+  }
+}

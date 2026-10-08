@@ -1,0 +1,1158 @@
+{
+  "checkedAt": "2026-09-18T08:25:38.842Z",
+  "readOnly": true,
+  "sourceShop": "3ddd6b-2.myshopify.com",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "source": {
+    "id": "gid://shopify/Product/7459581788249",
+    "title": "Thickened Jacket With Classic Plaid Fuzzy Fleece Lining Inside Design",
+    "status": "ACTIVE",
+    "totalInventory": 58191,
+    "variantsCount": {
+      "count": 9
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/32007573307481",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5bdc9923-5a0e-4432-bc0d-1b00fe7a60c8.jpg?v=1786067755"
+        },
+        {
+          "id": "gid://shopify/ProductImage/32007573438553",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/ed1f51d0-b9f7-405d-a928-a75402445669.jpg?v=1786067755"
+        },
+        {
+          "id": "gid://shopify/ProductImage/32007573635161",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/660f7448-3370-4ac8-84cd-e827a62e3015.jpg?v=1786067755"
+        },
+        {
+          "id": "gid://shopify/ProductImage/32007573864537",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1786067766"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354198732889",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-01-thickened-shirt-jacket-with-classic-plaid-fuzzy-fleece-lining-inside-design.jpg?v=1786067757"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/40753032396889",
+          "title": "Dark Brown / 2XL",
+          "inventoryQuantity": 6908,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Brown"
+            },
+            {
+              "name": "Size",
+              "value": "2XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/24576629440601",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5bdc9923-5a0e-4432-bc0d-1b00fe7a60c8.jpg?v=1786067755"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6908
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6908
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40753032429657",
+          "title": "Dark Brown / L",
+          "inventoryQuantity": 6523,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Brown"
+            },
+            {
+              "name": "Size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/24576629440601",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5bdc9923-5a0e-4432-bc0d-1b00fe7a60c8.jpg?v=1786067755"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6523
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6523
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40753032462425",
+          "title": "Dark Brown / XL",
+          "inventoryQuantity": 6371,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Brown"
+            },
+            {
+              "name": "Size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/24576629440601",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5bdc9923-5a0e-4432-bc0d-1b00fe7a60c8.jpg?v=1786067755"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6371
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6371
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40753032495193",
+          "title": "Dark Green / M",
+          "inventoryQuantity": 6557,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "Size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6557
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6557
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40753032527961",
+          "title": "Dark Green / XL",
+          "inventoryQuantity": 6556,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "Size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6556
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6556
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40753032560729",
+          "title": "Light Army Green / 2XL",
+          "inventoryQuantity": 6790,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Army Green"
+            },
+            {
+              "name": "Size",
+              "value": "2XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/24576629997657",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1786067766"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6790
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6790
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40753032593497",
+          "title": "Light Army Green / L",
+          "inventoryQuantity": 6090,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Army Green"
+            },
+            {
+              "name": "Size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/24576629997657",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1786067766"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6090
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6090
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40753032626265",
+          "title": "Light Army Green / M",
+          "inventoryQuantity": 6198,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Army Green"
+            },
+            {
+              "name": "Size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/24576629997657",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1786067766"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6198
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6198
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/40753032659033",
+          "title": "Light Army Green / XL",
+          "inventoryQuantity": 6198,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Army Green"
+            },
+            {
+              "name": "Size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/24576629997657",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1786067766"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 6198
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 6198
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    }
+  },
+  "target": {
+    "id": "gid://shopify/Product/16337889657219",
+    "title": "Thickened Jacket With Classic Plaid Fuzzy Fleece Lining Inside Design",
+    "status": "ACTIVE",
+    "totalInventory": 0,
+    "variantsCount": {
+      "count": 9
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/86543376679299",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5bdc9923-5a0e-4432-bc0d-1b00fe7a60c8.jpg?v=1789719335"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543376712067",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/ed1f51d0-b9f7-405d-a928-a75402445669.jpg?v=1789719335"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543376744835",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/660f7448-3370-4ac8-84cd-e827a62e3015.jpg?v=1789719334"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543376777603",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1789719336"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543376810371",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-01-thickened-shirt-jacket-with-classic-plaid-fuzzy-fleece-lining-inside-design.jpg?v=1789719334"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/62653959274883",
+          "title": "Dark Brown / 2XL",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Brown"
+            },
+            {
+              "name": "Size",
+              "value": "2XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525741443",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5bdc9923-5a0e-4432-bc0d-1b00fe7a60c8.jpg?v=1789719335"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": false,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62653959307651",
+          "title": "Dark Brown / L",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": false,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Brown"
+            },
+            {
+              "name": "Size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525741443",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5bdc9923-5a0e-4432-bc0d-1b00fe7a60c8.jpg?v=1789719335"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62653959340419",
+          "title": "Dark Brown / XL",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": false,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Brown"
+            },
+            {
+              "name": "Size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525741443",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5bdc9923-5a0e-4432-bc0d-1b00fe7a60c8.jpg?v=1789719335"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62653959373187",
+          "title": "Dark Green / M",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": false,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "Size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525839747",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1789719336"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62653959405955",
+          "title": "Dark Green / XL",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": false,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Dark Green"
+            },
+            {
+              "name": "Size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525839747",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1789719336"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62653959438723",
+          "title": "Light Army Green / 2XL",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": false,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Army Green"
+            },
+            {
+              "name": "Size",
+              "value": "2XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525839747",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1789719336"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62653959471491",
+          "title": "Light Army Green / L",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": false,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Army Green"
+            },
+            {
+              "name": "Size",
+              "value": "L"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525839747",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1789719336"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62653959504259",
+          "title": "Light Army Green / M",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": false,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Army Green"
+            },
+            {
+              "name": "Size",
+              "value": "M"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525839747",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1789719336"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/62653959537027",
+          "title": "Light Army Green / XL",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": false,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Light Army Green"
+            },
+            {
+              "name": "Size",
+              "value": "XL"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73698525839747",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/5ca96c3c-12b6-4f2c-9e67-ffe99e1a8df6.png?v=1789719336"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    }
+  }
+}

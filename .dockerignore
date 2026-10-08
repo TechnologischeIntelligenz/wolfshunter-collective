@@ -1,0 +1,15 @@
+﻿!node_modules
+.git
+.idea
+.env
+.env.*
+_recovery
+.runtime
+build
+.react-router
+data
+**/*.sqlite
+**/*.sqlite-*
+**/*.db
+docs/screenshots
+npm-debug.log*

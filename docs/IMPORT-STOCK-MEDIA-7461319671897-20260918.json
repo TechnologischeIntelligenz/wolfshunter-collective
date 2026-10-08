@@ -1,0 +1,230 @@
+{
+  "checkedAt": "2026-09-18T08:25:58.218Z",
+  "readOnly": true,
+  "sourceShop": "3ddd6b-2.myshopify.com",
+  "shop": "wolfshunter-ai-dev.myshopify.com",
+  "source": {
+    "id": "gid://shopify/Product/7461319671897",
+    "title": "Trendy Autumn Special-interest Design Crossbody Bag",
+    "status": "ACTIVE",
+    "totalInventory": 29292,
+    "variantsCount": {
+      "count": 1
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/36354674491481",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-07-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1779370645"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36337876762713",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-01-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1779101265"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36337877024857",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-02-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1779101267"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354674131033",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-03-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1779370635"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36337877254233",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-04-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1779101271"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36337877483609",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-05-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1779101274"
+        },
+        {
+          "id": "gid://shopify/ProductImage/36354674163801",
+          "url": "https://cdn.shopify.com/s/files/1/0580/3193/1481/files/upscaled-06-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1779370639"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/40758451077209",
+          "title": "Green / 21X8X15cm",
+          "inventoryQuantity": 29292,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Color",
+              "value": "Green"
+            },
+            {
+              "name": "Size",
+              "value": "21X8X15cm"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": true,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/64145162329",
+                    "name": "Jezerski 77241"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14646
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14646
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/94281400409",
+                    "name": "cjdropshipping"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 14646
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 14646
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    }
+  },
+  "target": {
+    "id": "gid://shopify/Product/16337859346819",
+    "title": "Trendy Autumn Special-interest Design Crossbody Bag",
+    "status": "ACTIVE",
+    "totalInventory": 0,
+    "variantsCount": {
+      "count": 1
+    },
+    "images": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductImage/86543019311491",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-07-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1789717954"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543019344259",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-01-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1789717953"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543019377027",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-02-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1789717954"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543019409795",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-03-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1789717954"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543019442563",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-04-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1789717954"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543019475331",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-05-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1789717954"
+        },
+        {
+          "id": "gid://shopify/ProductImage/86543019508099",
+          "url": "https://cdn.shopify.com/s/files/1/1015/5144/0259/files/upscaled-06-trendy-autumn-special-interest-design-crossbody-bag.jpg?v=1789717954"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/62653893575043",
+          "title": "Default Title",
+          "inventoryQuantity": 0,
+          "inventoryPolicy": "DENY",
+          "availableForSale": true,
+          "selectedOptions": [
+            {
+              "name": "Title",
+              "value": "Default Title"
+            }
+          ],
+          "media": {
+            "nodes": [],
+            "pageInfo": {
+              "hasNextPage": false
+            }
+          },
+          "inventoryItem": {
+            "tracked": false,
+            "inventoryLevels": {
+              "nodes": [
+                {
+                  "location": {
+                    "id": "gid://shopify/Location/119252976003",
+                    "name": "Shop location"
+                  },
+                  "quantities": [
+                    {
+                      "name": "available",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "on_hand",
+                      "quantity": 0
+                    },
+                    {
+                      "name": "committed",
+                      "quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "pageInfo": {
+                "hasNextPage": false
+              }
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    }
+  }
+}

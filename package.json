@@ -1,0 +1,88 @@
+{
+  "name": "wolfshunter-collective",
+  "private": true,
+  "scripts": {
+    "build": "react-router build",
+    "dev": "shopify app dev",
+    "dev:3001": "cross-env PORT=3001 shopify app dev",
+    "dev:safe": "shopify app dev --skip-prisma",
+    "config:link": "shopify app config link",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy",
+    "config:use": "shopify app config use",
+    "env": "shopify app env",
+    "start": "node scripts/start.mjs ./build/server/index.js",
+    "start:3001": "cross-env PORT=3001 node scripts/start.mjs ./build/server/index.js",
+    "docker-start": "npm run setup && npm run start",
+    "setup": "prisma generate && prisma migrate deploy",
+    "test": "node --experimental-test-module-mocks --experimental-strip-types --test app/services/app-role.test.ts app/services/merchandising/rule-based-provider.test.ts app/services/supplier-sku-visibility.test.ts app/services/shopify-admin-catalog.test.ts app/services/catalog-recovery.test.ts app/services/order-sync.test.ts app/services/product-import.test.ts app/services/source-catalog-job.test.ts app/services/durable-job.test.ts app/db.server.test.ts app/services/catalog-database.test.ts app/services/assistant-knowledge-database.test.ts scripts/durable-job-postgres.test.mjs scripts/import-sqlite-postgres.test.mjs scripts/auth-navigation.test.mjs",
+    "test:auth": "node --test scripts/auth-navigation.test.mjs",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "shopify": "shopify",
+    "prisma": "prisma",
+    "graphql-codegen": "graphql-codegen",
+    "vite": "vite",
+    "typecheck": "react-router typegen && tsc --noEmit",
+    "dev:collective:3001": "cross-env PORT=3001 shopify app dev --store wolfshunter-ai-dev.myshopify.com --use-localhost",
+    "sync:source": "node scripts/sync-source.mjs",
+    "sync:commerce": "node scripts/sync-commerce.mjs"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.19 <22 || >=22.12"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "6.19.3",
+    "@prisma/client": "^6.19.3",
+    "@react-router/dev": "^7.12.0",
+    "@react-router/fs-routes": "^7.12.0",
+    "@react-router/node": "^7.12.0",
+    "@react-router/serve": "^7.12.0",
+    "@shopify/app-bridge-react": "^4.2.4",
+    "@shopify/shopify-app-react-router": "^1.2.1",
+    "@shopify/shopify-app-session-storage-prisma": "^9.0.0",
+    "isbot": "^5.1.31",
+    "openai": "^7.5.0",
+    "pg": "8.16.3",
+    "prisma": "^6.16.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^7.12.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8",
+    "@shopify/api-codegen-preset": "^1.2.0",
+    "@shopify/cli": "4.8.0",
+    "@shopify/polaris-types": "^1.0.1",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.18.8",
+    "@types/pg": "8.15.5",
+    "@types/react": "^18.3.25",
+    "@types/react-dom": "^18.3.7",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^8.57.1",
+    "eslint-import-resolver-typescript": "^3.10.1",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "graphql-config": "^5.1.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "vite": "^6.3.6",
+    "wrangler": "4.134.0"
+  },
+  "workspaces": [
+    "extensions/*"
+  ],
+  "trustedDependencies": [
+    "@shopify/plugin-cloudflare"
+  ],
+  "overrides": {
+    "p-map": "^4.0.0"
+  },
+  "author": "gdjes"
+}
