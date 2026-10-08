@@ -1,13 +1,17 @@
 # App Store Submission Guide — WOLFSHUNTER COLLECTIVE
 
+**Current verified Worker:** `34772544-3841-4726-a4e0-b2ae279e33fa`  
+**Current recovery branch:** `recovery-20261008` (`05a63ca`)
+
 ## Prerequisites Completed
-- ✅ Hosting: Cloudflare Worker deployed (version: c3897e70-150d-4d71-a913-83b91370ce2a)
+- ✅ Hosting: Cloudflare Worker deployed (version: 34772544-3841-4726-a4e0-b2ae279e33fa)
 - ✅ App URL: https://wolfshunter-collective-test.limoorange99.workers.dev
 - ✅ Client ID: 51671c87d216d57415143f2ad8729399
 - ✅ Scopes: read_locations,read_orders,write_assigned_fulfillment_orders,write_fulfillments,write_inventory,write_products,read_markets,read_shipping,read_legal_policies
 - ✅ Billing: 14-day trial, USD 99/30 days
 - ✅ Legal: Privacy & Terms ready
-- ⚠️ Listing copy and icon are prepared; screenshots must be refreshed after the production billing/UI update.
+- ⚠️ Listing copy and icon are prepared; screenshots must be refreshed from the current live embedded app before submission.
+- ✅ Current UI verification: shared thumbnails in Import Lists/My Products, favorite exclusion from Discover, and delivery-country selection are deployed and smoke-tested on desktop and mobile.
 
 ## Shopify Partner Dashboard Steps
 
@@ -27,7 +31,7 @@
 - **Category**: Marketing, Sales & Customer Conversion (or appropriate category)
 
 ### 4. App Screenshots
-The old screenshots in `public/img.png` through `public/img_3.png` are historical and show the former test banner/pricing. Do not upload them. Capture three fresh screenshots from the current released app after the production UI is visible.
+The old screenshots in `public/img.png` through `public/img_3.png` are historical and show the former test banner/pricing. Do not upload them. Capture three fresh screenshots from the current released app after the production UI is visible. Include Discover, Import Lists/My Products with thumbnails, and Settings with the delivery-country selector.
 
 ### 5. App Icon
 Upload: `public/wolfshunter-collective-app-store-icon-1200.png`
