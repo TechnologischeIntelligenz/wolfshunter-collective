@@ -1,10 +1,10 @@
 # App Store Listing — WOLFSHUNTER COLLECTIVE
 
 ## App Name
-WOLFSHUNTER COLLECTIVE — Premium Retailer & Fulfillment Network
+WOLFSHUNTER COLLECTIVE — Premium Retailer Workspace
 
 ## Short Description (25-150 characters)
-Build an assortment with commercial discipline. Curate supplier products, protect margins, and prepare fulfillment.
+Build an assortment with commercial discipline. Curate supplier products, protect margins, and stage drafts for review.
 
 ## Detailed Description (200-4000 characters)
 WOLFSHUNTER COLLECTIVE helps Shopify merchants build disciplined product assortments from premium supplier catalogs. Review supplier products, calculate margins, stage imports, and create unpublished Shopify DRAFTs before publishing.
@@ -27,7 +27,7 @@ WOLFSHUNTER COLLECTIVE helps Shopify merchants build disciplined product assortm
 - Shopify merchants seeking premium supplier products
 - Retailers who want to protect margins before importing
 - Merchants who prefer explicit approval workflows
-- Stores looking for fulfillment-ready product data
+- Stores looking for disciplined product sourcing
 
 ## Pricing
 - 14-day free trial

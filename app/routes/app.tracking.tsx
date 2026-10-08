@@ -8,9 +8,9 @@ export default function TrackingRoute() {
     <FoundationRouteView
       eyebrow="Shipment visibility"
       title="Tracking"
-      description="Verified carrier events and Shopify tracking synchronization will appear here."
-      emptyTitle="No shipments are being monitored."
-      emptyDescription="Tracking starts only after a mapped Network Order reaches a verified shipment state."
+      description="Tracking is planned for a later release and is not active in the current retailer workflow."
+      emptyTitle="Tracking is not active in V1."
+      emptyDescription="No carrier events are being collected or synchronized. This area remains reserved for the verified fulfillment and carrier workflow."
     />
   );
 }

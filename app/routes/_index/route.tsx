@@ -5,11 +5,11 @@ import { login } from "../../shopify.server";
 import styles from "./styles.module.css";
 
 export const meta: MetaFunction = () => [
-  { title: "WOLFSHUNTER COLLECTIVE — Premium Retailer & Fulfillment Network" },
+  { title: "WOLFSHUNTER COLLECTIVE — Premium Retailer Workspace" },
   {
     name: "description",
     content:
-      "WOLFSHUNTER COLLECTIVE — A premium retailer catalog, merchandising, and fulfillment network for Shopify merchants. Curate products, protect margins, and prepare fulfillment in a calm, commerce-native workspace.",
+      "WOLFSHUNTER COLLECTIVE — A premium retailer catalog and merchandising workspace for Shopify merchants. Curate products and protect margins in a calm, commerce-native workflow.",
   },
 ];
 
@@ -54,11 +54,11 @@ export default function LandingRoute() {
           </div>
         </div>
         <div className={styles.statement}>
-          <p className={styles.tagline}>Premium Retailer &amp; Fulfillment Network</p>
+          <p className={styles.tagline}>Premium Retailer Workspace</p>
           <h1>Build an assortment with commercial discipline.</h1>
           <span>
-            Curate supplier products, protect margins, and prepare fulfillment
-            in a calm, commerce-native workspace for Shopify merchants.
+            Curate supplier products and protect margins in a calm,
+            commerce-native workspace for Shopify merchants.
           </span>
         </div>
         <div className={styles.principles}>
