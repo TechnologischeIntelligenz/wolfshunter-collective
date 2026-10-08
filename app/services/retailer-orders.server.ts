@@ -1,4 +1,5 @@
 import db from "../db.server.ts";
+import type { Prisma } from "@prisma/client";
 import { catalogGraphql, type CatalogAdmin } from "./catalog-bulk.server.ts";
 import {
   canonicalOrderId,
@@ -24,12 +25,16 @@ export interface RetailerOrderRecord {
   lastEvent: string | null;
 }
 
-export async function upsertRetailerOrder(shop: string, input: OrderInput) {
+export async function upsertRetailerOrder(
+  shop: string,
+  input: OrderInput,
+  transaction?: Prisma.TransactionClient,
+) {
   const id = canonicalOrderId(input.shopifyOrderId);
   const updated = validOrderDate(input.shopifyUpdatedAt);
   if (!id || !updated)
     throw new Error("Order identity or timestamp is invalid");
-  return db.$transaction(async (tx) => {
+  const write = async (tx: Prisma.TransactionClient) => {
     const suppressed = await tx.knowledgeDocument.findUnique({
       where: {
         shop_domain_sourceKey: {
@@ -101,7 +106,8 @@ export async function upsertRetailerOrder(shop: string, input: OrderInput) {
           : {}),
       },
     });
-  });
+  };
+  return transaction ? write(transaction) : db.$transaction(write);
 }
 
 export async function getRetailerOrders(shop: string, requestedPage = 1) {

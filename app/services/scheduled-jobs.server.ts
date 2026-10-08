@@ -4,12 +4,12 @@
 // source of truth for their domain behavior.
 import { unauthenticated } from "../shopify.server";
 import { getCatalogSourceShop } from "./app-admin.server";
-import { syncRecentShopifyOrders } from "./retailer-orders.server";
 import { syncSourceCommerce } from "./source-commerce.server";
 import { runDurableJobStep, listDueBackgroundJobs, prismaJobStore } from "./durable-job.server";
 import { processImportStock, processSourceStock } from "../../_recovery/live-import-runtime.mjs";
 import { processSourceCatalogPage } from "./source-catalog-job.server.ts";
 import { processSourceCommercePage } from "./source-commerce-job.server.ts";
+import { processOrderSyncPage } from "./order-sync-job.server.ts";
 
 const supportedKinds = new Set(["orders", "source-commerce", "source-full", "source-stock", "import-stock"]);
 
@@ -40,11 +40,12 @@ export async function runScheduledJobs() {
         if ((await processImportStock(admin, source.admin, job.shop)) === "completed") processed++;
         continue;
       }
+      if (job.kind === "orders") {
+        if ((await processOrderSyncPage(admin, job.shop)) === "completed") processed++;
+        continue;
+      }
       const store = prismaJobStore(job.shop, job.kind);
       const result = await runDurableJobStep(store, async (lease) => {
-        if (job.kind === "orders") {
-          await syncRecentShopifyOrders(admin, job.shop);
-        }
         return { state: lease.state, done: true };
       });
       if (result === "completed") processed++;
