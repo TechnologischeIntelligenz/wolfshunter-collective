@@ -1,0 +1,18 @@
+﻿WOLFSHUNTER deploy diagnostic
+Date: 2026-10-08
+Project: wolfshunter-collective-cloudflare-test
+
+Dry-run result: PASS
+Assets: 53
+Upload size: 4216.42 KiB (gzip 1206.73 KiB)
+HYPERDRIVE: bfa2eb771dea44cabed0f276579e6b91
+APP_ROLE: retailer
+CATALOG_SOURCE_SHOP: 3ddd6b-2.myshopify.com
+BILLING_TEST_MODE: false
+
+Live health result: PASS
+status: ok
+databaseReady: true
+merchantWorkspaceReady: true
+
+Conclusion: no deployment error detected. Wrangler AppData log contains diagnostics only; it does not alter the project deployment.
