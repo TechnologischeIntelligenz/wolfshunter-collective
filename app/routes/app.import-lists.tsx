@@ -209,6 +209,17 @@ export async function action({ request }: ActionFunctionArgs) {
     );
   }
 
+  // Enforce 99-product trial limit
+  if (workspace.importedProductIds.length >= 99) {
+    return Response.json(
+      {
+        ok: false,
+        error: "The 99-product trial limit has been reached. Please upgrade to continue importing products.",
+      },
+      { status: 403 },
+    );
+  }
+
   const existing = await getImportedProductPush(session.shop, productId);
   if (existing?.status === "DRAFT_CREATED" && existing.shopifyProductId) {
     return Response.json({ ok: true, alreadyExists: true, push: existing });
