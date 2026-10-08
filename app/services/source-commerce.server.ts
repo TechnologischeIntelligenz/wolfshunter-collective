@@ -78,23 +78,27 @@ export async function syncSourceCommerce(admin: CatalogAdmin, sourceShop: string
 }
 
 export async function readSourceCommerce(shop: string): Promise<SourceCommerce | null> {
+  // Cloudflare Workers have no writable project filesystem. The durable
+  // database snapshot is authoritative; the file is only a local-dev reserve.
+  const runtimeState = await db.runtimeSourceState.findUnique({
+    where: { shop_kind: { shop, kind: "commerce" } },
+    select: { payloadJson: true },
+  });
+  if (runtimeState) {
+    try {
+      const value = JSON.parse(runtimeState.payloadJson) as SourceCommerce;
+      if (value.sourceShop === shop) return value;
+    } catch {
+      // Fall through to the local development snapshot.
+    }
+  }
+
   try {
     const value = JSON.parse(await fs.readFile(sourceDataPath(shop, "commerce.json"), "utf8")) as SourceCommerce;
     return value.sourceShop === shop ? value : null;
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
   }
-
-  const runtimeState = await db.runtimeSourceState.findUnique({
-    where: { shop_kind: { shop, kind: "commerce" } },
-    select: { payloadJson: true },
-  });
-  if (!runtimeState) return null;
-  try {
-    const value = JSON.parse(runtimeState.payloadJson) as SourceCommerce;
-    return value.sourceShop === shop ? value : null;
-  } catch {
-    return null;
-  }
+  return null;
 }
 
