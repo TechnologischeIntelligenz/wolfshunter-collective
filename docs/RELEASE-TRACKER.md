@@ -136,7 +136,7 @@ Vorheriger Einzelschritt vom Nutzer bestätigt: Dev-Shop → Import Lists → Cr
 
 ## Aktueller Stand nach Wiederherstellung und Release — 08.10.2026
 
-- **Cloudflare Worker deployed:** `c3897e70-150d-4d71-a913-83b91370ce2a`. `GET /healthz` meldet weiterhin `status=ok`, `databaseReady=true` und `merchantWorkspaceReady=true`.
+- **Cloudflare Worker deployed:** `0910ae5a-f206-47c3-bc02-1ed39934023e`. `GET /healthz` meldet weiterhin `status=ok`, `databaseReady=true` und `merchantWorkspaceReady=true`.
 - **Shopify-Version released:** `wolfshunter-collective-23`, Version-ID `1160128069633`. Shopify CLI meldet diese Version als `active`.
 - **Billing:** Produktionsmodus ist aktiv (`BILLING_TEST_MODE=false`); der Code definiert 99 USD pro 30 Tage nach einer 14-tägigen Testphase.
 - **Live-Session geprüft:** Dev-Shop `wolfshunter-ai-dev.myshopify.com`, richtige App-ID, konfigurierte Scopes und 0 GraphQL-Fehler.
