@@ -62,14 +62,16 @@ export async function syncSourceCommerce(admin: CatalogAdmin, sourceShop: string
     if (!result.deliveryProfiles.pageInfo.endCursor || result.deliveryProfiles.pageInfo.endCursor === after) throw new Error("Profile pagination stalled");
     after = result.deliveryProfiles.pageInfo.endCursor;
   } while (after);
-  const activeCountries = new Map(markets.filter(m => m.status === "ACTIVE").flatMap(m => m.countries).map(c => [c.code, c]));
+  // Shipping destinations are the source of truth for retailer country
+  // selection. Markets are used only to resolve a readable country name.
+  const countryNames = new Map(markets.flatMap(m => m.countries).map(c => [c.code, c.name]));
   const shippingPolicy = info.shop.shopPolicies.find(p => p.type === "SHIPPING_POLICY");
   const plain = shippingPolicy?.body.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ") ?? "";
   const processing = plain.match(/processed within\s+(\d+\s*[–-]\s*\d+)\s+business days/i);
   const snapshot: SourceCommerce = {
     sourceShop, syncedAt: new Date().toISOString(), shopName: info.shop.name,
     shippingCountries: info.shop.shipsToCountries,
-    eligibleCountries: info.shop.shipsToCountries.filter(c => activeCountries.has(c)).map(c => activeCountries.get(c)!).sort((a,b) => a.name.localeCompare(b.name)),
+    eligibleCountries: info.shop.shipsToCountries.map(code => ({ code, name: countryNames.get(code) ?? code })).sort((a,b) => a.name.localeCompare(b.name)),
     markets, profiles, locations: info.locations.nodes, policies: info.shop.shopPolicies,
     processingLabel: processing ? `Processing: ${processing[1]} business days. Delivery estimate and shipping charges at checkout.` : "Processing and delivery follow the shipping policy; final charges and estimates at checkout.",
   };

@@ -44,7 +44,7 @@ export function RetailerSettingsView({
           />
           <div className="collective-settings-grid">
             <label>
-              <span>Primary market</span>
+              <span>Primary delivery country</span>
               <select name="marketCountry" defaultValue={settings.marketCountry}>
                 {!commerce?.eligibleCountries.some(c => c.code === settings.marketCountry) ? <option value={settings.marketCountry}>{settings.marketCountry} � not in synchronized shipping markets</option> : null}
                 {commerce?.eligibleCountries.map(country => <option key={country.code} value={country.code}>{country.name} ({country.code})</option>)}

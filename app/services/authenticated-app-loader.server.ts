@@ -139,6 +139,7 @@ export async function authenticatedAppLoader(
     ? await readSourceCommerce(sourceShop) : null;
   let pageProducts = catalogSnapshot.catalog;
   if (path === "/app/favorites") pageProducts = pageProducts.filter(p => workspace.favoriteProductIds.includes(p.id));
+  if (path === "/app/discover") pageProducts = pageProducts.filter(p => !workspace.favoriteProductIds.includes(p.id));
   if (path === "/app/import-lists" || path === "/app/my-products") pageProducts = pageProducts.filter(p => workspace.importedProductIds.includes(p.id));
   const page = isAppAdmin && adminCatalog
     ? paginateCatalog(adminCatalog.products, url.searchParams)

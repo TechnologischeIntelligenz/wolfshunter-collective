@@ -8,6 +8,7 @@ import {
   SectionHeading,
   StatusPill,
 } from "../../components/collective/foundation";
+import { ImportProductThumbnail } from "../../components/collective/import-product-thumbnail";
 import type { CatalogProduct } from "../../services/merchandising/types";
 import type { ImportedProductPushState } from "../../services/retailer-commerce.server";
 import type { ShopifyCollectionOption } from "../../services/shopify-collection-options.server";
@@ -115,6 +116,12 @@ export function ImportListsView({
 
               return (
                 <article className="collective-import-row" key={product.id}>
+                  <ImportProductThumbnail
+                    src={product.imageUrl}
+                    alt={product.title}
+                    imageCount={product.imageCount}
+                    variantImageUrls={product.variantImageUrls}
+                  />
                   <div>
                     <p className="collective-eyebrow">{product.category}</p>
                     <h3>{product.title}</h3>

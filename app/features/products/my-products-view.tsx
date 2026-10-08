@@ -5,7 +5,14 @@ import {
   SectionHeading,
   StatusPill,
 } from "../../components/collective/foundation";
+import { ImportProductThumbnail } from "../../components/collective/import-product-thumbnail";
 import type { ImportedProductPushState } from "../../services/retailer-commerce.server";
+
+type MyProductPush = ImportedProductPushState & {
+  imageUrl: string | null;
+  imageCount: number;
+  variantImageUrls: string[];
+};
 
 const adminProductUrl = (shop: string, productId: string) => {
   const numericId = productId.split("/").pop();
@@ -17,7 +24,7 @@ export function MyProductsView({
   pushes = [],
 }: {
   shop: string;
-  pushes?: ImportedProductPushState[];
+  pushes?: MyProductPush[];
 }) {
   return (
     <main className="collective-page">
@@ -44,6 +51,12 @@ export function MyProductsView({
                 : null;
               return (
                 <article className="collective-import-row" key={push.id}>
+                  <ImportProductThumbnail
+                    src={push.imageUrl}
+                    alt={push.sourceTitle}
+                    imageCount={push.imageCount}
+                    variantImageUrls={push.variantImageUrls}
+                  />
                   <div>
                     <p className="collective-eyebrow">{push.sourceCategory}</p>
                     <h3>{push.sourceTitle}</h3>

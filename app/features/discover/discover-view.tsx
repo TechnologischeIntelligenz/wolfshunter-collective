@@ -104,6 +104,11 @@ export function DiscoverView({
     [favoriteIds, fallbackFixture.affinity],
   );
 
+  const discoverCatalog = useMemo(
+    () => resolvedCatalog.filter((product) => !favoriteIds.includes(product.id)),
+    [favoriteIds, resolvedCatalog],
+  );
+
   const collectionOptions = useMemo(() => {
     if (serverPage) return serverPage.collections;
     const options = new Map<
@@ -111,7 +116,7 @@ export function DiscoverView({
       { id: string; title: string; handle: string; count: number }
     >();
 
-    for (const product of resolvedCatalog) {
+    for (const product of discoverCatalog) {
       for (const collection of product.collections) {
         const current = options.get(collection.id);
         options.set(collection.id, {
@@ -124,21 +129,21 @@ export function DiscoverView({
     return [...options.values()].sort((left, right) =>
       left.title.localeCompare(right.title),
     );
-  }, [resolvedCatalog, serverPage]);
+  }, [discoverCatalog, serverPage]);
 
   const selectedCollection = collectionOptions.find(
     (collection) => collection.id === collectionId,
   );
 
   const collectionFilteredCatalog = useMemo(() => {
-    if (serverPage || collectionId === ALL_COLLECTIONS) return resolvedCatalog;
-    return resolvedCatalog.filter((product) =>
+    if (serverPage || collectionId === ALL_COLLECTIONS) return discoverCatalog;
+    return discoverCatalog.filter((product) =>
       product.collections.some((collection) => collection.id === collectionId),
     );
-  }, [collectionId, resolvedCatalog, serverPage]);
+  }, [collectionId, discoverCatalog, serverPage]);
 
   const searchedCatalog = useMemo(() => {
-    if (serverPage) return resolvedCatalog;
+    if (serverPage) return discoverCatalog;
     const query = search.trim().toLowerCase();
     if (!query) return collectionFilteredCatalog;
     return collectionFilteredCatalog.filter((product) =>
@@ -146,7 +151,7 @@ export function DiscoverView({
         .map((collection) => collection.title)
         .join(" ")}`.toLowerCase().includes(query),
     );
-  }, [collectionFilteredCatalog, search, serverPage, resolvedCatalog]);
+  }, [collectionFilteredCatalog, search, serverPage, discoverCatalog]);
 
   const recommendations = useMemo(
     () =>
@@ -167,14 +172,14 @@ export function DiscoverView({
           candidate,
           provider.recommend({
             tenant: resolvedTenant,
-            products: resolvedCatalog,
+            products: discoverCatalog,
             affinity,
             bucket: candidate,
             sort: "RECOMMENDED",
           }).products.length,
         ]),
       ) as Record<RecommendationBucket, number>,
-    [affinity, provider, resolvedCatalog, resolvedTenant, serverPage],
+    [affinity, discoverCatalog, provider, resolvedTenant, serverPage],
   );
 
   const toggleFavorite = (id: string) => {
