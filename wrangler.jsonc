@@ -9,13 +9,13 @@
   "triggers": { "crons": ["* * * * *"] },
   "define": {
     "process.env.NODE_ENV": "\"production\"",
-    "process.env.BILLING_TEST_MODE": "\"true\""
+    "process.env.BILLING_TEST_MODE": "\"false\""
   },
   "assets": { "directory": "./build/client", "binding": "ASSETS" },
   "hyperdrive": [{ "binding": "HYPERDRIVE", "id": "bfa2eb771dea44cabed0f276579e6b91" }],
   "vars": {
     "NODE_ENV": "production",
-    "BILLING_TEST_MODE": "true",
+    "BILLING_TEST_MODE": "false",
     "APP_INSTANCES": "1",
     "MERCHANT_WORKSPACE_ENABLED": "true",
     "SHOPIFY_APP_URL": "https://wolfshunter-collective-test.limoorange99.workers.dev",

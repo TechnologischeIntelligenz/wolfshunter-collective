@@ -8,9 +8,9 @@ import type {
 } from "../../services/read-only-diagnostics.server";
 
 const toneLabel: Record<DiagnosticTone, string> = {
-  green: "Grün",
-  yellow: "Gelb",
-  red: "Rot",
+  green: "Green",
+  yellow: "Yellow",
+  red: "Red",
 };
 
 const pillTone: Record<DiagnosticTone, "positive" | "attention" | "critical"> = {
@@ -20,18 +20,18 @@ const pillTone: Record<DiagnosticTone, "positive" | "attention" | "critical"> = 
 };
 
 const errorCodeGuide = [
-  ["401", "Authentifizierung", "Session-Token fehlt oder ist abgelaufen; Shopify-App erneut öffnen."],
-  ["403", "Berechtigung", "Scope, Shopify-Berechtigung oder Cloudflare-Access-Regel prüfen."],
-  ["404", "Route fehlt", "Hostname und Pfad prüfen; /healthz ist der sichere Erreichbarkeitstest."],
-  ["410", "Bot-/Gone-Antwort", "Kein Session-Token bei /app; sauber über /auth/login starten."],
-  ["500", "Serverfehler", "Server-Logs und betroffene Aktion prüfen; nichts löschen oder neu installieren."],
-  ["502", "Upstreamfehler", "OpenAI/Cloudflare/Proxy getrennt prüfen; lokaler Fallback bleibt aktiv."],
+  ["401", "Authentication", "Session token is missing or expired; reopen the Shopify app."],
+  ["403", "Permission", "Check the scope, Shopify permission, or Cloudflare access rule."],
+  ["404", "Route missing", "Check the hostname and path; /healthz is the safe reachability test."],
+  ["410", "Bot/Gone response", "No session token at /app; start cleanly through /auth/login."],
+  ["500", "Server error", "Check server logs and the affected action; do not delete or reinstall."],
+  ["502", "Upstream error", "Check OpenAI, Cloudflare, and the proxy separately; local fallback remains active."],
 ] as const;
 
 function formatDate(value: string | null | undefined): string {
-  if (!value) return "nicht vorhanden";
+  if (!value) return "not available";
   const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? "ungültiges Datum" : date.toLocaleString("de-AT");
+  return Number.isNaN(date.getTime()) ? "Invalid date" : date.toLocaleString("en-US");
 }
 
 function metadataEntries(metadata: Record<string, string | number | boolean | null> | undefined) {
@@ -44,7 +44,7 @@ export function ReadOnlyDiagnosticsPanel({ diagnostics }: { diagnostics: ReadOnl
     <section className="collective-section collective-diagnostics" aria-label="Read-only diagnostics">
       <SectionHeading
         title="Read-only system diagnosis"
-        description="Health, Session, Shopify, OpenAI, Cloudflare, Datenbank und Webhooks – ohne Änderungen an deiner Infrastruktur."
+        description="Health, session, Shopify, OpenAI, Cloudflare, database, and webhooks ? without infrastructure changes."
         accessory={<StatusPill tone={pillTone[diagnostics.overallTone]}>{toneLabel[diagnostics.overallTone]}</StatusPill>}
       />
 
@@ -79,10 +79,10 @@ export function ReadOnlyDiagnosticsPanel({ diagnostics }: { diagnostics: ReadOnl
           <div className="collective-diagnostics-subpanel-header">
             <div>
               <p className="collective-eyebrow">Evidence log</p>
-              <h3>Letzte fehlgeschlagene Vorgänge</h3>
+              <h3>Latest failed operations</h3>
             </div>
             <StatusPill tone={diagnostics.recentFailures.length ? "attention" : "positive"}>
-              {diagnostics.recentFailures.length ? `${diagnostics.recentFailures.length} offen` : "Keine"}
+              {diagnostics.recentFailures.length ? `${diagnostics.recentFailures.length} open` : "None"}
             </StatusPill>
           </div>
           {diagnostics.recentFailures.length ? (
@@ -91,14 +91,14 @@ export function ReadOnlyDiagnosticsPanel({ diagnostics }: { diagnostics: ReadOnl
                 <li key={failure.id}>
                   <div>
                     <strong>{failure.title}</strong>
-                    <small>{failure.status} · {formatDate(failure.createdAt)}</small>
+                    <small>{failure.status} ? {formatDate(failure.createdAt)}</small>
                   </div>
-                  <p>{failure.error || "Keine Fehlerbeschreibung gespeichert."}</p>
+                  <p>{failure.error || "No error description is stored."}</p>
                 </li>
               ))}
             </ul>
           ) : (
-            <p className="collective-diagnostics-empty">Keine fehlgeschlagenen Import-/Shopify-Vorgänge gespeichert.</p>
+            <p className="collective-diagnostics-empty">No failed import or Shopify operations are stored.</p>
           )}
           {diagnostics.recentFailuresNote ? <small>{diagnostics.recentFailuresNote}</small> : null}
         </article>
@@ -107,7 +107,7 @@ export function ReadOnlyDiagnosticsPanel({ diagnostics }: { diagnostics: ReadOnl
           <div className="collective-diagnostics-subpanel-header">
             <div>
               <p className="collective-eyebrow">Quick reference</p>
-              <h3>Fehlercode-Erklärung</h3>
+              <h3>Error code guide</h3>
             </div>
           </div>
           <div className="collective-error-code-list">
@@ -120,8 +120,7 @@ export function ReadOnlyDiagnosticsPanel({ diagnostics }: { diagnostics: ReadOnl
           </div>
         </article>
       </div>
-
-      <p className="collective-diagnostics-checked">Zuletzt geprüft: {formatDate(diagnostics.checkedAt)}</p>
+      <p className="collective-diagnostics-checked">Last checked: {formatDate(diagnostics.checkedAt)}</p>
     </section>
   );
 }

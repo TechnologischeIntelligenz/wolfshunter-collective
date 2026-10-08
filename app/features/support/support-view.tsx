@@ -18,39 +18,39 @@ const supportModes: Array<{
 }> = [
   {
     value: "technical_support",
-    label: "Technik-Support",
-    description: "401, 404, 410, 500, 502, Session und sichere nächste Schritte.",
+    label: "Technical support",
+    description: "401, 404, 410, 500, 502, sessions, and safe next steps.",
     questions: [
-      "Warum bekomme ich 401 beim Öffnen der App?",
-      "Was bedeutet 410 bei /app?",
-      "Warum kommt Generate Analysis mit 502 zurück?",
+      "Why do I get a 401 when opening the app?",
+      "What does 410 at /app mean?",
+      "Why does Generate Analysis return 502?",
     ],
   },
   {
     value: "product_advice",
-    label: "Produktberatung",
-    description: "Katalog, Import-Liste, DRAFT-Produkte und sichere Freigaben.",
+    label: "Product advice",
+    description: "Catalog, import lists, DRAFT products, and safe approvals.",
     questions: [
-      "Wie bekomme ich ein Produkt aus der Import-Liste in Shopify?",
-      "Welche Produkte sollte ich zuerst als DRAFT testen?",
+      "How do I move a product from the import list into Shopify?",
+      "Which products should I test as DRAFTs first?",
     ],
   },
   {
     value: "returns_orders",
-    label: "Rückgabe / Bestellung",
-    description: "Fallaufnahme und Erklärung; Live-Bestellzugriff bleibt getrennt.",
+    label: "Returns / orders",
+    description: "Case intake and explanation; live order access stays separate.",
     questions: [
-      "Wie melde ich eine Rückgabe sicher?",
-      "Welche Informationen braucht der Support zu einer Bestellung?",
+      "How do I report a return safely?",
+      "What information does support need about an order?",
     ],
   },
   {
     value: "merchant_support",
-    label: "Händler-Support",
-    description: "Retailer-Settings, Freigaben, Import-Ablauf und Workspace.",
+    label: "Merchant support",
+    description: "Retailer settings, approvals, import flow, and workspace.",
     questions: [
-      "Welche Händler-Einstellungen darf ich ändern?",
-      "Wie läuft der sichere Import für meinen Shop?",
+      "Which merchant settings can I change?",
+      "How does the safe import flow work for my shop?",
     ],
   },
 ];
@@ -85,11 +85,11 @@ export function SupportView({ shop }: { shop: string }) {
 
       <section className="collective-section collective-support-shell">
         <SectionHeading
-          title="Was soll geprüft werden?"
-          description="Wähle zuerst einen Support-Modus. Statuscode, URL und letzte Aktion helfen bei technischen Fällen."
+          title="What should we check?"
+          description="Choose a support mode first. A status code, URL, and last action help with technical cases."
         />
         <div className="collective-support-mode-grid">
-          <label htmlFor="support-mode">Support-Modus</label>
+          <label htmlFor="support-mode">Support mode</label>
           <select
             id="support-mode"
             value={mode}

@@ -102,10 +102,10 @@ export function ImportListsView({
             </select>
           </label>
           <p className="collective-page-description">
-            Titel, Kategorie, Hauptbild und Zielpreis werden in einen
-            unveröffentlichten Shopify-DRAFT übertragen. Varianten, weitere
-            Medien, Texte und rechtliche Angaben werden danach bewusst im
-            Shopify-Admin geprüft. Die optionale Kollektion wird direkt verknüpft.
+            Title, category, primary image, and target price are transferred to
+            an unpublished Shopify DRAFT. Review variants, additional media,
+            copy, and legal details in Shopify Admin. The optional collection is
+            linked directly.
           </p>
           <div className="collective-import-list">
             {stagedProducts.map((product) => {

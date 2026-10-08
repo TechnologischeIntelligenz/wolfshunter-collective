@@ -63,7 +63,7 @@ export async function action({ request }: ActionFunctionArgs) {
     await askCollectiveAssistant({
       shop: session.shop,
       mode: "operations_analysis",
-      message: "Analysiere den aktuellen Retailer-Workspace, Import- und Shopify-DRAFT-Status. Nenne die wichtigsten Risiken und die nächsten sicheren Schritte.",
+      message: "Analyze the current retailer workspace, import status, and Shopify DRAFT status. List the key risks and safest next steps.",
     }),
     );
   } catch (error) {
@@ -73,7 +73,7 @@ export async function action({ request }: ActionFunctionArgs) {
     return Response.json({
       ok: true,
       source: "local",
-      answer: "Die Live-Analyse ist gerade nicht erreichbar. Sichere nächste Schritte: Import-Liste prüfen, Shopify-DRAFT-Status kontrollieren und nichts automatisch veröffentlichen.",
+      answer: "Live analysis is currently unavailable. Safe next steps: review the import list, check Shopify DRAFT status, and publish nothing automatically.",
       error: "analysis_fallback",
     });
   }

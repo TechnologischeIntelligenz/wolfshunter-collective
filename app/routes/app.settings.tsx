@@ -26,7 +26,7 @@ export async function action({ request }: { request: Request }) {
     marginPercent < 0 ||
     marginPercent > 100
   ) {
-    return Response.json({ ok: false, error: "Bitte prüfe Markt, Lager und Marge." }, { status: 400 });
+    return Response.json({ ok: false, error: "Please check the market, warehouse, and margin." }, { status: 400 });
   }
 
   try {
@@ -38,7 +38,7 @@ export async function action({ request }: { request: Request }) {
     });
     return Response.json({ ok: true, settings });
   } catch {
-    return Response.json({ ok: false, error: "Die Händler-Einstellungen konnten nicht gespeichert werden." }, { status: 400 });
+    return Response.json({ ok: false, error: "The retailer settings could not be saved." }, { status: 400 });
   }
 }
 

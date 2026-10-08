@@ -81,7 +81,7 @@ export default function SubscriptionRoute() {
         />
         <article className="collective-admin-card">
           <StatusPill tone="info">14-day trial</StatusPill>
-          <h2>99 EUR / 30 days</h2>
+          <h2>99 USD / 30 days</h2>
           <p>
             After the trial, Shopify applies the recurring charge to the
             merchant&apos;s Shopify billing account. The app does not receive or

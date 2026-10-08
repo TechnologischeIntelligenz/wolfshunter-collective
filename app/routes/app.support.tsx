@@ -27,7 +27,7 @@ export async function action({ request }: ActionFunctionArgs) {
       : "technical_support";
 
   if (!message) {
-    return Response.json({ ok: false, error: "Bitte beschreibe kurz dein Problem." }, { status: 400 });
+    return Response.json({ ok: false, error: "Please briefly describe the problem." }, { status: 400 });
   }
 
   let result: AssistantResult;
@@ -41,7 +41,7 @@ export async function action({ request }: ActionFunctionArgs) {
       ok: true,
       source: "local",
       mode,
-      answer: "Die Live-Unterstützung ist gerade nicht erreichbar. Nenne Statuscode, URL und letzte Aktion; prüfe zuerst /healthz und ändere keine Tokens oder Veröffentlichungen.",
+      answer: "Live support is currently unavailable. Include the status code, URL, and last action; check /healthz first and do not change tokens or publications.",
       error: "support_fallback",
     };
   }

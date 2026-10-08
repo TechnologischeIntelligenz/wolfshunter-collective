@@ -55,7 +55,7 @@ class ShopifyGraphqlError extends Error {
 
 const summarizeErrors = (errors: UserError[]) =>
   errors.map((error) => error.message).filter(Boolean).join("; ") ||
-  "Shopify hat die Produktanlage abgelehnt.";
+  "Shopify rejected the product creation request.";
 
 const escapeHtml = (value: string) =>
   value.replace(
@@ -69,7 +69,7 @@ const escapeHtml = (value: string) =>
 const safeErrorDetail = (error: unknown) => {
   const raw = error instanceof Error ? error.message : String(error);
   const detail = raw.replace(/\s+/g, " ").trim();
-  if (!detail || detail === "[object Object]") return "unbekannter Shopify-Fehler";
+  if (!detail || detail === "[object Object]") return "Unknown Shopify error";
   return detail.slice(0, 240);
 };
 
@@ -78,7 +78,7 @@ const graphQLErrorDetail = (errors: GraphqlError[] | undefined) =>
     .map((error) => {
       const code = error.extensions?.code;
       return code
-        ? `${error.message ?? "GraphQL-Fehler"} (${code})`
+        ? `${error.message ?? "GraphQL error"} (${code})`
         : error.message;
     })
     .filter(Boolean)
@@ -132,7 +132,7 @@ async function readShopifyData<T>(
     payload = (await response.json()) as GraphqlPayload<T>;
   } catch {
     throw new ShopifyGraphqlError(
-      `Shopify ${operation} lieferte keine lesbare Antwort.`,
+      `Shopify ${operation} returned no readable response.`,
       operation,
       response.status,
     );
@@ -150,7 +150,7 @@ async function readShopifyData<T>(
 
   if (!payload.data) {
     throw new ShopifyGraphqlError(
-      `Shopify ${operation} lieferte keine Daten.`,
+      `Shopify ${operation} returned no data.`,
       operation,
       response.status,
     );
@@ -168,7 +168,7 @@ export async function action({ request }: ActionFunctionArgs) {
   const collectionId = formData.get("collectionId");
 
   if (typeof productId !== "string") {
-    return Response.json({ ok: false, error: "Kein Produkt ausgewählt." }, { status: 400 });
+    return Response.json({ ok: false, error: "No product selected." }, { status: 400 });
   }
 
   if (intent === "favorite" || intent === "import") {
@@ -184,14 +184,14 @@ export async function action({ request }: ActionFunctionArgs) {
       return Response.json(workspace);
     } catch {
       return Response.json(
-        { ok: false, error: "Die Händlerauswahl konnte nicht gespeichert werden." },
+        { ok: false, error: "The merchant selection could not be saved." },
         { status: 400 },
       );
     }
   }
 
   if (intent !== "push-product") {
-    return Response.json({ ok: false, error: "Unbekannte Import-Aktion." }, { status: 400 });
+    return Response.json({ ok: false, error: "Unknown import action." }, { status: 400 });
   }
 
   const settings = await getRetailerSettings(session.shop);
@@ -203,7 +203,7 @@ export async function action({ request }: ActionFunctionArgs) {
     return Response.json(
       {
         ok: false,
-        error: "Das Produkt muss zuerst in der Import-Liste bestätigt werden.",
+        error: "The product must be confirmed in the import list first.",
       },
       { status: 400 },
     );
@@ -215,7 +215,7 @@ export async function action({ request }: ActionFunctionArgs) {
   }
   if (existing?.status === "PUSHING") {
     return Response.json(
-      { ok: false, error: "Dieses Produkt wird bereits verarbeitet." },
+      { ok: false, error: "This product is already being processed." },
       { status: 409 },
     );
   }
@@ -260,12 +260,12 @@ export async function action({ request }: ActionFunctionArgs) {
         status: string;
         variants?: { nodes?: Array<{ id: string }> };
       } | null;
-    }>(existingResponse, "Produktprüfung");
+    }>(existingResponse, "Product check");
     const existingProduct = existingData.productByHandle;
 
     if (existingProduct && existingProduct.status !== "DRAFT") {
       const message =
-        `Ein Shopify-Produkt mit dem sicheren Import-Handle existiert bereits (${existingProduct.status}) und wird nicht verändert.`;
+        `A Shopify product with the safe import handle already exists (${existingProduct.status}) and will not be changed.`;
       await markImportedProductPushFailed(session.shop, productId, message);
       return Response.json({ ok: false, error: message }, { status: 409 });
     }
@@ -301,7 +301,7 @@ export async function action({ request }: ActionFunctionArgs) {
           } | null;
           userErrors?: UserError[];
         };
-      }>(createResponse, "DRAFT-Erstellung");
+      }>(createResponse, "DRAFT creation");
       const createResult = createData.productCreate;
       const createErrors = createResult?.userErrors ?? [];
 
@@ -317,14 +317,14 @@ export async function action({ request }: ActionFunctionArgs) {
 
     if (!shopifyProductId) {
       throw new ShopifyGraphqlError(
-        "Shopify hat keine Produkt-ID für den Entwurf zurückgegeben.",
-        "DRAFT-Erstellung",
+        "Shopify did not return a product ID for the draft.",
+        "DRAFT creation",
       );
     }
 
     if (!shopifyVariantId) {
       draftWarning =
-        "Der Shopify-DRAFT wurde erstellt, aber der Start-Variant ist noch nicht lesbar; den Preis bitte im Shopify-Admin prüfen.";
+        "The Shopify DRAFT was created, but its initial variant is not readable yet; check the price in Shopify Admin.";
     }
 
     if (shopifyVariantId) {
@@ -354,19 +354,19 @@ export async function action({ request }: ActionFunctionArgs) {
         );
         const priceData = await readShopifyData<{
           productVariantsBulkUpdate?: { userErrors?: UserError[] };
-        }>(priceResponse, "Preisaktualisierung");
+        }>(priceResponse, "Price update");
         const priceErrors = priceData.productVariantsBulkUpdate?.userErrors ?? [];
 
         if (priceErrors.length) {
           draftWarning =
-            `DRAFT erstellt, Preis konnte noch nicht gesetzt werden: ${summarizeErrors(priceErrors)}`;
+            `DRAFT created, but the price could not be set yet: ${summarizeErrors(priceErrors)}`;
         }
       } catch (error) {
         console.error("[import-list] Shopify price update failed", {
           operation:
             error instanceof ShopifyGraphqlError
               ? error.operation
-              : "Preisaktualisierung",
+              : "Price update",
           status:
             error instanceof ShopifyGraphqlError
               ? error.httpStatus ?? null
@@ -374,7 +374,7 @@ export async function action({ request }: ActionFunctionArgs) {
           message: safeErrorDetail(error),
         });
         draftWarning =
-          `DRAFT erstellt, Preis konnte noch nicht bestätigt werden: ${safeErrorDetail(error)}`;
+          `DRAFT created, but the price could not be confirmed yet: ${safeErrorDetail(error)}`;
       }
     }
 
@@ -394,12 +394,12 @@ export async function action({ request }: ActionFunctionArgs) {
   } catch (error) {
     console.error("[import-list] Shopify draft action failed", {
       operation:
-        error instanceof ShopifyGraphqlError ? error.operation : "DRAFT-Erstellung",
+        error instanceof ShopifyGraphqlError ? error.operation : "DRAFT creation",
       status:
         error instanceof ShopifyGraphqlError ? error.httpStatus ?? null : null,
       message: safeErrorDetail(error),
     });
-    const message = `Shopify konnte den DRAFT nicht anlegen: ${safeErrorDetail(error)}`;
+    const message = `Shopify could not create the DRAFT: ${safeErrorDetail(error)}`;
     await markImportedProductPushFailed(session.shop, productId, message);
     return Response.json({ ok: false, error: message }, { status: 502 });
   }
