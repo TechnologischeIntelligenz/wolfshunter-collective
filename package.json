@@ -22,7 +22,7 @@
     "prisma": "prisma",
     "graphql-codegen": "graphql-codegen",
     "vite": "vite",
-    "typecheck": "react-router typegen && tsc --noEmit",
+    "typecheck": "npm run build && react-router typegen && tsc --noEmit",
     "dev:collective:3001": "cross-env PORT=3001 shopify app dev --store wolfshunter-ai-dev.myshopify.com --use-localhost",
     "sync:source": "node scripts/sync-source.mjs",
     "sync:commerce": "node scripts/sync-commerce.mjs"
