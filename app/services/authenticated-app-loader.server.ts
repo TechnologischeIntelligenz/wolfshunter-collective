@@ -74,7 +74,21 @@ export async function authenticatedAppLoader(
   options: { includeCollections?: boolean; requireRetailer?: boolean } = {},
 ) {
   const entryUrl = new URL(request.url);
-  const { session, admin } = await authenticate.admin(request);
+  let session: Awaited<ReturnType<typeof authenticate.admin>>["session"];
+  let admin: Awaited<ReturnType<typeof authenticate.admin>>["admin"];
+  try {
+    ({ session, admin } = await authenticate.admin(request));
+  } catch (error) {
+    if (error instanceof Response && entryUrl.searchParams.has("shop")) {
+      const headers = new Headers(error.headers);
+      headers.set(
+        "X-Shopify-API-Request-Failure-Reauthorize-Url",
+        new URL(`/auth/login?shop=${encodeURIComponent(entryUrl.searchParams.get("shop")!)}`, entryUrl).toString(),
+      );
+      throw new Response(null, { status: 401, headers });
+    }
+    throw error;
+  }
   const isAppAdmin = isAppAdminSession(session);
   if (options.requireRetailer) {
     if (isAppAdmin) throw redirect("/app");

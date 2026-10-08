@@ -1,6 +1,7 @@
 ﻿import fs from "node:fs/promises";
 import { catalogGraphql, type CatalogAdmin } from "./catalog-bulk.server.ts";
 import { sourceDataPath, writeSourceData } from "./catalog-snapshot.server.ts";
+import db from "../db.server.ts";
 
 type Connection<T> = { nodes: T[]; pageInfo: { hasNextPage: boolean; endCursor: string | null } };
 export interface SourcePolicy { id: string; title: string; body: string; type: string; url: string }
@@ -81,8 +82,19 @@ export async function readSourceCommerce(shop: string): Promise<SourceCommerce |
     const value = JSON.parse(await fs.readFile(sourceDataPath(shop, "commerce.json"), "utf8")) as SourceCommerce;
     return value.sourceShop === shop ? value : null;
   } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") return null;
-    throw error;
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+  }
+
+  const runtimeState = await db.runtimeSourceState.findUnique({
+    where: { shop_kind: { shop, kind: "commerce" } },
+    select: { payloadJson: true },
+  });
+  if (!runtimeState) return null;
+  try {
+    const value = JSON.parse(runtimeState.payloadJson) as SourceCommerce;
+    return value.sourceShop === shop ? value : null;
+  } catch {
+    return null;
   }
 }
 

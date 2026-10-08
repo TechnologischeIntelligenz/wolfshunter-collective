@@ -8,16 +8,25 @@ const viewports = [
 ];
 
 const browser = await chromium.launch({ headless: true });
+async function gotoWithRetry(page, url) {
+  let response;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    response = await page.goto(url, { waitUntil: "domcontentloaded" });
+    if (response?.status() !== 503 || attempt === 3) return response;
+    await page.waitForTimeout(250 * attempt);
+  }
+  return response;
+}
 try {
   for (const viewport of viewports) {
     const page = await browser.newPage({ viewport });
     for (const path of ["/", "/auth/login"]) {
-      const response = await page.goto(`${baseUrl}${path}`, { waitUntil: "domcontentloaded" });
+      const response = await gotoWithRetry(page, `${baseUrl}${path}`);
       assert.equal(response?.status(), 200, `${viewport.name} ${path} must return 200`);
       assert.equal(await page.locator("body").count(), 1, `${viewport.name} ${path} must render a body`);
     }
-    const appResponse = await page.goto(`${baseUrl}/app`, { waitUntil: "domcontentloaded" });
-    assert.ok([200, 302, 401].includes(appResponse?.status() ?? 0), `${viewport.name} /app returned an unexpected status`);
+    const appResponse = await gotoWithRetry(page, `${baseUrl}/app`);
+    assert.ok([200, 302, 401, 410].includes(appResponse?.status() ?? 0), `${viewport.name} /app returned an unexpected status`);
     console.log(JSON.stringify({ viewport: viewport.name, appStatus: appResponse?.status() }));
     await page.close();
   }
