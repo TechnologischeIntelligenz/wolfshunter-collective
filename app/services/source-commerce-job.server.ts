@@ -2,10 +2,55 @@ import { createHash } from "node:crypto";
 import type { Prisma } from "@prisma/client";
 import { getCatalogSourceShop } from "./app-admin.server.ts";
 import { catalogGraphql, type CatalogAdmin } from "./catalog-bulk.server.ts";
-import { prismaJobStore, runDurableJobStep } from "./durable-job.server.ts";
+import db from "../db.server.ts";
+import { enqueueBackgroundJob, prismaJobStore, runDurableJobStep } from "./durable-job.server.ts";
 
 type CommerceState = { phase: "info" | "markets" | "profiles"; startedAt: string; after: string | null; recentCursors: string[]; pages: number; snapshot: any | null };
 export const newCommerceCheckpoint = (): CommerceState => ({ phase: "info", startedAt: new Date().toISOString(), after: null, recentCursors: [], pages: 0, snapshot: null });
+
+export async function queueSourceCommerceSync(shop: string) {
+  if (shop !== getCatalogSourceShop()) throw new Error("Only the configured source shop can synchronize");
+  return enqueueBackgroundJob(shop, "source-commerce", newCommerceCheckpoint());
+}
+
+export async function readSourceCommerceSyncState(shop: string) {
+  const job = await db.backgroundJob.findUnique({
+    where: { shop_kind: { shop, kind: "source-commerce" } },
+    select: { status: true, stateJson: true, errorMessage: true, createdAt: true, updatedAt: true },
+  });
+  if (!job) return null;
+
+  let checkpoint: Partial<CommerceState> = {};
+  try {
+    checkpoint = JSON.parse(job.stateJson) as Partial<CommerceState>;
+  } catch {
+    // A malformed checkpoint is reported as failed instead of hiding sync state.
+  }
+
+  const status = job.status === "COMPLETED"
+    ? "COMPLETED"
+    : job.status === "FAILED" || job.status === "CANCELLED"
+      ? "FAILED"
+      : "RUNNING";
+  const message = status === "FAILED"
+    ? job.errorMessage ?? "Shipping synchronization failed. Retry from this page."
+    : status === "COMPLETED"
+      ? "Shipping, markets and policies synchronized"
+      : checkpoint.phase === "markets"
+        ? "Synchronizing Shopify markets"
+        : checkpoint.phase === "profiles"
+          ? "Synchronizing shipping zones and policies"
+          : "Reading Shopify shipping destinations";
+
+  return {
+    status,
+    message,
+    startedAt: checkpoint.startedAt ?? job.createdAt.toISOString(),
+    ...(status === "COMPLETED" || status === "FAILED"
+      ? { finishedAt: job.updatedAt.toISOString() }
+      : {}),
+  };
+}
 
 function nextPage(state: CommerceState, page: any) {
   if (typeof page?.hasNextPage !== "boolean") throw new Error("Missing commerce pagination");

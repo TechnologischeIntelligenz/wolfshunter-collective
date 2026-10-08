@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { readSourceCommerce } from "../services/source-commerce.server";
-import type { LoaderFunctionArgs } from "react-router";
 import {
-  startSourceSync,
-  readSourceSyncState,
-} from "../services/source-sync.server";
+  queueSourceCommerceSync,
+  readSourceCommerceSyncState,
+} from "../services/source-commerce-job.server";
+import type { LoaderFunctionArgs } from "react-router";
 import { useFetcher, useLoaderData, useRevalidator } from "react-router";
 
 import { AdminSettingsView } from "../features/admin/admin-settings-view";
@@ -25,16 +25,16 @@ export async function loader({ request }: LoaderFunctionArgs) {
   return {
     configuration: appAdminConfigurationState(),
     commerce: source ? await readSourceCommerce(source) : null,
-    syncState: source ? await readSourceSyncState(source) : null,
+    syncState: source ? await readSourceCommerceSyncState(source) : null,
   };
 }
 
 export async function action({ request }: { request: Request }) {
-  const { admin, session } = await authenticate.admin(request);
+  const { session } = await authenticate.admin(request);
   if (!isAppAdminSession(session))
     throw new Response("Forbidden", { status: 403 });
   try {
-    await startSourceSync(admin, session.shop, "commerce");
+    await queueSourceCommerceSync(session.shop);
     return { ok: true };
   } catch {
     return Response.json(
