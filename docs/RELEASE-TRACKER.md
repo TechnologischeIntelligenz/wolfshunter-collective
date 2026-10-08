@@ -136,6 +136,8 @@ Vorheriger Einzelschritt vom Nutzer bestÃ¤tigt: Dev-Shop â†’ Import Lists â†’ Cr
 
 ## Aktueller Stand nach Wiederherstellung und Release â€” 08.10.2026
 
+- **Cloudflare Worker erneut deployed:** 34772544-3841-4726-a4e0-b2ae279e33fa. Der Deploy enthält gemeinsame Thumbnails für Import Lists und My Products, entfernt favorisierte Produkte aus Discover und verwendet synchronisierte Lieferländer als Primary delivery country. Build, Typecheck und Playwright-Smoke wurden vor und nach dem Deploy jeweils zweimal erfolgreich geprüft.
+
 - **Cloudflare Worker deployed:** `42387bae-fcb5-441d-a05d-c29156e53ce3`. `GET /healthz` meldet weiterhin `status=ok`, `databaseReady=true` und `merchantWorkspaceReady=true`. Der Retailer-Katalog und Versanddaten lesen bei fehlendem Worker-Dateisnapshot jetzt die aktiven Supabase-Snapshots. Shopify-Reauth antwortet mit dem offiziellen `X-Shopify-API-Request-Failure-Reauthorize-Url` auÃŸerhalb des eingebetteten Frames.
 - **Shopify-Version released:** `wolfshunter-collective-23`, Version-ID `1160128069633`. Shopify CLI meldet diese Version als `active`.
 - **Billing:** Produktionsmodus ist aktiv (`BILLING_TEST_MODE=false`); der Code definiert 99 USD pro 30 Tage nach einer 14-tÃ¤gigen Testphase.
