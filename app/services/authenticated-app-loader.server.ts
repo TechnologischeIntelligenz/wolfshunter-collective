@@ -74,7 +74,6 @@ export async function authenticatedAppLoader(
   options: { includeCollections?: boolean; requireRetailer?: boolean } = {},
 ) {
   const entryUrl = new URL(request.url);
-  if (!entryUrl.searchParams.has("shop") && !entryUrl.searchParams.has("id_token") && !request.headers.has("authorization")) throw redirect("/auth/login");
   const { session, admin } = await authenticate.admin(request);
   const isAppAdmin = isAppAdminSession(session);
   if (options.requireRetailer) {

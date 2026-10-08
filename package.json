@@ -17,6 +17,7 @@
     "setup": "prisma generate && prisma migrate deploy",
     "test": "node --experimental-test-module-mocks --experimental-strip-types --test app/services/app-role.test.ts app/services/merchandising/rule-based-provider.test.ts app/services/supplier-sku-visibility.test.ts app/services/shopify-admin-catalog.test.ts app/services/catalog-recovery.test.ts app/services/order-sync.test.ts app/services/product-import.test.ts app/services/source-catalog-job.test.ts app/services/durable-job.test.ts app/db.server.test.ts app/services/catalog-database.test.ts app/services/assistant-knowledge-database.test.ts scripts/durable-job-postgres.test.mjs scripts/import-sqlite-postgres.test.mjs scripts/auth-navigation.test.mjs",
     "test:auth": "node --test scripts/auth-navigation.test.mjs",
+    "test:browser": "node scripts/playwright-smoke.mjs",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "shopify": "shopify",
     "prisma": "prisma",
@@ -52,6 +53,7 @@
   },
   "devDependencies": {
     "@electric-sql/pglite": "0.5.8",
+    "@playwright/test": "^1.64.0",
     "@shopify/api-codegen-preset": "^1.2.0",
     "@shopify/cli": "4.8.0",
     "@shopify/polaris-types": "^1.0.1",

@@ -80,7 +80,6 @@ export const loader = async ({ request }: { request: Request }) => {
   const hasSessionToken =
     url.searchParams.has("id_token") || request.headers.has("authorization");
 
-  if (!shop && !hasSessionToken) throw redirect("/auth/login");
   // Shopify may load the embedded shell with shop/host context before App Bridge
   // sends its session token. Let the authenticated child route complete that flow.
   if (shop && !hasSessionToken) {

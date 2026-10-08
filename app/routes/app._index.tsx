@@ -1,5 +1,5 @@
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "react-router";
-import { redirect, useLoaderData } from "react-router";
+import { useLoaderData } from "react-router";
 
 import { AiOperationsBrief } from "../features/dashboard/ai-operations-brief";
 import { RetailerDashboardView } from "../features/dashboard/retailer-dashboard-view";
@@ -18,10 +18,6 @@ export async function loader(args: LoaderFunctionArgs) {
   const hasSessionToken =
     url.searchParams.has("id_token") || args.request.headers.has("authorization");
   const shop = url.searchParams.get("shop");
-
-  if (shop && !hasSessionToken) {
-    throw redirect(`/auth/login?shop=${encodeURIComponent(shop)}`);
-  }
 
   return authenticatedAppLoader(args);
 }
