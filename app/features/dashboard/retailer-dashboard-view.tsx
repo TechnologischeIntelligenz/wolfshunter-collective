@@ -53,9 +53,9 @@ export function RetailerDashboardView({
         description="Curate supplier products, protect margins, and move approved products into your Shopify store from one premium workspace."
         actions={
           <>
-            <Link className="collective-button collective-button-secondary" to={authLink}>
+            <a className="collective-button collective-button-secondary" href={authLink} target="_top" rel="noreferrer">
               Re-run Shopify auth
-            </Link>
+            </a>
             <Link className="collective-button collective-button-primary" to="/app/discover">
               Explore the catalog
             </Link>
@@ -85,9 +85,9 @@ export function RetailerDashboardView({
           </p>
         </div>
         <div className="collective-auth-panel">
-          <Link className="collective-button collective-button-primary" to={authLink}>
+          <a className="collective-button collective-button-primary" href={authLink} target="_top" rel="noreferrer">
             Open auth link
-          </Link>
+          </a>
           <div className="collective-auth-url-wrap">
             <span>Direct link</span>
             <code className="collective-auth-url">{authLink}</code>
