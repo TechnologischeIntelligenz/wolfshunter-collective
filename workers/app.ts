@@ -46,7 +46,7 @@ export default {
       }, { headers: { "Cache-Control": "no-store" } });
     }
     if ((!connectionString || !workspaceEnabled) && /^\/(app|auth|webhooks|extensions)(\/|\.|$)/.test(url.pathname)) {
-      return new Response("Die Testversion ist erreichbar. Der Händlerbereich und die Datenanbindung werden noch eingerichtet.", {
+      return new Response("The application is temporarily unavailable while its data connection is restored.", {
         status: 503,
         headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag": "noindex, nofollow" },
       });
