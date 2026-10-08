@@ -55,7 +55,7 @@ const supportModes: Array<{
   },
 ];
 
-export function SupportView({ shop }: { shop: string }) {
+export function SupportView({ shop, isAdmin = false }: { shop: string; isAdmin?: boolean }) {
   const [mode, setMode] = useState<SupportMode>("technical_support");
   const [message, setMessage] = useState(supportModes[0].questions[0]);
   const fetcher = useFetcher();
@@ -74,13 +74,13 @@ export function SupportView({ shop }: { shop: string }) {
   return (
     <main className="collective-page">
       <PageHeader
-        eyebrow="Retailer support"
-        title="Ask Collective Support."
-        description="A shop-scoped assistant for connection errors, import workflows, settings, and safe next steps."
+        eyebrow={isAdmin ? "Wolfshunter Brain" : "Retailer support"}
+        title={isAdmin ? "Talk to your technical operator." : "Ask Collective Support."}
+        description={isAdmin ? "Read-only diagnosis, business context, recovery proposals, and controlled next steps for the connected shop." : "A shop-scoped assistant for connection errors, import workflows, settings, and safe next steps."}
         actions={<StatusPill tone={liveAi ? "positive" : "info"}>{liveAi ? `${result?.model ?? result?.source} assisted` : "Safe fallback ready"}</StatusPill>}
       />
       <FoundationNotice>
-        Support context is limited to {shop}. No API keys, Cloudflare credentials, or Shopify access tokens are sent to the chat.
+        {isAdmin ? "Admin Brain is read-first. Actions remain approval-gated and no raw credentials are sent to the model." : `Support context is limited to ${shop}. No API keys, Cloudflare credentials, or Shopify access tokens are sent to the chat.`}
       </FoundationNotice>
 
       <section className="collective-section collective-support-shell">

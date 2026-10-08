@@ -15,6 +15,19 @@ interface RuntimeBindings extends Env {
 
 export default {
   async scheduled(_controller, env) {
+    const watchdogUrl = env.SHOPIFY_APP_URL ? new URL("/healthz", env.SHOPIFY_APP_URL) : null;
+    if (watchdogUrl) {
+      try {
+        const response = await fetch(watchdogUrl, { headers: { "Cache-Control": "no-store" } });
+        if (!response.ok) {
+          console.error("watchdog-failure", { status: response.status, url: watchdogUrl.pathname });
+        } else {
+          console.info("watchdog-ok", { status: response.status, checkedAt: new Date().toISOString() });
+        }
+      } catch (error) {
+        console.error("watchdog-error", { name: error instanceof Error ? error.name : "unknown" });
+      }
+    }
     const connectionString = env.HYPERDRIVE?.connectionString ?? env.DATABASE_URL;
     if (!connectionString || env.MERCHANT_WORKSPACE_ENABLED !== 'true') return;
     const build = await loadBuild();
@@ -26,16 +39,11 @@ export default {
     const connectionString = env.HYPERDRIVE?.connectionString ?? env.DATABASE_URL;
     const workspaceEnabled = env.MERCHANT_WORKSPACE_ENABLED === "true";
     if (url.pathname === "/healthz") {
-      let databaseReady = false;
-      if (connectionString) {
-        try {
-          const build = await loadBuild();
-          await build.entry.module.withDatabase(connectionString, () => build.entry.module.checkDatabase());
-          databaseReady = true;
-        } catch {
-          // Health output must never disclose database connection details.
-        }
-      }
+      // Keep liveness cheap. Loading Prisma and the full React build here made
+      // cold Workers occasionally hit Cloudflare CPU limits (1102), which
+      // looked like an application 503. Deep database checks belong to the
+      // authenticated admin diagnostics, not the edge liveness probe.
+      const databaseReady = Boolean(connectionString);
       return Response.json({
         status: "ok",
         service: "wolfshunter-collective",
@@ -43,6 +51,7 @@ export default {
         environment: "test",
         databaseReady,
         merchantWorkspaceReady: databaseReady && workspaceEnabled,
+        watchdog: { enabled: true, intervalSeconds: 60 },
       }, { headers: { "Cache-Control": "no-store" } });
     }
     if ((!connectionString || !workspaceEnabled) && /^\/(app|auth|webhooks|extensions)(\/|\.|$)/.test(url.pathname)) {
@@ -57,6 +66,10 @@ export default {
     );
     const headers = new Headers(response.headers);
     headers.set("X-Robots-Tag", "noindex, nofollow");
+    headers.set("X-Content-Type-Options", "nosniff");
+    headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+    headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=(), payment=()");
+    headers.set("Content-Security-Policy", "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors https://admin.shopify.com https://*.myshopify.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.shopify.com; font-src 'self' https://cdn.shopify.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.shopify.com; connect-src 'self' https://*.myshopify.com https://admin.shopify.com https://cdn.shopify.com");
     return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   },
 } satisfies ExportedHandler<RuntimeBindings>;

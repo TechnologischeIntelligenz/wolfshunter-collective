@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-18T10:33:24.719Z",
+  "checkedAt": "2026-10-09T05:37:20.769Z",
   "items": [
     {
       "id": 1,
@@ -299,6 +299,182 @@
         "skuConfirmed": 18,
         "sourceImages": 11,
         "stockMatched": 18,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 21,
+      "sourceProductId": "gid://shopify/Product/7462485262425",
+      "sourceTitle": "A Long Sleeve Long Slim Fishtail Dress",
+      "shopifyProductId": "gid://shopify/Product/16338648465795",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 9,
+        "checkedAt": "2026-09-18T14:23:13.730Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 9,
+        "sourceImages": 14,
+        "stockMatched": 9,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 22,
+      "sourceProductId": "gid://shopify/Product/7461325733977",
+      "sourceTitle": "Cotton Linen Men's Long Sleeve DressShirt",
+      "shopifyProductId": "gid://shopify/Product/16338720391555",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 5,
+        "checkedAt": "2026-09-18T15:11:39.920Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 5,
+        "sourceImages": 9,
+        "stockMatched": 5,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 23,
+      "sourceProductId": "gid://shopify/Product/8292302651481",
+      "sourceTitle": "VELMONT™ Mandarin Collar Linen Shirt – Premium Lightweight Business Casual Long Sleeve Shirt",
+      "shopifyProductId": "gid://shopify/Product/16338720752003",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 12,
+        "checkedAt": "2026-09-18T15:11:51.196Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 12,
+        "sourceImages": 10,
+        "stockMatched": 12,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 24,
+      "sourceProductId": "gid://shopify/Product/7898587594841",
+      "sourceTitle": "NordWool™ – Double-Breasted Suede Trench Coat",
+      "shopifyProductId": "gid://shopify/Product/16340349911427",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 27,
+        "checkedAt": "2026-09-19T15:13:54.100Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 27,
+        "sourceImages": 7,
+        "stockMatched": 27,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 25,
+      "sourceProductId": "gid://shopify/Product/7462086377561",
+      "sourceTitle": "A. New Models Lapels Long-sleeved Corduroy Dresses",
+      "shopifyProductId": "gid://shopify/Product/16340356104579",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "4 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 4,
+        "checkedAt": "2026-09-19T15:23:29.861Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 4,
+        "sourceImages": 11,
+        "stockMatched": 4,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 26,
+      "sourceProductId": "gid://shopify/Product/7460843749465",
+      "sourceTitle": "Pleated Coat Loose And Slim Plus Size Long-sleeved Leopard Print",
+      "shopifyProductId": "gid://shopify/Product/16340356235651",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 1,
+        "checkedAt": "2026-09-19T15:23:39.499Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 1,
+        "sourceImages": 10,
+        "stockMatched": 1,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 27,
+      "sourceProductId": "gid://shopify/Product/7462086049881",
+      "sourceTitle": "Autumn Women's Suit Solid Color",
+      "shopifyProductId": "gid://shopify/Product/16340356268419",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 3,
+        "checkedAt": "2026-09-19T15:23:47.412Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 3,
+        "sourceImages": 11,
+        "stockMatched": 3,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 28,
+      "sourceProductId": "gid://shopify/Product/7461306794073",
+      "sourceTitle": "Women's Color Matching Plaid Long-sleeved Dress Shirt",
+      "shopifyProductId": "gid://shopify/Product/16340361511299",
+      "errorMessage": null,
+      "summary": {
+        "notes": [],
+        "variants": 8,
+        "checkedAt": "2026-09-19T15:29:19.634Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 8,
+        "sourceImages": 14,
+        "stockMatched": 8,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 29,
+      "sourceProductId": "gid://shopify/Product/7497934897241",
+      "sourceTitle": "Fashion Brand Plaid Long Sleeve DressShirt Coat Jacket Men & Women",
+      "shopifyProductId": "gid://shopify/Product/16341791834499",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "6 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 6,
+        "checkedAt": "2026-09-20T19:29:22.781Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 6,
+        "sourceImages": 20,
+        "stockMatched": 6,
+        "stockLocation": "WOLFSHUNTER COLLECTIVE"
+      }
+    },
+    {
+      "id": 30,
+      "sourceProductId": "gid://shopify/Product/7460841750617",
+      "sourceTitle": "LUXE_EDIT™ – Royal Red Blazer (Princess Diana Tribute Edition)",
+      "shopifyProductId": "gid://shopify/Product/16355910648195",
+      "errorMessage": null,
+      "summary": {
+        "notes": [
+          "6 variants have no image association in the source. Assign their original supplier images manually."
+        ],
+        "variants": 6,
+        "checkedAt": "2026-09-29T10:09:11.495Z",
+        "stockSource": "shopify-cj-mirror",
+        "skuConfirmed": 6,
+        "sourceImages": 8,
+        "stockMatched": 6,
         "stockLocation": "WOLFSHUNTER COLLECTIVE"
       }
     }

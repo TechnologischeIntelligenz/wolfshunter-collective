@@ -85,6 +85,24 @@ export function AdminDashboardView({
         only to this admin context and to the supplier that owns each mapping.
       </FoundationNotice>
 
+      <section className="collective-dashboard-callout collective-brain-hero">
+        <div>
+          <p className="collective-eyebrow">Wolfshunter Brain</p>
+          <h2>Your technical operator and business assistant</h2>
+          <p>
+            Start with diagnosis, customer-support context, product knowledge,
+            and safe recovery suggestions. Writes remain approval-gated until a
+            defined emergency rule applies.
+          </p>
+        </div>
+        <div className="collective-brain-hero-actions">
+          <StatusPill tone="positive">Read and diagnose</StatusPill>
+          <Link className="collective-button collective-button-primary" to="/app/brain">
+            Open Brain chat
+          </Link>
+        </div>
+      </section>
+
       <section className="collective-section">
         <SectionHeading
           title="Operator overview"

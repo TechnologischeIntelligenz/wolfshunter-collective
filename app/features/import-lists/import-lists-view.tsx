@@ -35,6 +35,7 @@ export function ImportListsView({
 }) {
   const fetcher = useFetcher();
   const [collectionId, setCollectionId] = useState("");
+  const [batchState, setBatchState] = useState<string | null>(null);
   const result = fetcher.data as
     | { ok?: boolean; error?: string; warning?: string }
     | undefined;
@@ -108,6 +109,42 @@ export function ImportListsView({
             copy, and legal details in Shopify Admin. The optional collection is
             linked directly.
           </p>
+          {stagedCount > 1 ? (
+            <button
+              className="collective-button collective-button-secondary"
+              type="button"
+              disabled={batchState !== null}
+              onClick={async () => {
+                const batch = stagedProducts.slice(0, 50);
+                let completed = 0;
+                let failed = 0;
+                setBatchState(`0/${batch.length} drafts processed`);
+                for (const product of batch) {
+                  const body = new URLSearchParams({
+                    intent: "push-product",
+                    productId: product.id,
+                    collectionId,
+                  });
+                  try {
+                    const response = await fetch("/app/import-lists", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                      body,
+                    });
+                    if (!response.ok) failed++;
+                    else completed++;
+                  } catch {
+                    failed++;
+                  }
+                  setBatchState(`${completed + failed}/${batch.length} processed · ${failed} failed`);
+                }
+                setBatchState(`Batch finished · ${completed} created/reused · ${failed} failed`);
+              }}
+            >
+              Create up to 50 DRAFTs
+            </button>
+          ) : null}
+          {batchState ? <p role="status">{batchState}</p> : null}
           <div className="collective-import-list">
             {stagedProducts.map((product) => {
               const push = pushBySourceId.get(product.id);

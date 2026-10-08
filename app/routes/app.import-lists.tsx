@@ -18,6 +18,8 @@ import {
   updateRetailerWorkspace,
 } from "../services/retailer-workspace.server";
 import { getRetailerCatalogSnapshot } from "../services/shopify-source-catalog.server";
+import { getCatalogSourceShop } from "../services/app-admin.server";
+import { createImportedProductDraft, readImportVariantPlan } from "../../_recovery/live-import-runtime.mjs";
 import type { CatalogProduct } from "../services/merchandising/types";
 
 export async function loader(args: LoaderFunctionArgs) {
@@ -83,6 +85,31 @@ const graphQLErrorDetail = (errors: GraphqlError[] | undefined) =>
     })
     .filter(Boolean)
     .join("; ");
+
+async function maybeAutoPublish(
+  admin: { graphql: (query: string, options?: { variables?: Record<string, unknown> }) => Promise<Response> },
+  response: Response,
+) {
+  if (process.env.AUTO_PUBLISH_IMPORTED_PRODUCTS !== "true") return response;
+  const publicationId = process.env.AUTO_PUBLISH_PUBLICATION_ID?.trim() ?? "";
+  if (!/^gid:\/\/shopify\/Publication\/\d+$/.test(publicationId)) return response;
+  const payload = await response.clone().json().catch(() => null) as { ok?: boolean; push?: { shopifyProductId?: string; status?: string } } | null;
+  const productId = payload?.push?.shopifyProductId;
+  if (!payload?.ok || payload.push?.status !== "DRAFT_CREATED" || !productId) return response;
+  const activate = await admin.graphql(
+    `mutation ActivateCollectiveProduct($product: ProductUpdateInput!) { productUpdate(product: $product) { product { id status } userErrors { message } } }`,
+    { variables: { product: { id: productId, status: "ACTIVE" } } },
+  );
+  const activatePayload: any = await activate.json();
+  if (activatePayload.data?.productUpdate?.userErrors?.length) return response;
+  const publish = await admin.graphql(
+    `mutation PublishCollectiveProduct($id: ID!, $input: [PublicationInput!]!) { publishablePublish(id: $id, input: $input) { userErrors { message } } }`,
+    { variables: { id: productId, input: [{ publicationId }] } },
+  );
+  const publishPayload: any = await publish.json();
+  if (publishPayload.data?.publishablePublish?.userErrors?.length || publishPayload.errors?.length) return response;
+  return Response.json({ ...payload, autoPublished: true });
+}
 
 const collectiveImportReviewNoticeHtml = (product: CatalogProduct) =>
   `<p>Imported as an unpublished WOLFSHUNTER COLLECTIVE DRAFT. Source category: ${escapeHtml(product.category)}. Review product copy, variants, media, pricing, size charts, shipping claims, and legal claims before publication.</p>`;
@@ -207,6 +234,33 @@ export async function action({ request }: ActionFunctionArgs) {
       },
       { status: 400 },
     );
+  }
+
+  if (workspace.importedProductIds.length >= 99) {
+    return Response.json({ ok: false, error: "The 99-product trial limit has been reached. Please upgrade to continue importing products." }, { status: 403 });
+  }
+
+  const sourceShop = getCatalogSourceShop();
+  if (sourceShop) {
+    try {
+      const variantPlan = await readImportVariantPlan(
+        admin,
+        sourceShop,
+        product,
+        settings.marginPercent,
+      );
+      const draftResponse = await createImportedProductDraft(
+        admin,
+        session.shop,
+        product,
+        typeof collectionId === "string" && collectionId ? collectionId : null,
+        variantPlan,
+      );
+      return await maybeAutoPublish(admin, draftResponse);
+    } catch (error) {
+      const message = error instanceof Error ? error.message.slice(0, 300) : "The source variants could not be verified.";
+      return Response.json({ ok: false, error: message }, { status: 400 });
+    }
   }
 
   // Enforce 99-product trial limit

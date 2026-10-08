@@ -10,10 +10,11 @@ import {
 } from "../services/openai-assistant.server";
 import { recordSupportCase } from "../services/support-case.server";
 import { authenticate } from "../shopify.server";
+import { isAppAdminSession } from "../services/app-admin.server";
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const { session } = await authenticate.admin(request);
-  return { shop: session.shop };
+  return { shop: session.shop, isAdmin: isAppAdminSession(session) };
 }
 
 export async function action({ request }: ActionFunctionArgs) {
@@ -58,6 +59,6 @@ export async function action({ request }: ActionFunctionArgs) {
 }
 
 export default function SupportRoute() {
-  const { shop } = useLoaderData<typeof loader>();
-  return <SupportView shop={shop} />;
+  const { shop, isAdmin } = useLoaderData<typeof loader>();
+  return <SupportView shop={shop} isAdmin={isAdmin} />;
 }

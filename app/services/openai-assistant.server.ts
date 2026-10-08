@@ -296,6 +296,15 @@ const fallbackAnswer = (message: string, context: AssistantContext, mode: Assist
   if (mode === "technical_support" && codeMatch?.[1] === "501") {
     return "501 bedeutet nicht implementiert. Das ist kein Grund, Daten zu löschen: Funktion als geplante, approval-gated Verbesserung markieren, erst den Scope definieren und dann mit einer reversiblen DRAFT-/Preview-Aktion ergänzen.";
   }
+  if (mode === "technical_support" && codeMatch?.[1] === "503") {
+    return "503: Die App oder eine Abhaengigkeit ist temporaer nicht bereit. Zuerst /healthz pruefen. Wenn databaseReady true ist, Route, Zeitpunkt und Tab-Anzahl erfassen; keine Tokens rotieren und App nicht neu installieren.";
+  }
+  if (mode === "technical_support" && codeMatch?.[1] === "429") {
+    return "429: Rate-Limit. Tabs schliessen, kurz warten und nicht wiederholt neu laden. Route und Zeitpunkt fuer die Admin-Diagnose notieren.";
+  }
+  if (mode === "technical_support" && (codeMatch?.[1] === "500" || codeMatch?.[1] === "502")) {
+    return `${codeMatch[1]}: interner Worker-, Upstream- oder Datenbankfehler. /healthz pruefen, Logs sichern und keine Secrets oder Daten aendern.`;
+  }
   if (mode === "technical_support" && codeMatch) {
     return `${codeMatch[1]} ist ein technischer Fehlerstatus. Nenne URL, letzte Aktion und Zeitpunkt; prüfe zuerst /healthz und ändere keine Tokens oder Cloudflare-Regeln.`;
   }

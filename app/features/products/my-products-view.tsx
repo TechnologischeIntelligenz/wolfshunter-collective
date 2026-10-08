@@ -13,6 +13,7 @@ type MyProductPush = ImportedProductPushState & {
   imageCount: number;
   variantImageUrls: string[];
 };
+type Publication = { id: string; name: string; supportsFuturePublishing: boolean };
 
 const adminProductUrl = (shop: string, productId: string) => {
   const numericId = productId.split("/").pop();
@@ -22,9 +23,11 @@ const adminProductUrl = (shop: string, productId: string) => {
 export function MyProductsView({
   shop,
   pushes = [],
+  publications = [],
 }: {
   shop: string;
   pushes?: MyProductPush[];
+  publications?: Publication[];
 }) {
   return (
     <main className="collective-page">
@@ -73,6 +76,16 @@ export function MyProductsView({
                       <a className="collective-button collective-button-secondary" href={productUrl} target="_blank" rel="noreferrer">
                         Open in Shopify
                       </a>
+                    ) : null}
+                    {push.shopifyProductId && publications.length ? (
+                      <form method="post">
+                        <input type="hidden" name="intent" value="publish" />
+                        <input type="hidden" name="productId" value={push.shopifyProductId} />
+                        <select name="publicationId" aria-label={`Publication for ${push.sourceTitle}`} defaultValue={publications[0].id}>
+                          {publications.map((publication) => <option key={publication.id} value={publication.id}>{publication.name}</option>)}
+                        </select>
+                        <button className="collective-button collective-button-primary" type="submit">Publish</button>
+                      </form>
                     ) : null}
                   </div>
                 </article>

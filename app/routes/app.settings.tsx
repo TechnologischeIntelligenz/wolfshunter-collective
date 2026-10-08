@@ -1,14 +1,22 @@
 import { useLoaderData } from "react-router";
+import type { LoaderFunctionArgs } from "react-router";
 import { RetailerSettingsView } from "../features/settings/retailer-settings-view";
-import {
-  authenticatedRetailerLoader,
-  type AuthenticatedAppLoaderData,
-} from "../services/authenticated-app-loader.server";
 import { requireRetailerSession } from "../services/app-role.server";
 import { authenticate } from "../shopify.server";
-import { updateRetailerSettings } from "../services/retailer-commerce.server";
+import { getCatalogSourceShop } from "../services/app-admin.server";
+import { getRetailerSettings, updateRetailerSettings } from "../services/retailer-commerce.server";
+import { readSourceCommerce } from "../services/source-commerce.server";
 
-export { authenticatedRetailerLoader as loader };
+export async function loader({ request }: LoaderFunctionArgs) {
+  const { session } = await authenticate.admin(request);
+  requireRetailerSession(session);
+  const sourceShop = getCatalogSourceShop();
+  const [settings, sourceCommerce] = await Promise.all([
+    getRetailerSettings(session.shop),
+    sourceShop ? readSourceCommerce(sourceShop) : Promise.resolve(null),
+  ]);
+  return { shop: session.shop, settings, sourceCommerce };
+}
 
 export async function action({ request }: { request: Request }) {
   const { session } = await authenticate.admin(request);
@@ -43,7 +51,7 @@ export async function action({ request }: { request: Request }) {
 }
 
 export default function SettingsRoute() {
-  const loaderData = useLoaderData<AuthenticatedAppLoaderData>();
+  const loaderData = useLoaderData<typeof loader>();
 
-  return <RetailerSettingsView commerce={loaderData.sourceCommerce} shop={loaderData.shop} settings={loaderData.retailerSettings} />;
+  return <RetailerSettingsView commerce={loaderData.sourceCommerce} shop={loaderData.shop} settings={loaderData.settings} />;
 }

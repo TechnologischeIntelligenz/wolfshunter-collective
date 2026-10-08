@@ -1,6 +1,7 @@
 import { SourceCommercePanel } from "../../components/collective/source-commerce-panel";
 import type { SourceCommerce } from "../../services/source-commerce.server";
 import { useFetcher } from "react-router";
+import { useEffect, useState } from "react";
 
 import {
   FoundationNotice,
@@ -20,6 +21,12 @@ export function RetailerSettingsView({
   settings: RetailerSettingsState;
 }) {
   const fetcher = useFetcher();
+  const [language, setLanguage] = useState("de");
+  const [currency, setCurrency] = useState("EUR");
+  useEffect(() => {
+    setLanguage(localStorage.getItem("wolfshunter.language") || "de");
+    setCurrency(localStorage.getItem("wolfshunter.currency") || "EUR");
+  }, []);
   const result = fetcher.data as
     | { ok?: boolean; error?: string }
     | undefined;
@@ -43,6 +50,20 @@ export function RetailerSettingsView({
             description="Used to rank and validate the assortment for this retailer."
           />
           <div className="collective-settings-grid">
+            <label>
+              <span>Language</span>
+              <select value={language} onChange={(event) => { setLanguage(event.currentTarget.value); localStorage.setItem("wolfshunter.language", event.currentTarget.value); }}>
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+              </select>
+            </label>
+            <label>
+              <span>Display currency</span>
+              <select value={currency} onChange={(event) => { setCurrency(event.currentTarget.value); localStorage.setItem("wolfshunter.currency", event.currentTarget.value); }}>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="USD">US Dollar (USD)</option>
+              </select>
+            </label>
             <label>
               <span>Primary delivery country</span>
               <select name="marketCountry" defaultValue={settings.marketCountry}>

@@ -14,11 +14,6 @@ import { SupplierDashboardView } from "../features/supplier/supplier-dashboard-v
 import { AdminDashboardView } from "../features/admin/admin-dashboard-view";
 
 export async function loader(args: LoaderFunctionArgs) {
-  const url = new URL(args.request.url);
-  const hasSessionToken =
-    url.searchParams.has("id_token") || args.request.headers.has("authorization");
-  const shop = url.searchParams.get("shop");
-
   return authenticatedAppLoader(args);
 }
 
@@ -100,8 +95,6 @@ export default function DashboardRoute() {
   return (
     <>
       <RetailerDashboardView {...loaderData} />
-      <ReadOnlyDiagnosticsPanel diagnostics={loaderData.diagnostics} />
-      <AiOperationsBrief />
     </>
   );
 }

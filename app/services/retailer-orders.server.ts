@@ -136,6 +136,39 @@ export async function getRetailerOrders(shop: string, requestedPage = 1) {
     total,
   };
 }
+
+export async function saveManualTracking(input: {
+  shop: string;
+  orderReference: string;
+  carrier: string;
+  trackingNumber: string;
+  trackingUrl?: string;
+  status?: string;
+}) {
+  const reference = input.orderReference.trim();
+  const carrier = input.carrier.trim().slice(0, 80);
+  const trackingNumber = input.trackingNumber.trim().slice(0, 160);
+  if (!reference || !carrier || !trackingNumber) throw new Error("Tracking fields are required");
+  if (input.trackingUrl && !/^https:\/\//i.test(input.trackingUrl)) throw new Error("Tracking URL must use HTTPS");
+  const order = await db.retailerOrder.findFirst({
+    where: { shop: input.shop, OR: [{ shopifyOrderId: reference }, { orderNumber: reference }] },
+  });
+  if (!order) throw new Error("Order was not found in the synchronized workspace");
+  const previous = JSON.parse(order.trackingJson || "[]") as unknown[];
+  const event = {
+    carrier,
+    number: trackingNumber,
+    url: input.trackingUrl?.trim() || null,
+    status: input.status?.trim().toUpperCase() || "IN_TRANSIT",
+    source: "ADMIN_MANUAL",
+    updatedAt: new Date().toISOString(),
+  };
+  const updated = await db.retailerOrder.update({
+    where: { id: order.id },
+    data: { trackingStatus: event.status, trackingJson: JSON.stringify([event, ...previous].slice(0, 10)), lastEvent: "MANUAL_TRACKING_UPDATED" },
+  });
+  return { id: updated.id, orderNumber: updated.orderNumber, tracking: event };
+}
 export const ORDERS_QUERY = `query CollectiveOrders($after: String, $query: String) {
   orders(first: 100, after: $after, sortKey: UPDATED_AT, query: $query) {
     nodes { id name createdAt updatedAt displayFinancialStatus displayFulfillmentStatus currencyCode

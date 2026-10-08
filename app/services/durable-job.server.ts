@@ -1,5 +1,5 @@
 import type { Prisma, PrismaClient } from "@prisma/client";
-import prisma from "../db.server";
+import prisma from "../db.server.ts";
 
 const LEASE_MS = 120_000;
 const activeStatuses = ["PENDING", "RUNNING"];
@@ -19,7 +19,6 @@ export interface DurableJobStep<T> {
   effects?: unknown;
 }
 
-type JobClient = PrismaClient | Prisma.TransactionClient;
 type Persist<T> = (client: Prisma.TransactionClient, lease: DurableJobLease<T>, step: DurableJobStep<T>) => Promise<void>;
 
 export interface DurableJobStore<T> {
@@ -96,6 +95,24 @@ export async function listDueBackgroundJobs(limit = 2) {
     take: Math.max(1, Math.min(10, Math.floor(limit) || 2)),
     select: { shop: true, kind: true },
   });
+}
+
+export async function cancelBackgroundJobs(shop: string, kind?: string) {
+  const result = await prisma.backgroundJob.updateMany({
+    where: {
+      shop,
+      ...(kind ? { kind } : {}),
+      status: { in: activeStatuses },
+    },
+    data: {
+      status: "CANCELLED",
+      leaseToken: null,
+      leaseExpiresAt: null,
+      errorMessage: "Synchronization cancelled by an administrator.",
+      revision: { increment: 1 },
+    },
+  });
+  return result.count > 0;
 }
 
 export function prismaJobStore<T>(shop: string, kind: string, persist?: Persist<T>): DurableJobStore<T> {
