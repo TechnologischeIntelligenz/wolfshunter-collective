@@ -22,7 +22,7 @@
 
 ### 3. App Information
 - **App Name**: WOLFSHUNTER COLLECTIVE — Premium Retailer & Fulfillment Network
-- **Short Description**: Build an assortment with commercial discipline. Curate supplier products, protect margins, and prepare fulfillment.
+- **Short Description**: Build an assortment with commercial discipline. Curate supplier products, protect margins, and stage Shopify DRAFTs.
 - **Detailed Description**: Use content from `docs/APP-STORE-LISTING.md`
 - **Category**: Marketing, Sales & Customer Conversion (or appropriate category)
 

@@ -133,3 +133,13 @@ Vorheriger Einzelschritt vom Nutzer bestätigt: Dev-Shop → Import Lists → Cr
 - Der vorhandene Rollen-Test läuft erfolgreich: 2 bestanden (Produktions-Shop `admin`, Dev-Shop `retailer`).
 - Der lokale `scheduled-jobs.server.ts` ist eine ausdrücklich markierte Wiederherstellungsfassung, die den Build ermöglicht und den gesicherten Import-/Bestandslaufzeitstand nutzt. Sie ist nicht als neuer Cloudflare-Deploy freigegeben; der aktuell laufende Worker bleibt unverändert.
 - Kein Cloudflare-Deployment und keine Shopify-Schreiboperation.
+
+## Aktueller Stand nach Wiederherstellung und Release — 08.10.2026
+
+- **Cloudflare Worker deployed:** `c3897e70-150d-4d71-a913-83b91370ce2a`. `GET /healthz` meldet weiterhin `status=ok`, `databaseReady=true` und `merchantWorkspaceReady=true`.
+- **Shopify-Version released:** `wolfshunter-collective-23`, Version-ID `1160128069633`. Shopify CLI meldet diese Version als `active`.
+- **Billing:** Produktionsmodus ist aktiv (`BILLING_TEST_MODE=false`); der Code definiert 99 USD pro 30 Tage nach einer 14-tägigen Testphase.
+- **Live-Session geprüft:** Dev-Shop `wolfshunter-ai-dev.myshopify.com`, richtige App-ID, konfigurierte Scopes und 0 GraphQL-Fehler.
+- **Scheduler-Recovery:** Katalog, Commerce/Policies und Orders verwenden wieder durable, seitenweise Checkpoints. Typecheck und Produktions-Build sind grün.
+- **Recovery-Backup:** GitHub-Branch `recovery-20261008`, letzter Commit `5171d1f`.
+- **Noch kein öffentlicher App-Store-Reviewabschluss:** Fulfillment-Ausführung, Carrier-Tracking, geschützte Kundendatenfreigabe, vollständiger Browser-/Neuinstallationstest und die Dashboard-Einreichung bleiben separate Nachweise. Diese Punkte werden in V1 nicht beworben.

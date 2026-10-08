@@ -12,9 +12,10 @@ WOLFSHUNTER COLLECTIVE helps Shopify merchants build disciplined product assortm
 ## Key Features
 - **Curated Supplier Catalog**: Browse verified supplier products with real-time inventory and pricing
 - **Margin Protection**: Calculate target margins and profitability before committing to products
-- **Import Staging**: Build import lists with explicit approval workflow
+- **Import Staging**: Build import lists with an explicit approval workflow
 - **Draft-First Workflow**: Create unpublished Shopify DRAFTs for review before publication
 - **Tenant-Scoped**: Your catalog and settings remain private to your shop
+- **Guided Support**: Use technical, product, merchant, and order-support guidance inside the app
 
 ## How It Works
 1. Discover supplier products in the curated catalog
@@ -28,6 +29,8 @@ WOLFSHUNTER COLLECTIVE helps Shopify merchants build disciplined product assortm
 - Retailers who want to protect margins before importing
 - Merchants who prefer explicit approval workflows
 - Stores looking for disciplined product sourcing
+
+Fulfillment execution and carrier tracking are not active in the current V1 workflow and are not included in this listing.
 
 ## Pricing
 - 14-day free trial
