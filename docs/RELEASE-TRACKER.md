@@ -136,7 +136,7 @@ Vorheriger Einzelschritt vom Nutzer bestätigt: Dev-Shop → Import Lists → Cr
 
 ## Aktueller Stand nach Wiederherstellung und Release — 08.10.2026
 
-- **Cloudflare Worker deployed:** `d705d1ce-900d-4d20-8b04-8691194d924f`. `GET /healthz` meldet weiterhin `status=ok`, `databaseReady=true` und `merchantWorkspaceReady=true`. Der Retailer-Katalog liest bei fehlendem Worker-Dateisnapshot jetzt den aktiven Katalog aus `CatalogKnowledgeProduct` in Supabase (8.237 Produkte vorhanden). Shopify-Auth-Links öffnen den Login außerhalb des eingebetteten Frames.
+- **Cloudflare Worker deployed:** `68454832-6b65-45fa-95ae-1afb3a5526c9`. `GET /healthz` meldet weiterhin `status=ok`, `databaseReady=true` und `merchantWorkspaceReady=true`. Der Retailer-Katalog und Versanddaten lesen bei fehlendem Worker-Dateisnapshot jetzt die aktiven Supabase-Snapshots. Shopify-Reauth antwortet mit dem offiziellen `X-Shopify-API-Request-Failure-Reauthorize-Url` außerhalb des eingebetteten Frames.
 - **Shopify-Version released:** `wolfshunter-collective-23`, Version-ID `1160128069633`. Shopify CLI meldet diese Version als `active`.
 - **Billing:** Produktionsmodus ist aktiv (`BILLING_TEST_MODE=false`); der Code definiert 99 USD pro 30 Tage nach einer 14-tägigen Testphase.
 - **Live-Session geprüft:** Dev-Shop `wolfshunter-ai-dev.myshopify.com`, richtige App-ID, konfigurierte Scopes und 0 GraphQL-Fehler.
