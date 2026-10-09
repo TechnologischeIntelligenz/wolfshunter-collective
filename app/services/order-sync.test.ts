@@ -1,26 +1,78 @@
 import assert from "node:assert/strict";
-import test, { after } from "node:test";
+import test, { after, mock } from "node:test";
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { EventEmitter } from "node:events";
+import { readFileSync } from "node:fs";
+import pg from "pg";
+import { PrismaClient } from "@prisma/client";
+import { PrismaPg } from "@prisma/adapter-pg";
+import { PGlite } from "@electric-sql/pglite";
 import {
   canonicalOrderId,
   normalizeOrderWebhook,
 } from "./order-normalization.ts";
 
+class OrderSyncPGlitePool extends pg.Pool {
+  constructor(database) {
+    super({ max: 1 });
+    this.database = database;
+    this.tail = Promise.resolve();
+  }
+  async acquire() {
+    const previous = this.tail;
+    let unlock;
+    this.tail = new Promise(resolve => { unlock = resolve; });
+    await previous;
+    return unlock;
+  }
+  async execute(query, values) {
+    const config = typeof query === "string" ? { text: query } : query;
+    const parsers = config.types ? Object.fromEntries(
+      [16, 20, 21, 23, 25, 114, 700, 701, 1043, 1082, 1114, 1184, 1700, 3802]
+        .map(oid => [oid, config.types.getTypeParser(oid, "text")]),
+    ) : undefined;
+    const result = await this.database.query(config.text, values ?? config.values ?? [], {
+      ...(config.rowMode ? { rowMode: config.rowMode } : {}),
+      ...(parsers ? { parsers } : {}),
+    });
+    return { ...result, rowCount: result.affectedRows ?? result.rows.length };
+  }
+  async query(query, values) {
+    const unlock = await this.acquire();
+    try { return await this.execute(query, values); } finally { unlock(); }
+  }
+  async connect() {
+    const unlock = await this.acquire();
+    const connection = new EventEmitter();
+    connection.query = (query, values) => this.execute(query, values);
+    let released = false;
+    connection.release = () => {
+      if (released) return;
+      released = true;
+      unlock();
+    };
+    return connection;
+  }
+  async end() { await this.tail; }
+}
+
 const directory = await fs.mkdtemp(
   path.join(os.tmpdir(), "collective-sync-test-"),
 );
-process.env.DATABASE_URL =
-  "file:" + path.join(directory, "test.sqlite").replaceAll("\\", "/");
 process.env.SOURCE_DATA_DIR = path.join(directory, "source");
-const migrated = spawnSync(
-  process.execPath,
-  ["node_modules/prisma/build/index.js", "migrate", "deploy"],
-  { env: process.env, encoding: "utf8" },
-);
-assert.equal(migrated.status, 0, "Isolated migrations failed");
+
+const database = await PGlite.create();
+await database.exec(readFileSync(
+  new URL("../../prisma/migrations/20260918060000_postgresql_baseline/migration.sql", import.meta.url),
+  "utf8",
+));
+const pool = new OrderSyncPGlitePool(database);
+const prisma = new PrismaClient({ adapter: new PrismaPg(pool) });
+const dbModule = mock.module(new URL("../db.server.ts", import.meta.url).href, {
+  exports: { default: prisma },
+});
 const { default: db } = await import("../db.server.ts");
 const { upsertRetailerOrder, syncRecentShopifyOrders, getRetailerOrders } =
   await import("./retailer-orders.server.ts");
@@ -31,7 +83,11 @@ const { deleteShopData } = await import("./tenant-data.server.ts");
 const { sourceDataPath, writeSourceData } =
   await import("./catalog-snapshot.server.ts");
 after(async () => {
+  dbModule.restore();
   await db.$disconnect();
+  await pool.end();
+  await database.close();
+  await fs.rm(directory, { recursive: true, force: true });
 });
 const order = (id: string, time = "2026-09-18T01:00:00Z") => ({
   shopifyOrderId: id,
