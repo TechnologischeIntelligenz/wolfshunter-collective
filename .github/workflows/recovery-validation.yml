@@ -1,4 +1,4 @@
-name: Recovery validation
+name: WOLFSHUNTER repair validation
 
 on:
   push:
@@ -9,51 +9,24 @@ on:
 permissions:
   contents: read
 
+# Separate group from earlier stuck runs; keep one active run without cancelling it
+# on every code update. This workflow can deploy only the repair branch to the test Worker.
 concurrency:
-  group: recovery-validation-${{ github.ref }}
+  group: wolfshunter-repair-v2-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  static-validation:
-    name: Install, typecheck, tests, lint and Worker dry-run
+  repair-validate-deploy:
+    name: Build, test, deploy test Worker, verify HTTP and browser
+    if: ${{ github.ref == 'refs/heads/fix/validate-live-worker-20261009' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 55
     env:
       CI: "true"
       SHOPIFY_API_KEY: "test-client-id"
       SHOPIFY_API_SECRET: "test-client-secret"
       SCOPES: "read_locations,read_orders,write_assigned_fulfillment_orders,write_fulfillments,write_inventory,write_products,read_markets,read_shipping,write_shipping,read_legal_policies"
       SHOPIFY_APP_URL: "https://wolfshunter-collective-test.limoorange99.workers.dev"
-    steps:
-      - name: Checkout recovery branch
-        uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: npm
-      - name: Install locked dependencies
-        run: npm ci
-      - name: Generate Prisma client
-        run: npx prisma generate
-      - name: Generate Cloudflare Worker types
-        run: npx wrangler types
-      - name: TypeScript and production build
-        run: npm run typecheck
-      - name: Unit and database-adapter tests
-        run: npm test
-      - name: Lint
-        run: npm run lint
-      - name: Cloudflare Worker deployment dry-run (no production deploy)
-        run: npx wrangler deploy --dry-run
-
-  deploy-test-worker:
-    name: Deploy validated Cloudflare test Worker
-    needs: static-validation
-    if: ${{ github.ref == 'refs/heads/fix/validate-live-worker-20261009' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
-    env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - name: Checkout repair branch
@@ -63,43 +36,35 @@ jobs:
         with:
           node-version: "22"
           cache: npm
-      - name: Verify Cloudflare deploy credential is configured
+      - name: Install locked dependencies
+        run: npm ci --prefer-offline --no-audit --no-fund
+      - name: Generate Prisma client
+        run: npx prisma generate
+      - name: Generate Cloudflare Worker bindings
+        run: npx wrangler types
+      - name: Production build and TypeScript check
+        run: npm run typecheck
+      - name: Unit and database-adapter tests
+        run: npm test
+      - name: Lint
+        run: npm run lint
+      - name: Cloudflare dry-run
+        run: npx wrangler deploy --dry-run
+      - name: Require Cloudflare deploy credential
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "CLOUDFLARE_API_TOKEN is not configured in repository Actions secrets; no deployment was attempted." >> "$GITHUB_STEP_SUMMARY"
+            echo "Build and tests can pass, but CLOUDFLARE_API_TOKEN is missing from repository Actions secrets. No live deploy was attempted." >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
-      - name: Install locked dependencies
-        run: npm ci
-      - name: Generate Cloudflare Worker types
-        run: npx wrangler types
-      - name: Build the production app
-        run: npm run build
       - name: Deploy the configured test Worker
         run: npx wrangler deploy
-
-  live-smoke:
-    name: Test current hosted endpoints
-    needs: deploy-test-worker
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
-    steps:
-      - name: Checkout recovery branch
-        uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: npm
-      - name: Install locked dependencies
-        run: npm ci
+      - name: HTTP smoke test for test Worker
+        run: node scripts/smoke-workers.mjs https://wolfshunter-collective-test.limoorange99.workers.dev
+      - name: HTTP smoke test for collective.wolfshunter.com
+        run: node scripts/smoke-workers.mjs https://collective.wolfshunter.com
       - name: Install Chromium for Playwright
         run: npx playwright install --with-deps chromium
-      - name: HTTP smoke test of configured Cloudflare Worker
-        run: node scripts/smoke-workers.mjs https://wolfshunter-collective-test.limoorange99.workers.dev
-      - name: HTTP smoke test of the custom app hostname
-        run: node scripts/smoke-workers.mjs https://collective.wolfshunter.com
-      - name: Playwright desktop and mobile smoke test
+      - name: Browser smoke tests
         env:
           SMOKE_BASE_URL: "https://wolfshunter-collective-test.limoorange99.workers.dev"
         run: npm run test:browser
