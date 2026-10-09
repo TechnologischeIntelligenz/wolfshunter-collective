@@ -3,15 +3,14 @@
 // processors are recovered separately; existing sync functions remain the
 // source of truth for their domain behavior.
 import { unauthenticated } from "../shopify.server";
-import { getCatalogSourceShop } from "./app-admin.server";
-import { syncSourceCommerce } from "./source-commerce.server";
-import { runDurableJobStep, listDueBackgroundJobs, prismaJobStore } from "./durable-job.server";
-import { processImportStock, processSourceStock } from "../../_recovery/live-import-runtime.mjs";
+import { listDueBackgroundJobs } from "./durable-job.server";
 import { processSourceCatalogPage } from "./source-catalog-job.server.ts";
 import { processSourceCommercePage } from "./source-commerce-job.server.ts";
 import { processOrderSyncPage } from "./order-sync-job.server.ts";
 
-const supportedKinds = new Set(["orders", "source-commerce", "source-full", "source-stock", "import-stock"]);
+// Only processors restored as TypeScript modules are scheduled. Stock jobs remain
+// durable in PostgreSQL but must not be claimed until their recovery processor is restored.
+const supportedKinds = new Set(["orders", "source-commerce", "source-full"]);
 
 export async function runScheduledJobs() {
   const jobs = await listDueBackgroundJobs(2);
@@ -29,26 +28,10 @@ export async function runScheduledJobs() {
         if ((await processSourceCommercePage(admin, job.shop)) === "completed") processed++;
         continue;
       }
-      if (job.kind === "source-stock") {
-        if ((await processSourceStock(admin, job.shop)) === "completed") processed++;
-        continue;
-      }
-      if (job.kind === "import-stock") {
-        const sourceShop = getCatalogSourceShop();
-        if (!sourceShop) throw new Error("Stock source is missing");
-        const source = await unauthenticated.admin(sourceShop);
-        if ((await processImportStock(admin, source.admin, job.shop)) === "completed") processed++;
-        continue;
-      }
       if (job.kind === "orders") {
         if ((await processOrderSyncPage(admin, job.shop)) === "completed") processed++;
         continue;
       }
-      const store = prismaJobStore(job.shop, job.kind);
-      const result = await runDurableJobStep(store, async (lease) => {
-        return { state: lease.state, done: true };
-      });
-      if (result === "completed") processed++;
     } catch {
       // runDurableJobStep fences and retries the job through the lease store.
     }

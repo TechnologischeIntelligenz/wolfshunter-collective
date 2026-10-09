@@ -2,20 +2,22 @@
 import { defineConfig, type UserConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+const runtimeEnv: Record<string, string | undefined> = process.env;
+
 // Related: https://github.com/remix-run/remix/issues/2835#issuecomment-1144102176
 // Replace the HOST env var with SHOPIFY_APP_URL so that it doesn't break the Vite server.
 // The CLI will eventually stop passing in HOST,
 // so we can remove this workaround after the next major release.
 if (
-  process.env.HOST &&
-  (!process.env.SHOPIFY_APP_URL ||
-    process.env.SHOPIFY_APP_URL === process.env.HOST)
+  runtimeEnv.HOST &&
+  (!runtimeEnv.SHOPIFY_APP_URL ||
+    runtimeEnv.SHOPIFY_APP_URL === runtimeEnv.HOST)
 ) {
-  process.env.SHOPIFY_APP_URL = process.env.HOST;
+  runtimeEnv.SHOPIFY_APP_URL = runtimeEnv.HOST;
   Reflect.deleteProperty(process.env, "HOST");
 }
 
-const host = new URL(process.env.SHOPIFY_APP_URL || "http://localhost")
+const host = new URL(runtimeEnv.SHOPIFY_APP_URL || "http://localhost")
   .hostname;
 const isLocalHost = host === "localhost" || host === "127.0.0.1";
 
@@ -31,7 +33,7 @@ if (isLocalHost) {
   hmrConfig = {
     protocol: "wss",
     host: host,
-    port: parseInt(process.env.FRONTEND_PORT!) || 8002,
+    port: parseInt(runtimeEnv.FRONTEND_PORT!) || 8002,
     clientPort: 443,
   };
 }
@@ -48,7 +50,7 @@ export default defineConfig({
     cors: {
       preflightContinue: true,
     },
-    port: Number(process.env.PORT || 3000),
+    port: Number(runtimeEnv.PORT || 3000),
     hmr: hmrConfig,
     fs: {
       // See https://vitejs.dev/config/server-options.html#server-fs-allow for more information

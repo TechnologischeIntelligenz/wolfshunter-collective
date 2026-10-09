@@ -8,9 +8,9 @@ const loadBuild = () =>
 const handler = createRequestHandler(loadBuild, "production");
 
 interface RuntimeBindings extends Env {
-  HYPERDRIVE?: { connectionString: string };
+  // Optional legacy/direct connection for non-Hyperdrive test environments.
+  // HYPERDRIVE and Wrangler vars are generated from wrangler.jsonc.
   DATABASE_URL?: string;
-  MERCHANT_WORKSPACE_ENABLED?: string;
 }
 
 export default {

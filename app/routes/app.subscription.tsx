@@ -7,11 +7,7 @@ import {
 } from "../components/collective/foundation";
 import { authenticatedRetailerLoader } from "../services/authenticated-app-loader.server";
 import { requireRetailerSession } from "../services/app-role.server";
-import { authenticate, MONTHLY_PLAN } from "../shopify.server";
-
-function billingIsTestMode() {
-  return process.env.NODE_ENV !== "production" || process.env.BILLING_TEST_MODE === "true";
-}
+import { authenticate, billingIsTestMode, MONTHLY_PLAN } from "../shopify.server";
 
 export async function loader(args: Parameters<typeof authenticatedRetailerLoader>[0]) {
   const data = await authenticatedRetailerLoader(args);

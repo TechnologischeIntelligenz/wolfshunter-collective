@@ -21,7 +21,8 @@
     "SHOPIFY_APP_URL": "https://wolfshunter-collective-test.limoorange99.workers.dev",
     "APP_ROLE": "retailer",
     "APP_ADMIN_SHOPS": "3ddd6b-2.myshopify.com",
-    "CATALOG_SOURCE_SHOP": "3ddd6b-2.myshopify.com"
+    "CATALOG_SOURCE_SHOP": "3ddd6b-2.myshopify.com",
+    "SCOPES": "read_locations,read_orders,write_assigned_fulfillment_orders,write_fulfillments,write_inventory,write_products,read_markets,read_shipping,write_shipping,read_legal_policies"
   },
   "observability": { "enabled": true, "head_sampling_rate": 0.1 }
 }

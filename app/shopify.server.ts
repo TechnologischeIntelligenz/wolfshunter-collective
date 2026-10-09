@@ -20,7 +20,7 @@ function resolveAppUrl() {
 export const MONTHLY_PLAN = "WOLFSHUNTER COLLECTIVE Pro";
 
 export function billingIsTestMode() {
-  return process.env.NODE_ENV !== "production" || process.env.BILLING_TEST_MODE === "true";
+  return process.env.NODE_ENV !== "production" || String(process.env.BILLING_TEST_MODE) === "true";
 }
 
 const shopify = shopifyApp({
