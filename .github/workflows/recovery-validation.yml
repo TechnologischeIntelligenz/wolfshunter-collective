@@ -2,6 +2,9 @@ name: WOLFSHUNTER repair validation
 # Last updated after the PostgreSQL fixture and runtime-import fixes.
 
 on:
+  push:
+    branches:
+      - fix/validate-live-worker-20261009
   workflow_dispatch:
 
 permissions:
