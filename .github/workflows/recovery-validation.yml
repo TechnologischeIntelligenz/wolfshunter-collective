@@ -1,5 +1,5 @@
 name: WOLFSHUNTER repair validation
-# Last updated after the PostgreSQL fixture and runtime-import fixes.
+# Last updated to support both scoped Cloudflare API tokens and Global API Key + email.
 
 on:
   push:
@@ -29,6 +29,8 @@ jobs:
       SCOPES: "read_locations,read_orders,write_assigned_fulfillment_orders,write_fulfillments,write_inventory,write_products,read_markets,read_shipping,write_shipping,read_legal_policies"
       SHOPIFY_APP_URL: "https://wolfshunter-collective-test.limoorange99.workers.dev"
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN || secrets.CLOUDFLARE_TOKEN || secrets.WRANGLER_API_TOKEN }}
+      CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY || secrets.CLOUDFLARE_GLOBAL_API_KEY || secrets.CF_API_KEY || secrets.GLOBAL_API_KEY }}
+      CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL || secrets.CF_EMAIL }}
     steps:
       - name: Checkout repair branch
         uses: actions/checkout@v4
@@ -54,10 +56,11 @@ jobs:
         run: npx wrangler deploy --dry-run
       - name: Require Cloudflare deploy credential
         run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "Build, tests and Wrangler dry-run passed, but no Cloudflare deploy credential was available to this GitHub Actions job." >> "$GITHUB_STEP_SUMMARY"
-            echo "Accepted secret names: CLOUDFLARE_API_TOKEN, CF_API_TOKEN, CLOUDFLARE_TOKEN, WRANGLER_API_TOKEN." >> "$GITHUB_STEP_SUMMARY"
-            echo "A secret stored only in local .env.local or inside the deployed Worker is not available to GitHub Actions." >> "$GITHUB_STEP_SUMMARY"
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] && { [ -z "$CLOUDFLARE_API_KEY" ] || [ -z "$CLOUDFLARE_EMAIL" ]; }; then
+            echo "Build, tests and Wrangler dry-run passed, but no complete Cloudflare credential pair was available to this GitHub Actions job." >> "$GITHUB_STEP_SUMMARY"
+            echo "Accepted token secrets: CLOUDFLARE_API_TOKEN, CF_API_TOKEN, CLOUDFLARE_TOKEN, WRANGLER_API_TOKEN." >> "$GITHUB_STEP_SUMMARY"
+            echo "Accepted Global API Key secrets: CLOUDFLARE_API_KEY, CLOUDFLARE_GLOBAL_API_KEY, CF_API_KEY, GLOBAL_API_KEY; email secrets: CLOUDFLARE_EMAIL, CF_EMAIL." >> "$GITHUB_STEP_SUMMARY"
+            echo "A Global API Key must be paired with the Cloudflare account email. No live deploy was attempted." >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
       - name: Deploy the configured test Worker
