@@ -41,7 +41,7 @@ jobs:
       - name: Generate Prisma client
         run: npx prisma generate
       - name: Generate Cloudflare Worker bindings
-        run: npx wrangler types
+        run: npx wrangler types --strict-vars false
       - name: Production build and TypeScript check
         run: npm run typecheck
       - name: Unit and database-adapter tests
