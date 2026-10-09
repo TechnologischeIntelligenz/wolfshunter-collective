@@ -72,7 +72,7 @@ await database.exec(readFileSync(
 const pool = new OrderSyncPGlitePool(database);
 const prisma = new PrismaClient({ adapter: new PrismaPg(pool) });
 const dbModule = mock.module(new URL("../db.server.ts", import.meta.url).href, {
-  exports: { default: prisma },
+  defaultExport: prisma,
 });
 const { default: db } = await import("../db.server.ts");
 const { upsertRetailerOrder, syncRecentShopifyOrders, getRetailerOrders } =
