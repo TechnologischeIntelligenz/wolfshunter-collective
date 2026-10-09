@@ -86,6 +86,25 @@ export async function enqueueBackgroundJob<T>(
   return prisma.backgroundJob.findUniqueOrThrow({ where: { id: row.id } });
 }
 
+/** Cancel pending/running jobs for one shop. Clearing the lease fences late commits. */
+export async function cancelBackgroundJobs(shop: string, kind?: string) {
+  const result = await prisma.backgroundJob.updateMany({
+    where: {
+      shop,
+      status: { in: activeStatuses },
+      ...(kind ? { kind } : {}),
+    },
+    data: {
+      status: "CANCELLED",
+      leaseToken: null,
+      leaseExpiresAt: null,
+      errorMessage: null,
+      revision: { increment: 1 },
+    },
+  });
+  return result.count > 0;
+}
+
 export async function listDueBackgroundJobs(limit = 2) {
   return prisma.backgroundJob.findMany({
     where: {
