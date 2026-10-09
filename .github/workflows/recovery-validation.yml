@@ -1,0 +1,71 @@
+name: Recovery validation
+
+on:
+  push:
+    branches:
+      - fix/validate-live-worker-20261009
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recovery-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  static-validation:
+    name: Install, typecheck, tests, lint and Worker dry-run
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      CI: "true"
+      SHOPIFY_API_KEY: "test-client-id"
+      SHOPIFY_API_SECRET: "test-client-secret"
+      SCOPES: "read_locations,read_orders,write_assigned_fulfillment_orders,write_fulfillments,write_inventory,write_products,read_markets,read_shipping,read_legal_policies"
+      SHOPIFY_APP_URL: "https://wolfshunter-collective-test.limoorange99.workers.dev"
+    steps:
+      - name: Checkout recovery branch
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Generate Prisma client
+        run: npx prisma generate
+      - name: TypeScript and production build
+        run: npm run typecheck
+      - name: Unit and database-adapter tests
+        run: npm test
+      - name: Lint
+        run: npm run lint
+      - name: Cloudflare Worker deployment dry-run (no production deploy)
+        run: npx wrangler deploy --dry-run
+
+  live-smoke:
+    name: Test current hosted endpoints
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout recovery branch
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Install Chromium for Playwright
+        run: npx playwright install --with-deps chromium
+      - name: HTTP smoke test of configured Cloudflare Worker
+        run: node scripts/smoke-workers.mjs https://wolfshunter-collective-test.limoorange99.workers.dev
+      - name: HTTP smoke test of the custom app hostname
+        run: node scripts/smoke-workers.mjs https://collective.wolfshunter.com
+      - name: Playwright desktop and mobile smoke test
+        env:
+          SMOKE_BASE_URL: "https://wolfshunter-collective-test.limoorange99.workers.dev"
+        run: npm run test:browser
