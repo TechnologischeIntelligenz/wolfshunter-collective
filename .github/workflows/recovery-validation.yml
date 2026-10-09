@@ -36,6 +36,8 @@ jobs:
         run: npm ci
       - name: Generate Prisma client
         run: npx prisma generate
+      - name: Generate Cloudflare Worker types
+        run: npx wrangler types
       - name: TypeScript and production build
         run: npm run typecheck
       - name: Unit and database-adapter tests
