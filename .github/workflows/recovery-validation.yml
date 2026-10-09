@@ -1,9 +1,6 @@
 name: Recovery validation
 
 on:
-  push:
-    branches:
-      - fix/validate-live-worker-20261009
   workflow_dispatch:
 
 permissions:
