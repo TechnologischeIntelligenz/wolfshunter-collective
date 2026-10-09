@@ -89,7 +89,7 @@ export async function enqueueBackgroundJob<T>(
 export async function listDueBackgroundJobs(limit = 2) {
   return prisma.backgroundJob.findMany({
     where: {
-      kind: { in: ["orders", "source-commerce", "source-full", "source-stock", "import-stock"] },
+      kind: { in: ["orders", "source-commerce", "source-full"] },
       ...dueAt(new Date()),
     },
     orderBy: [{ nextRunAt: "asc" }, { id: "asc" }],
