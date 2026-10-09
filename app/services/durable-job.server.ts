@@ -1,5 +1,5 @@
 import type { Prisma, PrismaClient } from "@prisma/client";
-import prisma from "../db.server";
+import prisma from "../db.server.ts";
 
 const LEASE_MS = 120_000;
 const activeStatuses = ["PENDING", "RUNNING"];
