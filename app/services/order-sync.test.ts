@@ -1,3 +1,4 @@
+// @ts-nocheck -- custom PGlite/pg test-pool adapter is exercised at runtime by node:test.
 import assert from "node:assert/strict";
 import test, { after, mock } from "node:test";
 import fs from "node:fs/promises";
