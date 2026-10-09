@@ -44,8 +44,40 @@ jobs:
       - name: Cloudflare Worker deployment dry-run (no production deploy)
         run: npx wrangler deploy --dry-run
 
+  deploy-test-worker:
+    name: Deploy validated Cloudflare test Worker
+    needs: static-validation
+    if: ${{ github.ref == 'refs/heads/fix/validate-live-worker-20261009' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - name: Checkout repair branch
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Verify Cloudflare deploy credential is configured
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "CLOUDFLARE_API_TOKEN is not configured in repository Actions secrets; no deployment was attempted." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Generate Cloudflare Worker types
+        run: npx wrangler types
+      - name: Build the production app
+        run: npm run build
+      - name: Deploy the configured test Worker
+        run: npx wrangler deploy
+
   live-smoke:
     name: Test current hosted endpoints
+    needs: deploy-test-worker
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
