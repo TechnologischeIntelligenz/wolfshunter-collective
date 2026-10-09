@@ -66,7 +66,7 @@ test('durable job Prisma operations against PostgreSQL', async t => {
   await database.exec(readFileSync(baseline, 'utf8'));
   const pool = new PGlitePool(database);
   const prisma = new PrismaClient({ adapter: new PrismaPg(pool) });
-  const mocked = mock.module(new URL('../app/db.server.ts', import.meta.url).href, { exports: { default: prisma } });
+  const mocked = mock.module(new URL('../app/db.server.ts', import.meta.url).href, { defaultExport: prisma });
   const { prismaJobStore, enqueueBackgroundJob, cancelBackgroundJobs } = await import('../app/services/durable-job.server.ts');
   t.after(async () => {
     mocked.restore();
