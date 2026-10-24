@@ -99,6 +99,10 @@ export async function authenticatedAppLoader(
     getRetailerWorkspace(session.shop),
     getRetailerSettings(session.shop),
   ]);
+  const path = new URL(request.url).pathname.replace(/\/$/, "");
+  const limitedProductIds = !isAppAdmin && (path === "/app/import-lists" || path === "/app/my-products")
+    ? workspace.importedProductIds
+    : undefined;
   const catalogPromise = isAppAdmin
     ? Promise.resolve({
         source: "fallback" as const,
@@ -108,7 +112,7 @@ export async function authenticatedAppLoader(
         sourceProductCount: 0,
         error: null,
       })
-    : getRetailerCatalogSnapshot(session.shop, retailerSettings);
+    : getRetailerCatalogSnapshot(session.shop, retailerSettings, { productIds: limitedProductIds });
   const [
     diagnostics,
     shopMetrics,
@@ -133,7 +137,6 @@ export async function authenticatedAppLoader(
 
 
   const url = new URL(request.url);
-  const path = url.pathname.replace(/\/$/, "");
   const sourceShop = getCatalogSourceShop();
   const sourceCommerce = sourceShop && (path === "/app/settings" || path === "/app/admin")
     ? await readSourceCommerce(sourceShop) : null;

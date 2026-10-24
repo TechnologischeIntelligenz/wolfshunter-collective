@@ -90,6 +90,13 @@ export const loader = async ({ request }: { request: Request }) => {
     };
   }
 
+  // Direct hits without embedded Shopify context must enter through the login
+  // route. Calling authenticate.admin in the index route without a shop produces
+  // Shopify's HTTP 410 response instead of a useful login redirect.
+  if (!shop) {
+    throw redirect("/auth/login");
+  }
+
   const appRole = getAppRole();
   const pathname = url.pathname.replace(/\/$/, "");
   const supplierAllowedPaths = new Set(["/app", "/app/support", "/app/admin"]);
@@ -141,7 +148,10 @@ export default function App() {
           {isSupplier ? "Supplier dashboard" : "Dashboard"}
         </AppNavLink>
         {isAdminShop ? (
-          <AppNavLink to="/app/admin">Admin controls</AppNavLink>
+          <>
+            <AppNavLink to="/app/catalog">Catalog</AppNavLink>
+            <AppNavLink to="/app/admin">Admin controls</AppNavLink>
+          </>
         ) : isSupplier ? null : (
           <>
             <AppNavLink to="/app/discover">Discover</AppNavLink>

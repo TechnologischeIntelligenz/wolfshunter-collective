@@ -36,6 +36,7 @@ export default {
   },
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    const requestId = request.headers.get("x-wolfshunter-request-id")?.trim() || crypto.randomUUID();
     const connectionString = env.HYPERDRIVE?.connectionString ?? env.DATABASE_URL;
     const workspaceEnabled = env.MERCHANT_WORKSPACE_ENABLED === "true";
     if (url.pathname === "/healthz") {
@@ -52,19 +53,35 @@ export default {
         databaseReady,
         merchantWorkspaceReady: databaseReady && workspaceEnabled,
         watchdog: { enabled: true, intervalSeconds: 60 },
-      }, { headers: { "Cache-Control": "no-store" } });
+      }, { headers: { "Cache-Control": "no-store", "X-Wolfshunter-Request-Id": requestId } });
     }
     if ((!connectionString || !workspaceEnabled) && /^\/(app|auth|webhooks|extensions)(\/|\.|$)/.test(url.pathname)) {
       return new Response("The application is temporarily unavailable while its data connection is restored.", {
         status: 503,
-        headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag": "noindex, nofollow" },
+        headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag": "noindex, nofollow", "X-Wolfshunter-Request-Id": requestId },
       });
     }
     const build = await loadBuild();
-    const response = await build.entry.module.withDatabase(connectionString, () =>
-      handler(request, { cloudflare: { env, ctx } }),
-    );
+    let response: Response;
+    try {
+      response = await build.entry.module.withDatabase(connectionString, () =>
+        handler(request, { cloudflare: { env, ctx } }),
+      );
+    } catch (error) {
+      if (error instanceof Response) {
+        const headers = new Headers(error.headers);
+        headers.set("X-Wolfshunter-Request-Id", requestId);
+        headers.set("X-Robots-Tag", "noindex, nofollow");
+        return new Response(error.body, {
+          status: error.status,
+          statusText: error.statusText,
+          headers,
+        });
+      }
+      throw error;
+    }
     const headers = new Headers(response.headers);
+    headers.set("X-Wolfshunter-Request-Id", requestId);
     headers.set("X-Robots-Tag", "noindex, nofollow");
     headers.set("X-Content-Type-Options", "nosniff");
     headers.set("Referrer-Policy", "strict-origin-when-cross-origin");

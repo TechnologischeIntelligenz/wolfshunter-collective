@@ -37,10 +37,38 @@ const parseArray = <T>(value: string): T[] => {
   }
 };
 
-async function readDatabaseSourceCatalog(sourceShop: string) {
+async function readDatabaseSourceCatalog(sourceShop: string, productIds?: string[]) {
+  if (productIds && productIds.length === 0) return null;
   const rows = await db.catalogKnowledgeProduct.findMany({
-    where: { sourceShop, status: "ACTIVE" },
+    where: {
+      sourceShop,
+      status: "ACTIVE",
+      ...(productIds ? { sourceProductId: { in: productIds } } : {}),
+    },
     orderBy: { sourceProductId: "asc" },
+    select: {
+      sourceProductId: true,
+      title: true,
+      handle: true,
+      descriptionHtml: true,
+      status: true,
+      vendor: true,
+      productType: true,
+      tagsJson: true,
+      collectionsJson: true,
+      sourceCreatedAt: true,
+      sourceUpdatedAt: true,
+      createdAt: true,
+      updatedAt: true,
+      totalInventory: true,
+      variantCount: true,
+      imageCount: true,
+      imageUrlsJson: true,
+      priceMinimum: true,
+      priceMaximum: true,
+      currency: true,
+      lastSyncedAt: true,
+    },
   });
   if (!rows.length) return null;
   const products: ShopifyAdminProduct[] = rows.map((row) => {
@@ -174,7 +202,16 @@ export function mapShopifyProductToRetailerCatalog(
   };
 }
 
-async function readSourceCatalog(sourceShop: string) {
+async function readSourceCatalog(sourceShop: string, productIds?: string[]) {
+  // Filtered views must not populate or reuse the full-catalog cache.
+  if (productIds) {
+    const databaseSnapshot = await readDatabaseSourceCatalog(sourceShop, productIds);
+    return databaseSnapshot ?? {
+      catalog: { source: "shopify" as const, products: [], collections: [], error: null },
+      syncedAt: new Date().toISOString(),
+      expiresAt: Date.now(),
+    };
+  }
   const cached = sourceCatalogCache.get(sourceShop);
   if (cached && cached.expiresAt > Date.now()) return cached;
 
@@ -195,6 +232,7 @@ async function readSourceCatalog(sourceShop: string) {
 export async function getRetailerCatalogSnapshot(
   retailerShop: string,
   settings: RetailerSettingsState,
+  options: { productIds?: string[] } = {},
 ): Promise<RetailerCatalogSnapshot> {
   const fixture = createPhaseOneFixtureState(retailerShop);
   const tenant: TenantContext = {
@@ -217,7 +255,7 @@ export async function getRetailerCatalogSnapshot(
   }
 
   try {
-    const source = await readSourceCatalog(sourceShop);
+    const source = await readSourceCatalog(sourceShop, options.productIds);
     const commerce = await readSourceCommerce(sourceShop);
     const sourceCountry = (
       process.env.CATALOG_SOURCE_COUNTRY?.trim().toUpperCase() || "AT"
